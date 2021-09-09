@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/Activity2.css" rel="stylesheet">
+    <title>Phi Ha, ITIS 3135, Introduction</title>
+</head>
+
+<body>
+    <header>
+        <h1>Phi Ha </h1>
+        <hr>
+        <h2>ITIS 3135</h2>
+    </header>
+    <nav>
+        <a href="introduction.html">Introduction</a>
+        ||
+        <a href="contract.html">Contract</a>
+        ||
+        <a href="tables.html">HTML Tables</a>
+        ||
+        <a href="forms.html">HTML Forms</a>
+    </nav>
+
+    <main>
+        <h2>HTML Tables</h2>
+        
+        <h3>My Tabular Data</h3>
+
+        <ol>
+            <li>Phi Ha pha1@uncc.edu 7</li>
+            <li>Phu Ha phuman2021@gmail.com 15</li>
+            <li>Ze Stacks zestacks999@gmail.com 3</li>
+            <li>Cloud Strife bustersword@yahoo.com 25</li>
+            <li>Ely Lancer bluelancer@gmail.com 2</li>
+            <li>Nik Key nikkayy@gmail.com 4</li>
+            <li>Sephi Roth masamune@yahoo.com 50</li>
+            <li>Tifa Lockhart tlockhart@yahoo.com 18</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">E-mail</th>
+                <th scope="col" class="right">Years of Service</th>
+            </tr>
+            </thead>
+        <tbody>
+			<tr>
+				<td scope="row">Phi Ha</td>
+				<td>pha1@uncc.edu</td>
+				<td class="right">7</td>
+			</tr>
+			<tr>
+				<td>Phu Ha</td>
+				<td>phuman2021@gmail.com</td>
+				<td class="right">15</td>
+			</tr>
+			<tr>
+				<td>Ze Stacks</td>
+				<td>zestacks999@gmail.com</td>
+				<td class="right">3</td>
+			</tr>
+			<tr>
+				<td>Cloud Strife</td>
+				<td>bustersword@yahoo.com</td>
+				<td class="right">25</td>
+			</tr>
+			<tr>
+				<td>Ely Lancer</td>
+				<td>bluelancer@gmail.com</td>
+				<td class="right">2</td>
+			</tr>
+			<tr>
+				<td>Nik Key</td>
+				<td>nikkayy@gmail.com</td>
+				<td class="right">4</td>
+			</tr>
+			<tr>
+				<td>Sephi Roth</td>
+				<td>masamune@yahoo.com</td>
+				<td class="right">50</td>
+			</tr>
+            <tr>
+				<td>Tifa Lockhart</td>
+				<td>tlockhart@yahoo.com</td>
+				<td class="right">18</td>
+			</tr>
+		</tbody>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <thead>
+                <tr>
+                    <th scope="col">Department</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col" class="right">Years of Service</th>
+                    <th scope="col">Monthly Salary</th>
+                </tr>
+                </thead>
+            <tbody>
+                <tr>
+                    <td>Developer</td>
+                    <td>Phi Ha</td>
+                    <td>pha1@uncc.edu</td>
+                    <td class="right">7</td>
+                    <td class="right">$6,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Sales</td>
+                    <td>Phu Ha</td>
+                    <td>phuman2021@gmail.com</td>
+                    <td class="right">15</td>
+                    <td class="right">$6,200</td>
+                </tr>
+                <tr>
+                    <td>Ze Stacks</td>
+                    <td>zestacks999@gmail.com</td>
+                    <td class="right">3</td>
+                    <td class="right">$5,000</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td>Cloud Strife</td>
+                    <td>bustersword@yahoo.com</td>
+                    <td class="right">25</td>
+                    <td class="right">$7,250</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Marketing</td>
+                    <td>Ely Lancer</td>
+                    <td>bluelancer@gmail.com</td>
+                    <td class="right">2</td>
+                    <td class="right">$4,000</td>
+                </tr>
+                <tr>
+                    <td>Nik Key</td>
+                    <td>nikkayy@gmail.com</td>
+                    <td class="right">4</td>
+                    <td class="right">$5,000</td>
+                </tr>
+                <tr>
+                    <td>Sephi Roth</td>
+                    <td>masamune@yahoo.com</td>
+                    <td class="right">50</td>
+                    <td class="right">$9,000</td>
+                </tr>
+                <tr>
+                    <td>Sales</td>
+                    <td>Tifa Lockhart</td>
+                    <td>tlockhart@yahoo.com</td>
+                    <td class="right">18</td>
+                    <td class="right">$6,800</td>
+                </tr>
+                <tr>
+                    <td scope="row" colspan="3">Total Years of Service and Total Sum of Salaries</td>
+                    <td class="right">124</td>
+                    <td class="right">$49,250</td>
+                </tr>
+            </tbody>
+            </table>
+        </figure>
+    </main>
+
+    <hr>
+    <br>
+
+    <footer>
+
+        <nav>
+            <a href="http://webpages.uncc.edu/pha1/" target="_blank">Charlotte.edu</a> &#9553;
+            <a href="https://github.com/pha1" target="_blank">Github</a> &#9553;
+            <a href="https://pha1.github.io/" target="_blank">Github.io</a> &#9553;
+            <a href="https://pha1.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> &#9553;
+            <a href="https://www.codecademy.com/profiles/pha1" target="_blank">Codecademy</a> &#9553;
+            <a href="https://www.freecodecamp.org/pha1" target="_blank">freeCodeCamp</a> &#9553;
+            <a href="https://jsfiddle.net/user/pha1_uncc" target="_blank">JSFiddle</a> &#9553;
+            <a href="https://www.linkedin.com/in/phi-ha-29272b21b/" target="_blank">LinkedIn</a> &#9553;
+        </nav>
+        <br />
+
+        <p>Page built by Miso Studios</p>
+
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fintroduction.html">
+			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
+
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+
+    </footer>
+
+</body>
+
+</html>

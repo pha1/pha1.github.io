@@ -1,0 +1,53 @@
+body
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(54, 133, 223);
+    background-color: rgb(6, 56, 105);
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+header,footer
+{
+    text-align: center;
+    color: rgb(119, 160, 235);
+    font-weight: bold;
+}
+
+h2
+{
+    text-align: center;
+    color: rgb(119, 160, 235);
+}
+
+h3
+{
+    font-size: 200%;
+    line-height: 0px;
+}
+
+a
+{
+    text-decoration: none;
+    color:rgb(159, 159, 231);
+}
+
+a:hover
+{
+    text-decoration: overline underline;
+}
+
+figure
+{
+    text-align: center;
+}
+
+figcaption
+{
+    font-style: italic;
+}
+
+nav
+{
+    text-align: center;
+}
