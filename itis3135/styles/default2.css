@@ -1,10 +1,28 @@
 body
 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(119, 160, 235);
-    background-color: rgb(6, 56, 105);
+    color: rgb(141, 176, 241);
+    background-color: rgb(3, 36, 70);
     margin-left: 75px;
     margin-right: 75px;
+}
+
+input[type=text]
+{
+    padding:4px 10px;
+    margin: 10px 0;
+}
+
+input[type=email]
+{
+    padding: 4px 10px;
+    margin: 10px 0;
+}
+
+input[type=tel]
+{
+    padding: 4px 10px;
+    margin: 10px 0;
 }
 
 p
@@ -12,17 +30,29 @@ p
     text-align: center;
 }
 
+p.title
+{
+    font-size: 20px;
+    text-align: left;
+}
+
+p.question
+{
+    text-align: left;
+    margin: top;
+}
+
 header,footer
 {
     text-align: center;
-    color: rgb(119, 160, 235);
+    color: rgb(141, 176, 241);
     font-weight: bold;
 }
 
 h2
 {
     text-align: center;
-    color: rgb(119, 160, 235);
+    color: rgb(141, 176, 241);
 }
 
 h3

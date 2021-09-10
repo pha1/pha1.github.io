@@ -28,30 +28,29 @@
         <p>If you are interested in our newsletter, <em>The Java Jam Coffee House Daily</em>, please fill in the form below:</p>
 
         <form action="#">
-            <u>Personal Information</u><br><br>
-            First Name: <input type="text" placeholder="First Name" required>
-            Last Name: <input type="text" placeholder="Last Name" required>
+            <p class="title"><u>Personal Information</u></p>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" placeholder="First Name" size="30" required>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" placeholder="Last Name" size="30" required>
             <br>
-            Email Address: <input type="text" placeholder="Email Address" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Email Address" size="30" required>
             <br>
-            Phone Number: <input type="text" placeholder="Phone Number">
-            <br>
-            <br>
-            <u>Additional Information</u><br><br>
-            Are you a musician?
+            <label for="phonenum">Phone Number:</label> 
+            <input type="tel" id="phonenum" placeholder="Phone number" required>
+            <p class="title"><u>Additional Information</u></p>
+            <p class="question">Are you a musician?</p>
             <label for="yes">
                 <input id="yes" type="radio" checked name="yes-no">Yes
             </label>
             <label for="no">
                 <input id="no" type="radio" name="yes-no">No
             </label>
-            <br>
-            <br>
-            Which of these days would you come out to:
-            <br> 
-            <label for="loving"><input id="loving" type="checkbox" name="dayoftheweek"> Friday</label>
-            <label for="loving"><input id="loving" type="checkbox" name="dayoftheweek"> Saturday</label>
-            <label for="loving"><input id="loving" type="checkbox" name="dayoftheweek"> Sunday</label>
+            <p class="question">Which of these days would you come out to:</p>
+            <label for="Friday"><input id="Friday" type="checkbox" name="dayoftheweek"> Friday</label>
+            <label for="Saturday"><input id="Saturday" type="checkbox" name="dayoftheweek"> Saturday</label>
+            <label for="Sunday"><input id="Sunday" type="checkbox" name="dayoftheweek"> Sunday</label>
             <br>
             <br>
             <label for="coffee">Preferred coffee selection:</label>
@@ -61,7 +60,7 @@
                     <option value="cappuccino">Iced Cappuccino</option>
                 </select>
             <br><br>
-            <button type="submit">Submit</button>
+            <button type="submit" value="Submit">Submit</button>
           </form>
 
     </main>
