@@ -29,7 +29,7 @@ h3
 a
 {
     text-decoration: none;
-    color:darkblue;
+    color: lightsteelblue;
 }
 
 a:hover
@@ -50,4 +50,9 @@ figcaption
 nav
 {
     text-align: center;
+}
+
+#CRAPList
+{
+    color: black;
 }
