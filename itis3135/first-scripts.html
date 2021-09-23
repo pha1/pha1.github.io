@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet">
+    <script src="scripts/alert.js"></script>
     <title>Phi Ha, ITIS 3135, Introduction</title>
 </head>
 
@@ -10,7 +11,7 @@
     <header>
         <h1>Phi Ha </h1>
         <hr>
-        <h2>ITIS 3135</h2>
+        <h1>ITIS 3135</h1>
     </header>
     <nav>
         <a href="index.html">Index</a>
@@ -29,9 +30,40 @@
     </nav>
 
     <main>
-        <h2>Index</h2>
+        <h2>First JavaScript</h2>
 
-        <p>I am Phi Ha and this is my ITIS3135 First Course Page.</p>
+        <!-- This is a test method to see if the script was working. I commented it out, but left it here as resource.
+        <p>
+            This is a test button.
+            <button type="button" onclick="testScript()">Press me!</button>
+            <br>
+        </p>
+        -->
+
+        <p id="display" style="text-align: center; margin: 30px;">
+            <button type="button" onclick="greetingMessage()">To get started, press me!</button>
+        </p>
+
+        <p>
+            This is my first attempt at JavaScript, learning the different kind of functions you can use for these are interesting. <br>
+            I will continue to look deeper in what functions can be done with JavaScript. How to design better webpages with them.
+        </p>
+
+        <p style="text-align: center; margin: 30px;">
+            <button type="button" onclick="calculateMPG()">Calculate Miles Per Gallon</button>
+            <button type="button" onclick="calculateTestScores()">Test Score Calculation App</button>
+            <button type="button" onclick="openNewWindow()">Visit the Purple Trusting Hydra!</button>
+            <button type="button" onclick="calculateTheAreaOfACircle()">Calculate the area of a circle</button>
+            <button type="button" onclick="openWhatIsThisPage()">What is this page????</button>
+        </p>
+
+        <p style="text-align: center;">
+            Calculate Miles Per Gallon prompts the user for the number of miles driven, gallons used, and shows the MPG of the trip. <br>
+            Test Score Calculator will take in 4 scores and return the average of the test scores. <br>
+            Click on "Visit the Purple Trusting Hydra" to open a new tab where you will be brought to the home page of the PTH. <br>
+            Calculate the area of a circle is temporarly only able to solve the area of a circle with the given radius. To be updated with more options...<br>
+            Where does this button lead to?
+        </p>
     </main>
 
     <footer>
