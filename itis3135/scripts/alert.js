@@ -5,7 +5,8 @@ let userName;
 let howAreYou;
 
 // Test function
-let testScript = function() {
+let testScript = function()
+{
 
     alert("Hey my script is running!");
 }
@@ -23,7 +24,8 @@ let showDate = function() {
  * This method returns the current time.
  * @returns time, the current time in HH:MM:SS format.
  */
-let showTime = function() {
+let showTime = function() 
+{
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     return time;
 }
@@ -31,12 +33,15 @@ let showTime = function() {
 /**
  * This method dsplays the "Welcome message".
  */
-let greetingMessage = function() {
-    do {
+let greetingMessage = function()
+ {
+    do 
+    {
         userName = prompt("Please enter your name");
     } while(userName !== null && userName === "") 
 
-    do {
+    do 
+    {
         howAreYou = prompt("How are you doing today?");
     } while(howAreYou !== null && howAreYou === "")
 
@@ -47,7 +52,8 @@ let greetingMessage = function() {
 /**
  * This method calculates MPG
  */
-let calculateMPG = function() {
+let calculateMPG = function()
+ {
 
     let miles = prompt("Enter miles driven:");
     let gallonsOfGas = prompt("Enter gallons of gas used:");
@@ -59,7 +65,8 @@ let calculateMPG = function() {
 /**
  * This method calculates average test scores.
  */
-let calculateTestScores = function() {
+let calculateTestScores = function() 
+{
 
     let testScore1 = prompt("Enter first test score:");
     let testScore2 = prompt("Enter second test score:");
@@ -71,11 +78,13 @@ let calculateTestScores = function() {
     alert("Test Score 1 = " + testScore1 + "\nTest Score 2 = " + testScore2 + "\nTest Score 3 = " + testScore3 + "\nTest Score 4 = " + testScore4 + "\nAverage Test Score is: " + avgTestScore);
 }
 
-let openNewWindow = function() {
+let openNewWindow = function() 
+{
     window.open('https://webpages.uncc.edu/pha1/itis3135/brand-purple-trusting-hydra.html');
 }
 
-let calculateTheAreaOfACircle = function() {
+let calculateTheAreaOfACircle = function()
+ {
     
     let radius = prompt("Enter the radius of the circle:");
     let areaOfCircle = Math.PI * radius * radius;
@@ -83,6 +92,7 @@ let calculateTheAreaOfACircle = function() {
     alert("The area of the circle with " + radius + " radius is : " + areaOfCircle);
 }
 
-let openWhatIsThisPage = function() {
+let openWhatIsThisPage = function() 
+{
     window.open('https://webpages.uncc.edu/pha1/itis3135/whatisinthis/WHAT%20is%20THIS%20webP@GE&.htm', "anotherWindow", "width=300, height=150");
 }

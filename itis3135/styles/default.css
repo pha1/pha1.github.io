@@ -1,8 +1,8 @@
 body
 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: cyan;
-    background-color: slategray;
+    color: #944BBB;
+    background-color: #CC92C2;
     margin-left: 75px;
     margin-right: 75px;
 }
@@ -10,14 +10,14 @@ body
 header,footer
 {
     text-align: center;
-    color: cornflowerblue;
+    color: #531CB3;
     font-weight: bold;
 }
 
 h2
 {
     text-align: center;
-    color: cornflowerblue;
+    color: #531CB3;
 }
 
 h3
@@ -29,7 +29,7 @@ h3
 a
 {
     text-decoration: none;
-    color: lightsteelblue;
+    color: #944BBB;
 }
 
 a:hover
@@ -50,9 +50,16 @@ figcaption
 nav
 {
     text-align: center;
+    color: #DBA8AC
 }
 
 .CRAPList
 {
     color: black;
+}
+
+#polygonButton
+{
+    text-align: center;
+    margin: 30px;
 }

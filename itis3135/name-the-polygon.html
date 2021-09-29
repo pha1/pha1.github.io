@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet">
-    <title>Phi Ha, ITIS 3135, Contract</title>
+    <script src="scripts/name-the-polygon.js"></script>
+    <title>Phi Ha, ITIS 3135, Name the Polygon</title>
 </head>
 
 <body>
@@ -12,6 +14,7 @@
         <hr>
         <h2>ITIS 3135</h2>
     </header>
+
     <nav>
         <a href="index.html">Index</a>
         ||
@@ -31,12 +34,33 @@
     </nav>
 
     <main>
-        <h2>Contract</h2>
+        <h2>Name the Polygon</h2>
 
+        <div id="polygonIntro">
+            <p>Welcome to our polygon page! Here are some things you should know about polygons:</p>
+
+                <ul>
+                    <li>A polygon is traditionally a plane figure that is bounded by a finite chain of straight line segments
+                        closing in a loop to form a closed chain.
+                    </li>
+                    <li>Those segments are called edges or sides.</li>
+                    <li>The points where the edges meet are called vertices (singular: vertex).</li>
+                </ul>
+
+                <img src="images/polygon.png" style="margin:20px;" alt="Examples of Polygons.">
+            <p>If you would like to know the name of a polygon with a specific number of sides, please press the following button to begin!</p>
+        </div>
+
+        <div id="polygonButton">
+            <button type="button" onclick="nameThatPolygon()">Name that Polygon!</button>
+        </div>
+
+        <p>
+            This program allows you to enter a number of sides for a polygon (up to 19!) and returns the name of the polygon!
+        </p>
     </main>
 
     <footer>
-
         <nav>
             <a href="http://webpages.uncc.edu/pha1/" target="_blank">Charlotte.edu</a> &#9553;
             <a href="https://github.com/pha1" target="_blank">Github</a> &#9553;
@@ -47,16 +71,15 @@
             <a href="https://jsfiddle.net/user/pha1_uncc" target="_blank">JSFiddle</a> &#9553;
             <a href="https://www.linkedin.com/in/phi-ha-29272b21b/" target="_blank">LinkedIn</a> &#9553;
         </nav>
-        <br />
+        <br>
 
         <p>Page built by Purple Trusting Hydra, LLC</p>
 
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fintroduction.html">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fname-the-polygon.html">
 			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
 
-		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fname-the-polygon.html&profile=css3svg&usermedium=all&warning=1&vextwarning=        ">
 			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
-
     </footer>
 
 </body>
