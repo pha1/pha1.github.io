@@ -1,3 +1,5 @@
+
+
 // Declare global variables
 let sides;
 let shape;
