@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet">
-    <title>Phi Ha, ITIS 3135, Index</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <title>Phi Ha, ITIS 3135, JQuery Slideshow</title>
 </head>
 
 <body>
     <header>
         <h1>Phi Ha </h1>
         <hr>
-        <h2>ITIS 3135</h2>
+        <h1>ITIS 3135</h1>
     </header>
     <nav>
         <a href="index.html">Index</a>
@@ -39,9 +41,32 @@
     </nav>
 
     <main>
-        <h2>Index</h2>
+        <h2>Image Gallery</h2>
 
-        <p>I am Phi Ha and this is my ITIS3135 First Course Page.</p>
+        <!-- This is a test method to see if the script was working. I commented it out, but left it here as resource.
+        <p>
+            This is a test button.
+            <button type="button" onclick="testScript()">Press me!</button>
+            <br>
+        </p>
+        -->
+
+        <h3 id="gallery">Welcome to the gallery page of the Purple Trusting Hydra!</h3>
+
+        <p>
+            These are various pictures of interest to the web developers!
+        </p>
+
+        <div id="gallery_links">
+            <a href = "#" title="lancer">Lancer Parking Deck</a> //
+            <a href = "#" title="z">Drift Z</a> //
+            <a href = "#" title="silvia">Purple Silvia</a> //
+            <a href = "#" title="supra">White Supra</a> //
+            <a href = "#" title="hydra">Purple Hydra</a> //
+            <a href = "#" title="charlotte">Charlotte Logo</a> //
+        </div>
+
+        <div id="pics_holder"></div>
     </main>
 
     <footer>
@@ -60,10 +85,10 @@
 
         <p>Page built by Purple Trusting Hydra, LLC</p>
 
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Findex.html">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fslideshow.html">
 			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
 
-		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fslideshow.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
 			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
 
     </footer>
