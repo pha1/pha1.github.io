@@ -1,5 +1,5 @@
 /* These are the colors used for the company*/
-/* #531CB3 #944BBB #AA7BC3 #CC92C2 #DBA8AC */
+/* #531CB3 #944BBB #7A1FAC #CC92C2 #ECA7EC */
 
 body
 {
@@ -23,16 +23,28 @@ h2
     color: #531CB3;
 }
 
-h3
+hr
+{
+    background-color: #eca7ec;
+    height: 2px;
+    border: none;
+}
+
+.project_header
 {
     font-size: 200%;
     line-height: 0px;
 }
 
+.homepage_header
+{
+    color: #531CB3;
+}
+
 a
 {
     text-decoration: none;
-    color: #944BBB;
+    color: #7a1fac;
 }
 
 a:hover
@@ -53,7 +65,7 @@ figcaption
 nav
 {
     text-align: center;
-    color: #DBA8AC
+    color: #eca7ec
 }
 
 .CRAPList
@@ -61,12 +73,14 @@ nav
     color: black;
 }
 
+/* Styles for Polygon Page */
 #polygonButton
 {
     text-align: center;
     margin: 30px;
 }
 
+/* Styles for Calculator Try */
 .calculator-keys
 {
     display: grid;
@@ -216,14 +230,11 @@ nav
     grid-row: 2 / span 4;
 }
 
-h3
-{
-    margin-bottom: 50px;
-}
-
+/* Styles for Image Gallery (Slideshow) */
 #gallery
 {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #gallery_links

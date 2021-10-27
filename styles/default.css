@@ -1,0 +1,37 @@
+header
+{
+    text-align: center;
+}
+
+footer
+{
+    text-align: center;
+}
+
+nav
+{
+    text-align: center;
+    margin: 25px;
+}
+
+body
+{
+    background-color: rgba(38, 95, 6, 0.815);
+}
+
+a
+{
+    color: goldenrod;
+}
+
+a:hover
+{
+    text-decoration: overline underline;
+}
+
+hr
+{
+    background-color:goldenrod;
+    border: none;
+    height: 2px;
+}
