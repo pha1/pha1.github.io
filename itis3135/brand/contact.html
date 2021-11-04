@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us, Purple Trusting Hydra, LLC</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <script src="scripts/contact.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <main>
+        <hr>
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                    <p>Feel free to contact us through phone, mail, or email.</p>
+                    <p><u>Phone:</u> (704) 333-9876</p>
+                    <p><u>Mail to:</u></p>
+                    <p>3754 Olympus Drive</p>
+                    <p>34608 Spring Hill, FL</p>
+            </div>
+
+            <div><p id="form_Info"></p></div>
+
+            <div class="contact-form">
+                <form action="#">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+                    <br>
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email" placeholder="Email Address" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="(999)-999-9999" required>
+                    <br>
+                    <textarea id="subject" name="subject" placeholder="Please enter text..." style="height:200px; width:300px"></textarea>
+                </form>
+            </div>
+            <div id="form_button"><button type="button" onclick="displayInfo()">Submit</button></div>
+        </div>
+
+        <hr>
+    </main>
+
+    <footer-component></footer-component>
+
+    <div id="validatorSpace">
+        <a class="validator" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fbrand%2Fcontact.html">
+            HTML Validator</a>
+            ||
+        <a class="validator" href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fbrand%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=
+        ">
+            CSS Validator</a>
+    </div>
+
+</body>
+
+</html>
