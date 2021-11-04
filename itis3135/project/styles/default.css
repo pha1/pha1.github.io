@@ -1,0 +1,68 @@
+/* CSS For Quality Auto Washes */
+
+body
+{
+    background-color: gray;
+    color:rgb(77, 9, 77);
+}
+
+footer
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#companyName
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+nav
+{
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: rgb(47, 170, 211);
+    padding: 15px;
+    border-style: solid;
+    border-color: rgb(77, 9, 77);
+}
+
+a
+{
+    margin: 25px;
+    color:rgb(77, 9, 77);
+    /*border-color: rgb(47, 170, 211);*/
+    padding: 15px;
+}
+
+a:hover
+{
+    background-color: lightskyblue;
+    border-style: solid;
+    border-color: rgb(77, 9, 77);
+}
+
+#introductory
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+hr
+{
+    border-style:dashed;
+    border-color: rgb(77, 9, 77);
+}
+
+#inlineLink
+{
+    margin: 0px;
+    padding: 0px;
+}
