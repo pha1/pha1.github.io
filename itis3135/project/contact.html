@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet">
     <script src="w3.js"></script>
+    <script src="scripts/form.js"></script>
     <title>Quality Auto Washes, Contact Us</title>
 </head>
 
@@ -14,6 +15,30 @@
     <h1>Contact Us</h1>
 
     <main>
+        <h2>Reach out to us, We will reply!</h2>
+        <div>
+            <p>If you wish to contact us, we can be reached via mail, phone, and email.</p>
+        </div>
+        
+        <div id="email_form">
+        <h2>Fill This Form to Send an Email</h2>
+            <form action="#">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" placeholder="First Name" size="30" required>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" placeholder="Last Name" size="30" required>
+                <br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Email Address" size="30" required>
+                <br>
+                <label for="phonenum">Phone Number:</label> 
+                <input type="tel" id="phonenum" placeholder="Phone number" required>
+                <br>
+                <textarea id="subject" name="subject" placeholder="Please enter text..." style="height:200px; width:300px"></textarea>
+                <br>
+                <button type="submit" value="Submit">Send Email!</button>
+            </form>
+        </div>
     </main>
 
     <div w3-include-html="components/footer.html"></div>
