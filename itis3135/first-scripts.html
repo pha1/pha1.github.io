@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet">
     <script src="scripts/alert.js"></script>
+    <script src="w3.js"></script>
     <title>Phi Ha, ITIS 3135, First JavaScript</title>
 </head>
 
@@ -13,31 +14,8 @@
         <hr>
         <h1>ITIS 3135</h1>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        ||
-        <a href="introduction.html">Introduction</a>
-        ||
-        <a href="contract.html">Contract</a>
-        ||
-        <a href="tables.html">HTML Tables</a>
-        ||
-        <a href="forms.html">HTML Forms</a>
-        ||
-        <a href="website_evaluations.html">Website Evaluations</a>
-        ||
-        <a href="first-scripts.html">First JavaScript</a>
-        ||
-        <a href="name-the-polygon.html">Name the Polygon</a>
-        ||
-        <a href="calculator_try.html">Calculator Try</a>
-        ||
-        <a href="calculator_fcc.html">Calculator FCC</a>
-        ||
-        <a href="project_rand.html">Project Design</a>
-        ||
-        <a href="slideshow.html">JQuery Slideshow</a>
-    </nav>
+
+    <div w3-include-html="components/nav.html"></div>
 
     <main>
         <h2>First JavaScript</h2>
@@ -100,6 +78,9 @@
 
     </footer>
 
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 
 </html>
