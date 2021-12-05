@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet">
     <script src="w3.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="scripts/services.js"></script>
     <title>Quality Auto Washes, Services</title>
 </head>
 
@@ -14,99 +16,103 @@
     <h1>Services Available at Locations</h1>
 
     <main>
-        <h2>Car Wash Packages</h2>
+        <div id="serviceBody">
+            <h2>Car Wash Packages</h2>
 
-        <h3>Basic Drive Thru</h3>
-        <div> Image "See/Hide details"</div>
-        <div>
-            <p>This is the basic car wash option. You will get the base wash. This is what comes with the wash:</p>
-            <ul>
-                <li>Machine wash (exterior)</li>
-                <li>Robotic wheel cleaning</li>
-            </ul>
-        </div>
+            <h3>Basic Drive Thru</h3>
+            <button class="washButton" onclick="show_hide()">See/Hide Details</button>
+            <div id="details_1" style="display:none">
+                <p>This is the basic car wash option. You will get the base wash. This is what comes with the wash:</p>
+                <ul class="serviceList">
+                    <li>Machine wash (exterior)</li>
+                    <li>Robotic wheel cleaning</li>
+                </ul>
+            </div>
 
-        <h3>Hands-On Drive Thru</h3>
-        <div> Image "See/Hide details"</div>
-        <div>
-            <p>This is an extension to our basic car wash.</p>
-            <ul>
-                <li>Machine wash (exterior)</li>
-                <li>Robotic wheel cleaning</li>
-                <li>Hand-dry by a team</li>
-                <li>Have polish applied</li>
-            </ul>
-        </div>
+            <h3>Hands-On Drive Thru</h3>
+            <button class="washButton" onclick="show_hide2()">See/Hide Details</button>
+            <div id="details_2" style="display:none">
+                <p>This is an extension to our basic car wash.</p>
+                <ul class="serviceList">
+                    <li>Machine wash (exterior)</li>
+                    <li>Robotic wheel cleaning</li>
+                    <li>Hand-dry by a team</li>
+                    <li>Have polish applied</li>
+                </ul>
+            </div>
 
-        <h3>Premium Drive Thru</h3>
-        <div> Image "See/Hide details"</div>
-        <div>
-            <p>This is the premium option of the car wash.</p>
-            <ul>
-                <li>Machine wash (exterior)</li>
-                <li>Robotic wheel cleaning</li>
-                <li>Hand-dry by a team</li>
-                <li>Have polish applied</li>
-                <li>Underbody wash</li>
-                <li>Premium Shine product for a long-lasting shine</li>
-                <li>Our own Tire Shine product for a gloss on your tires</li>
-            </ul>
-        </div>
+            <h3>Premium Drive Thru</h3>
+            <button class="washButton" onclick="show_hide3()">See/Hide Details</button>
+            <div id="details_3" style="display:none">
+                <p>This is the premium option of the car wash.</p>
+                <ul class="serviceList">
+                    <li>Machine wash (exterior)</li>
+                    <li>Robotic wheel cleaning</li>
+                    <li>Hand-dry by a team</li>
+                    <li>Have polish applied</li>
+                    <li>Underbody wash</li>
+                    <li>Premium Shine product for a long-lasting shine</li>
+                    <li>Our own Tire Shine product for a gloss on your tires</li>
+                </ul>
+            </div>
 
-        <h2>Interior Cleaning Packages</h2>
+            <hr>
 
-        <h3>Basic Interior Cleaning</h3>
-        <div>Image "See/Hide details"</div>
-        <div>
-            <p>This is the basic interior package.</p>
-            <ul>
-                <li>Vacuum the interior floor</li>
-                <li>Wipe down the interior</li>
-            </ul>
-        </div>
+            <h2>Interior Cleaning Packages</h2>
 
-        <h3>Intermediate Interior Cleaning</h3>
-        <div>Image "See/Hide details"</div>
-        <div>
-            <p>This is the intermediate interior package, in which you get the basic clean with a little extra care.</p>
-            <ul>
-                <li>Vacuum the interior floor</li>
-                <li>Wipe/Sanitize down the interior</li>
-                <li>Polish/Shine interior</li>
-                <li>Ceiling and upholstery detailing</li>
-            </ul>
-        </div>
+            <h3>Basic Interior Cleaning</h3>
+            <button class="washButton" onclick="show_hide4()">See/Hide Details</button>
+            <div id="details_4" style="display:none">
+                <p>This is the basic interior package.</p>
+                <ul class="serviceList">
+                    <li>Vacuum the interior floor</li>
+                    <li>Wipe down the interior</li>
+                </ul>
+            </div>
 
-        <h3>Premium Interior Cleaning</h3>
-        <div>Image "See/Hide details"</div>
-        <div>
-            <p>This is the premium interior package, in which you get the intermediate clean with even more care.</p>
-            <ul>
-                <li>Vacuum the interior floor</li>
-                <li>Wipe/Sanitize down the interior</li>
-                <li>Polish/Shine interior</li>
-                <li>Ceiling and upholstery detailing</li>
-                <li>Air circulation scents to kill odor in vents</li>
-                <li>Window cleaning</li>
-                <li>Leather cleaning - with leather soap, cleaner, and saddle soap</li>
-            </ul>
-        </div>
+            <h3>Intermediate Interior Cleaning</h3>
+            <button class="washButton" onclick="show_hide5()">See/Hide Details</button>
+            <div id="details_5" style="display:none">
+                <p>This is the intermediate interior package, in which you get the basic clean with a little extra care.</p>
+                <ul class="serviceList">
+                    <li>Vacuum the interior floor</li>
+                    <li>Wipe/Sanitize down the interior</li>
+                    <li>Polish/Shine interior</li>
+                    <li>Ceiling and upholstery detailing</li>
+                </ul>
+            </div>
 
-        <h3>Extreme Interior Cleaning</h3>
-        <div>Image "See/Hide details"</div>
-        <div>
-            <p>This is the extreme interior package, in which you get the premium clean with extensive care.</p>
-            <ul>
-                <li>Vacuum the interior floor</li>
-                <li>Wipe/Sanitize down the interior</li>
-                <li>Polish/Shine interior</li>
-                <li>Ceiling and upholstery detailing</li>
-                <li>Air circulation scents to kill odor in vents</li>
-                <li>Window cleaning</li>
-                <li>Leather cleaning - with leather soap, cleaner, and saddle soap</li>
-                <li>Brushing and steam cleaning</li>
-                <li>Re-vacuuming - to remove all last bit of dust</li>
-            </ul>
+            <h3>Premium Interior Cleaning</h3>
+            <button class="washButton" onclick="show_hide6()">See/Hide Details</button>
+            <div id="details_6" style="display:none">
+                <p>This is the premium interior package, in which you get the intermediate clean with even more care.</p>
+                <ul class="serviceList">
+                    <li>Vacuum the interior floor</li>
+                    <li>Wipe/Sanitize down the interior</li>
+                    <li>Polish/Shine interior</li>
+                    <li>Ceiling and upholstery detailing</li>
+                    <li>Air circulation scents to kill odor in vents</li>
+                    <li>Window cleaning</li>
+                    <li>Leather cleaning - with leather soap, cleaner, and saddle soap</li>
+                </ul>
+            </div>
+
+            <h3>Extreme Interior Cleaning</h3>
+            <button class="washButton" onclick="show_hide7()">See/Hide Details</button>
+            <div id="details_7" style="display:none">
+                <p>This is the extreme interior package, in which you get the premium clean with extensive care.</p>
+                <ul class="serviceList">
+                    <li>Vacuum the interior floor</li>
+                    <li>Wipe/Sanitize down the interior</li>
+                    <li>Polish/Shine interior</li>
+                    <li>Ceiling and upholstery detailing</li>
+                    <li>Air circulation scents to kill odor in vents</li>
+                    <li>Window cleaning</li>
+                    <li>Leather cleaning - with leather soap, cleaner, and saddle soap</li>
+                    <li>Brushing and steam cleaning</li>
+                    <li>Re-vacuuming - to remove all last bit of dust</li>
+                </ul>
+            </div>
         </div>
     </main>
 

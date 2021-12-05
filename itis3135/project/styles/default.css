@@ -81,7 +81,7 @@ hr
     border-color: rgb(77, 9, 77);
 }
 
-#careerButton
+.washButton
 {
     background-color: rgb(153, 148, 96);
     border:rgb(0, 0, 0);
@@ -92,7 +92,37 @@ hr
     margin: 0 0.3em 0.3em 0;
 }
 
+#serviceButton
+{
+    text-align: center;
+}
+
 #email_form
 {
     text-align: center;
+}
+
+#careerList
+{
+    margin: 50px;
+}
+
+.bx-wrapper {
+	margin-bottom: 20px;
+}
+
+#id_pager {
+	text-align: center;
+	font-size: 90%;
+    color:rgb(77, 9, 77);
+}
+
+#serviceBody
+{
+    text-align: center;
+}
+
+ul
+{
+    list-style: none;
 }
