@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet">
     <script src="w3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="scripts/shop.js"></script>
     <title>Quality Auto Washes, Shop</title>
 </head>
 
@@ -14,17 +16,24 @@
     <h1>Shop</h1>
 
     <main>
-        <h2>Available Products to Purchase</h2>
+        <div id="shopHeader">
+            <h2>Available Products to Purchase</h2>
+            <hr>
+        </div>
 
-        <p>List Products with images</p>
+        <div id="products"></div>
+        <hr>
 
-        <p>Describe the products and list prices
-            The user can "increase" or "decrease" the number of products they wish to purchase.
-        </p>
-
-        <p>Calculate the total price of the products, shipping & handling, and tax.
-            Present the total cost at the bottom of the page when you hit "order".
-        </p>
+        <div id="reviewYourOrder">
+            <div id="totalCost">
+                <p style="font-size: 20px;"><b>Your total cost is:</b></p>
+                <input type="text" id="totalCostDisplay" name="totalCostDisplay" value="0.00" disabled>
+                <br>
+                <form action="reviewOrder.html">
+                    <input type="submit" value="Click to Review Your Order" name="Submit" id="confirm">
+                </form>
+            </div>
+        </div>
     </main>
 
     <div w3-include-html="components/footer.html"></div>

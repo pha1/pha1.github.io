@@ -1,0 +1,32 @@
+{"products":[
+	{
+		"name":"Chemical Guys: Mr Pink Foaming Car Wash Soap",
+        "image":"mr_pink_soap.jpg",
+        "description": "Perfect wash for weekly maintenace. Excellent for two-bucket wash or foam gun. PH neutral for a gentle wash",
+        "cost": "12.74"
+	},
+	{
+		"name":"Meguiar's Ultimate Wash & Wax",
+        "image":"meguiars_wash_wax.jpg",
+        "description": "Car Exterior Wash. Clear Coat Safe. Deep Shine. Incredible sudsing action safely lifts dirt and grime to minimize swirling",
+        "cost": "12.99"
+	},
+	{
+		"name":"Grip Premium XL Plush Drying Towel",
+        "image":"grip_towel.jpg",
+        "description": "6ft. x 6ft XL Plush Towel. For cleaning, drying and polishing. Plush weave microfiber is highly absorbent, lint-free and scratch-free.",
+        "cost": "12.99"
+	},
+	{
+		"name":"2-in-1 Microfiber Car Wash Mop Mitt",
+        "image":"carwash_mop_mitt.jpg",
+        "description": "Microfiber Car Wash Mop Mitt with 45in aluminum alloy long handle, Chenille car cleaning kit, brush and duster. Also comes with mop head, 1 towel, and air vent duster. You can remove the handle and use the mop head as a mitt.",
+        "cost": "18.99"
+	},
+	{
+		"name":"Jay Leno's Garage Tire Shine",
+        "image": "jay_leno_tire_shine.jpg",
+        "description": "Jya Leno's high gloss, no sling tire shine, comes in a 16 oz bottle. Water-based technology guards against browning, aging, and fading. UV inhibitors guard against harmful effects from the sun. Achieve a deep black, brand new shine. Spreads evenly with any foam applicator.",
+        "cost": "13.99"
+	}
+]}

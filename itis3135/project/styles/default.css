@@ -126,3 +126,66 @@ ul
 {
     list-style: none;
 }
+
+/* Forms CSs */
+input[type=text]
+{
+    padding:4px 10px;
+    margin: 10px 0;
+}
+
+input[type=email]
+{
+    padding: 4px 10px;
+    margin: 10px 0;
+}
+
+input[type=tel]
+{
+    padding: 4px 10px;
+    margin: 10px 0;
+}
+
+#products
+{
+    text-align: center;
+}
+
+#shopHeader
+{
+    text-align: center;
+}
+
+#cost
+{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#quantity1, #quantity2, #quantity3, #quantity4, #quantity5
+{
+    text-align: center;
+    height: 32px;
+    width: 30px;
+}
+
+.shopButtons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#totalCost
+{
+    text-align: right;
+}
+
+#totalCostDisplay
+{
+    text-align: right;
+    height: 32px;
+    width: 80px;
+    font-size: 20px;
+    background-color: white;
+}
