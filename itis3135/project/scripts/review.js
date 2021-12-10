@@ -10,7 +10,7 @@ $(document).ready(function()
         "<p><b>SubTotal = " + localStorage.getItem("subtotal") + "</b></p>" + 
         "<p><b>Sales Tax (15%) = " + localStorage.getItem('tax') + "</b></p>" +
         "<p><b>Total Cost = " + localStorage.getItem("total") + "</b></p>" +
-        "<form action='confirm.html'><input type='submit' value='Confirm Order' name='confirm' id='confirm'></form>" +
+        "<form action='billingInformation.html'><input type='submit' value='Confirm Order' name='confirm' id='confirm'></form>" +
         "<form action='shop.html'><input type='submit' value='Cancel' name='cancel' id='cancel'></form>"
     );
 });

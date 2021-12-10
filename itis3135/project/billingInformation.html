@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/default.css" rel="stylesheet">
+    <script src="w3.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="scripts/billing.js"></script>
+    <title>Quality Auto Washes, Billing Information</title>
+</head>
+
+<body class="w3-containter">
+    <div w3-include-html="components/header.html"></div>
+    <div w3-include-html="components/navBar.html"></div>
+
+    <main>
+
+        <h1>Billing Information</h1>
+        <div id="billing_form">
+            <h2>Please Enter Your Billing Information</h2>
+                <form action="billingConfirmation.html">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" placeholder="First Name" size="30" required>
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" placeholder="Last Name" size="30" required>
+
+                    <br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Email Address" size="30" required>
+
+                    <br>
+                    <label for="phonenum">Phone Number:</label> 
+                    <input type="tel" id="phonenum" placeholder="Phone number" required>
+
+                    <p>Payment Option:</p>
+                    <label for="debit/credit">
+                        <input id='debit/credit' type='radio' checked name='payment' value="Debit/Credit">Debit/Credit
+                    </label>
+                    <label for="paypal">
+                        <input id='paypal' type='radio' name='payment' value="PayPal">PayPal
+                    </label>
+                    <label for="applepay">
+                        <input id='applepay' type='radio' name='payment' value="Apple Pay">Apple Pay
+                    </label>
+
+                    <input type="submit" value="Submit Billing Information" id="submitBilling">
+                </form>
+            </div>
+    </main>
+
+    <div w3-include-html="components/footer.html"></div>
+    <script>
+    w3.includeHTML();
+    </script>
+</body>
+
+</html>

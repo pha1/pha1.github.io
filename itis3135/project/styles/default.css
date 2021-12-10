@@ -97,7 +97,7 @@ hr
     text-align: center;
 }
 
-#email_form
+#email_form, #billing_form
 {
     text-align: center;
 }
@@ -191,17 +191,12 @@ input[type=tel]
     background-color: white;
 }
 
-#orderResults
+#orderResults, #emailConfirm, #billConfirm
 {
     text-align: center;
 }
 
-#emailConfirm
-{
-    text-align: center;
-}
-
-#emailHome, #submitEmail, #confirm, #cancel
+#emailHome, #submitEmail, #confirm, #cancel, #billHome, #submitBilling
 {
     background-color: rgb(153, 148, 96);
     border:rgb(0, 0, 0);
