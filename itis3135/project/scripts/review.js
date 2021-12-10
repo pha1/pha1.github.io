@@ -1,5 +1,8 @@
+/* Once the page is loaded */
 $(document).ready(function()
 {
+    /* The javascript appends the following text into the element with the id of "orderResults" */
+    /* The localStorage pulls items that were stored locally under those variable names from the Shop Page. */
     $("#orderResults").append("<h2>Review Your Order </h2>" + "<hr>" + 
         "<p>Chemical guys: Mr Pink Foaming Car Wash Soap</p><p class='costReview'><b>$12.74 x " + localStorage.getItem("prod1") + "</b></p>" +
         "<p>Meguiar's Ultimate Wash & Wax</p><p class='costReview'><b>$12.99 x " + localStorage.getItem("prod2") + "</b></p>" +

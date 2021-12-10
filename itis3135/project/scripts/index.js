@@ -1,3 +1,7 @@
+
+/* Box slider javascript */
+/* This plugin is loaded into the element with the id of "slider" */
+/* The slider fades from picture to picture, set to change every 4 seconds, has a pager, and starts with a random picture every time. */
 $(document).ready(function() {
     $("#slider").bxSlider({
         auto: true,

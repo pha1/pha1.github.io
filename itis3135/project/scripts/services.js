@@ -1,3 +1,9 @@
+
+/* Each of these functions are the same. They are just named different for each button that exists on the Services Page */
+
+/* The function first gets the id of the element and checks if that element is visible (showing), if it is then it will change the display setting to none.
+    Otherwise it will change the setting to show.*/
+
 let show_hide = function()
 {
     if ($("#details_1").is(":visible"))

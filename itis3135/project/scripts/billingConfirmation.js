@@ -1,5 +1,7 @@
 $(document).ready(function()
 {
+    /* Appends the following text into the Billing Confirmation page, where the element has an id of "billConfirm". */
+    /* The data is gathered from local storage, collected by the form in the Billing Page. */
     $("#billConfirm").append(
         "<h2> Thank you for purchasing from Quality Auto Wash, " + localStorage.getItem("bill_first_name") + "!</h2>" +
         "<p>This is just a confirmation page to show that you have made a purchase with us! We would like for you to review the information that was entered in case of any issues:</p>" +
