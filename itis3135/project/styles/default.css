@@ -92,7 +92,7 @@ hr
     margin: 0 0.3em 0.3em 0;
 }
 
-#serviceButton
+.serviceButton
 {
     text-align: center;
 }
@@ -191,7 +191,7 @@ input[type=tel]
     background-color: white;
 }
 
-#orderResults, #emailConfirm, #billConfirm
+#orderResults, #emailConfirm, #billConfirm, #validator
 {
     text-align: center;
 }
