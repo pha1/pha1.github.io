@@ -31,6 +31,7 @@ $(document).ready(function()
 });
 
 let num = 0;
+let subTotal = 0;
 let total = 0;
 
 let mrpink = 12.74;
@@ -38,6 +39,7 @@ let meguiar = 12.99;
 let grip = 12.99;
 let mop_mitt = 18.99;
 let shine = 13.99;
+let tax = 0;
 
 let totalCost = function()
 {
@@ -49,15 +51,28 @@ let totalCost = function()
     prod4 = parseFloat(document.getElementById("quantity4").value) * mop_mitt;
     prod5 = parseFloat(document.getElementById("quantity5").value) * shine;
 
-    total = parseFloat(prod1) + parseFloat(prod2) + parseFloat(prod3) + parseFloat(prod4) + parseFloat(prod5);
-    total = total * 1.15;
+    subTotal = parseFloat(prod1) + parseFloat(prod2) + parseFloat(prod3) + parseFloat(prod4) + parseFloat(prod5);
+    tax = subTotal * .15;
+    total = subTotal + tax;
 
-    localStorage.setItem("mrpink", document.getElementById("quantity1").value);
-    localStorage.setItem("meguiar", document.getElementById("quantity2").value);
-    localStorage.setItem("grip", document.getElementById("quantity3").value);
-    localStorage.setItem("mop_mitt", document.getElementById("quantity4").value);
-    localStorage.setItem("shine", document.getElementById("quantity5").value);
-    localStorage.setItem("total", total);
+    let quantityOfProd = document.getElementById("quantity1").value;
+    localStorage.setItem("prod1", quantityOfProd);
+
+    quantityOfProd = document.getElementById("quantity2").value;
+    localStorage.setItem("prod2", quantityOfProd);
+
+    quantityOfProd = document.getElementById("quantity3").value;
+    localStorage.setItem("prod3", quantityOfProd);
+
+    quantityOfProd = document.getElementById("quantity4").value;
+    localStorage.setItem("prod4", quantityOfProd);
+
+    quantityOfProd = document.getElementById("quantity5").value;
+    localStorage.setItem("prod5", quantityOfProd);
+
+    localStorage.setItem("subtotal", subTotal.toFixed(2));
+    localStorage.setItem("tax", tax.toFixed(2));
+    localStorage.setItem("total", total.toFixed(2));
 
 
     document.getElementById("totalCostDisplay").value = total.toFixed(2);

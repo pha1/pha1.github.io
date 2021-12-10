@@ -189,3 +189,8 @@ input[type=tel]
     font-size: 20px;
     background-color: white;
 }
+
+#orderResults
+{
+    text-align: center;
+}
