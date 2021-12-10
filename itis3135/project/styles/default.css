@@ -127,7 +127,7 @@ ul
     list-style: none;
 }
 
-/* Forms CSs */
+/* Forms CSS */
 input[type=text]
 {
     padding:4px 10px;
@@ -146,6 +146,7 @@ input[type=tel]
     margin: 10px 0;
 }
 
+/* CSS for Shop Page*/
 #products
 {
     text-align: center;
@@ -193,4 +194,20 @@ input[type=tel]
 #orderResults
 {
     text-align: center;
+}
+
+#emailConfirm
+{
+    text-align: center;
+}
+
+#emailHome, #submitEmail, #confirm, #cancel
+{
+    background-color: rgb(153, 148, 96);
+    border:rgb(0, 0, 0);
+    border-radius: 2em;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
 }
