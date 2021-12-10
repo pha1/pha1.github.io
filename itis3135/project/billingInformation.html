@@ -10,12 +10,16 @@
 </head>
 
 <body class="w3-containter">
+    <!-- Loads Header and Navigation Bar -->
     <div w3-include-html="components/header.html"></div>
     <div w3-include-html="components/navBar.html"></div>
 
     <main>
 
         <h1>Billing Information</h1>
+
+        <!-- The bill form has required fields, such that you can not submit the form until all fields are filled. -->
+        <!-- The information entered will be stored locally to be used in the following page. -->
         <div id="billing_form">
             <h2>Please Enter Your Billing Information</h2>
                 <form action="billingConfirmation.html">
@@ -49,6 +53,7 @@
             </div>
     </main>
 
+    <!-- Loads the Footer -->
     <div w3-include-html="components/footer.html"></div>
     <div id="validator">
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fproject%2FbillingInformation.html%3Fconfirm%3DConfirm%2BOrder" class="inlineLink">

@@ -10,6 +10,7 @@
 </head>
 
 <body class="w3-containter">
+    <!-- Loads Header and Navigation Bar -->
     <div w3-include-html="components/header.html"></div>
     <div w3-include-html="components/navBar.html"></div>
 
@@ -21,6 +22,8 @@
             <p>If you wish to contact us, we can be reached via mail, phone, and email.</p>
         </div>
         
+        <!-- The form has required fields, thus an error message will display and the submit button will not function unless all fields are filled in -->
+        <!-- The form collects data and stores it locally once you click the submit button, in which you will be taken to the Email Confirmation Page -->
         <div id="email_form">
         <h2>Fill This Form to Send an Email</h2>
             <form action="emailConfirmation.html">
@@ -53,6 +56,7 @@
         <p>To speak to a representative at our Home Office, please call the following number:<br> 323-333-9696</p>
     </main>
 
+    <!-- Loads Footer -->
     <div w3-include-html="components/footer.html"></div>
     <div id="validator">
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fproject%2Fcontact.html" class="inlineLink">

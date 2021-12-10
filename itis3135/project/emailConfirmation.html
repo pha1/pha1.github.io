@@ -10,6 +10,7 @@
 </head>
 
 <body class="w3-containter">
+    <!-- Loads Header and Navigation Bar -->
     <div w3-include-html="components/header.html"></div>
     <div w3-include-html="components/navBar.html"></div>
 
@@ -17,9 +18,11 @@
 
         <h1>Email Confirmation</h1>
 
+        <!-- This <div> will have a javascript and jquery that appends the information onto the page. The information is loaded from localStorage where it was collected from the form in Contact Us. -->
         <div id="emailConfirm"></div>
     </main>
 
+    <!-- Loads the Footer -->
     <div w3-include-html="components/footer.html"></div>
 
     <div id="validator">

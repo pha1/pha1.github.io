@@ -12,11 +12,13 @@
 </head>
 
 <body class="w3-containter">
+    <!-- Loads Header and Navigation Bar -->
     <div w3-include-html="components/header.html"></div>
     <div w3-include-html="components/navBar.html"></div>
 
     <h1>Leave with a Shine and Smile!</h1>
     <main>
+        <!-- Main introductory to the page, this is centered and is printed in larger font size -->
         <div id="introductory">
             <p>
                 Welcome to the home page of Quality Auto Washes! We would like to take the time to say thank you for visiting our website!<br>
@@ -27,19 +29,23 @@
                 Feel free to browse through our gallery of our local facilities and customers' cars. If you would like to add your image to the gallery, please visit our <a class="inlineLink" href="contact.html">Contact Us</a> page!
             </p>
 
+            <!-- Box Slider used to create a slideshow that is interactive -->
             <div id="gallery">
+                <!-- Images are preloaded in a list -->
                 <ul id="slider">
                     <li><img src="images/carwash1.jpg" alt="" title="CarWash System"></li>
                     <li><img src="images/carwash2.jpg" alt="" title="CarWash Site"></li>
                     <li><img src="images/carwash3.jpg" alt="" title="CarWash Exit"></li>
                     <li><img src="images/carwash4.jpg" alt="" title="Hand Dry"></li>
                 </ul>
+                <!-- Loads pager here -->
                 <p id="id_pager"></p>
             </div>
             
             <hr>
 
             <p>Coming soon! Personal App you can download and sign up to redeem deals and specials!</p>
+            <!-- When an image becomes avaiable it will be added -->
             <div>(Image of an app will be placed here)</div>
             <hr>
             <p>Wondering who we are and what we do? Visit <a class="inlineLink" href="about.html">here</a> to get to know us!</p>
@@ -49,6 +55,7 @@
         </div>
     </main>
 
+    <!-- Loads Footer -->
     <div w3-include-html="components/footer.html"></div>
     <div id="validator">
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fproject%2Findex.html" class="inlineLink">

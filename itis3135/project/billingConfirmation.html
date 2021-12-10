@@ -10,6 +10,7 @@
 </head>
 
 <body class="w3-containter">
+    <!-- Loads the Header and Navigation Bar -->
     <div w3-include-html="components/header.html"></div>
     <div w3-include-html="components/navBar.html"></div>
 
@@ -17,9 +18,12 @@
 
         <h1>Billing Confirmation</h1>
 
+        <!-- The <div> has an id where a javascript will append data into. The page will be loaded via that way, where it pulls local stored information that was -->
+        <!-- entered by the user and prints it onto the screen. -->
         <div id="billConfirm"></div>
     </main>
 
+    <!-- Loads the Footer -->
     <div w3-include-html="components/footer.html"></div>
     <div id="validator">
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fproject%2FbillingConfirmation.html%3Fpayment%3DPayPal" class="inlineLink">

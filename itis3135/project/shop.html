@@ -10,6 +10,7 @@
 </head>
 
 <body class="w3-containter">
+    <!-- Loads Header and Navigation Bar -->
     <div w3-include-html="components/header.html"></div>
     <div w3-include-html="components/navBar.html"></div>
 
@@ -21,14 +22,17 @@
             <hr>
         </div>
 
+        <!-- This is where all the product information and image will be loaded. The Shop will be displayed and functions are loaded along with the page -->
         <div id="products"></div>
         <hr>
 
+        <!-- This is where the total would be displayed in a textbox that is disabled. The default value will be displayed as 0.00. You cannot go negative in this shop -->
         <div id="reviewYourOrder">
             <div id="totalCost">
                 <p style="font-size: 20px;"><b>Your total cost is:</b></p>
                 <input type="text" id="totalCostDisplay" name="totalCostDisplay" value="0.00" disabled>
                 <br>
+                <!-- This form was made to redirect the page to the Review Order Page -->
                 <form action="reviewOrder.html">
                     <input type="submit" value="Click to Review Your Order" name="Submit" id="confirm">
                 </form>
@@ -36,6 +40,7 @@
         </div>
     </main>
 
+    <!-- Loads Footer -->
     <div w3-include-html="components/footer.html"></div>
     <div id="validator">
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fproject%2Fshop.html" class="inlineLink">

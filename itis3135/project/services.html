@@ -10,6 +10,7 @@
 </head>
 
 <body class="w3-containter">
+    <!-- Loads Header and Navigation Bar -->
     <div w3-include-html="components/header.html"></div>
     <div w3-include-html="components/navBar.html"></div>
 
@@ -19,10 +20,13 @@
 
         <div id="serviceBody">
             
+            <!-- Button to Contact Us -->
             <button class="washButton" onclick="window.location.href= 'contact.html'">If You Have Any Questions About the Services, Contact Us!</button>
 
             <h2>Car Wash Packages</h2>
 
+            <!-- The format of this page is consistent: Header in <h3> followed by a button that hide/show the details by clicking on it. Javascript hides/shows the <div> seciton below.-->
+            <!-- They are all in default display:none, thus they are all hidden when the page is loaded.-->
             <h3>Basic Drive Thru</h3>
             <button class="washButton" onclick="show_hide()">See/Hide Details</button>
             <div id="details_1" style="display:none">
@@ -120,6 +124,7 @@
         </div>
     </main>
 
+    <!-- Loads the Footer -->
     <div w3-include-html="components/footer.html"></div>
     <div id="validator">
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fpha1%2Fitis3135%2Fproject%2Fservices.html" class="inlineLink">
