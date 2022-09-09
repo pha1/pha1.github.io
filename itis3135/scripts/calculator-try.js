@@ -297,7 +297,6 @@ let clearkey = function()
 {
     document.getElementById("calculator-display").value = "0";
     countKeys = 0;
-    count = 0;
     currentValue = 0;
     functionNum = 0;
 }
