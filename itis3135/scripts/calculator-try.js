@@ -2,10 +2,12 @@
 
 // Global variables
 let placeholder;
-let currentNum;
+let currentValue;
 let newNum = 0;
-let anotherNum = 0;
-let count = 0;
+let functionNum = 0;
+let functionString = "default";
+let functionKeyPressed = false;
+let equalKeyPressed = false;
 let countKeys = 0;
 const numbers = [];
 
@@ -18,6 +20,11 @@ let zeroKey = function()
         placeholder = placeholder + "0";
         document.getElementById("calculator-display").value = placeholder;
     }
+    else if (functionKeyPressed || equalKeyPressed) {
+        document.getElementById("calculator-display").value = "0";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
+    }
     else
     {
         document.getElementById("calculator-display").value = "0";
@@ -27,9 +34,17 @@ let zeroKey = function()
 
 let oneKey = function()
 {
+    // Initial state sets to 1
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "1";
+    }
+    // If not the initial state, add 1 to the existing number
+    else if (functionKeyPressed || equalKeyPressed)
+    {
+        document.getElementById("calculator-display").value = "1";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
     }
     else
     {
@@ -46,6 +61,11 @@ let twoKey = function()
     {
         document.getElementById("calculator-display").value = "2";
     }
+    else if (functionKeyPressed || equalKeyPressed) {
+        document.getElementById("calculator-display").value = "2";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
+    }
     else
     {
         placeholder = document.getElementById("calculator-display").value;
@@ -60,6 +80,11 @@ let threeKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "3";
+    }
+    else if (functionKeyPressed || equalKeyPressed) {
+        document.getElementById("calculator-display").value = "3";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
     }
     else
     {
@@ -76,6 +101,11 @@ let fourKey = function()
     {
         document.getElementById("calculator-display").value = "4";
     }
+    else if (functionKeyPressed || equalKeyPressed) {
+        document.getElementById("calculator-display").value = "4";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
+    }
     else
     {
         placeholder = document.getElementById("calculator-display").value;
@@ -90,6 +120,11 @@ let fiveKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "5";
+    }
+    else if (functionKeyPressed || equalKeyPressed) {
+        document.getElementById("calculator-display").value = "5";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
     }
     else
     {
@@ -106,6 +141,11 @@ let sixKey = function()
     {
         document.getElementById("calculator-display").value = "6";
     }
+    else if (functionKeyPressed || equalKeyPressed) {
+        document.getElementById("calculator-display").value = "6";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
+    }
     else
     {
         placeholder = document.getElementById("calculator-display").value;
@@ -120,6 +160,11 @@ let sevenKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "7";
+    }
+    else if (functionKeyPressed || equalKeyPressed) {
+        document.getElementById("calculator-display").value = "7";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
     }
     else
     {
@@ -136,6 +181,11 @@ let eightKey = function()
     {
         document.getElementById("calculator-display").value = "8";
     }
+    else if (functionKeyPressed || equalKeyPressed) {
+        document.getElementById("calculator-display").value = "8";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
+    }
     else
     {
         placeholder = document.getElementById("calculator-display").value;
@@ -150,6 +200,11 @@ let nineKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "9";
+    }
+    else if (functionKeyPressed || equalKeyPressed) {
+        document.getElementById("calculator-display").value = "9";
+        functionKeyPressed = false;
+        equalKeyPressed = false;
     }
     else
     {
@@ -179,22 +234,24 @@ let decimalKey = function()
 /* Continue here...If fail to do so just copy their code and turn it in as is... */
 let pluskey = function()
 {
-    // Find a way to store the current value and add it to the new value. So either store the added values or store the new values.
-    currentNum = document.getElementById("calculator-display").value;
-    count = numbers.push(currentNum);
-    //alert(numbers);
-    //resetDisplay();
-    anotherNum = currentNum;
-
-    if (count > 1)
-    {   
-        currentNum = anotherNum;
-        let curNum = parseInt(currentNum);
-        let reservedNum = parseInt(numbers[count-2]);
-        newNum = curNum + reservedNum;
-        document.getElementById("calculator-display").value = newNum;
+    if (functionKeyPressed) {
+        return;
     }
-    countKeys = 0;
+
+    // Find a way to store the current value and add it to the new value. So either store the added values or store the new values.
+    // ** Was not parsed before this **
+
+    currentValue = parseInt(document.getElementById("calculator-display").value);
+    functionNum += currentValue;
+    
+    // Display new value
+    document.getElementById("calculator-display").value = functionNum.toString();
+
+    // For equals key
+    functionString = "addition";
+
+    // function has been clicked
+    functionKeyPressed = true;
 }
 
 
@@ -216,7 +273,19 @@ let divisionkey = function()
 
 let equalskey = function()
 {
+    if (equalKeyPressed) {
+        return;
+    }
 
+    if (functionString === "addition") {
+        currentValue = parseInt(document.getElementById("calculator-display").value);
+        functionNum += currentValue;
+        document.getElementById("calculator-display").value = functionNum.toString();
+        functionString = "default";
+        functionNum = 0;
+        equalKeyPressed = true;
+    }
+      
 }
 
 let resetDisplay = function()
@@ -229,4 +298,6 @@ let clearkey = function()
     document.getElementById("calculator-display").value = "0";
     countKeys = 0;
     count = 0;
+    currentValue = 0;
+    functionNum = 0;
 }
