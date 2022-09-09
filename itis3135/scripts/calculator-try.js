@@ -14,14 +14,14 @@ const numbers = [];
 let zeroKey = function()
 {
 
-    if(!(document.getElementById("calculator-display").value === "0"))
+    if(!(document.getElementById("calculator-display").value === "0") && !(functionKeyPressed) && !(equalKeyPressed) )
     {
         placeholder = document.getElementById("calculator-display").value;
         placeholder = placeholder + "0";
         document.getElementById("calculator-display").value = placeholder;
     }
     else if (functionKeyPressed || equalKeyPressed) {
-        document.getElementById("calculator-display").value = "0";
+        document.getElementById("calculator-display").value = 0;
         functionKeyPressed = false;
         equalKeyPressed = false;
     }
@@ -299,4 +299,6 @@ let clearkey = function()
     countKeys = 0;
     currentValue = 0;
     functionNum = 0;
+    functionKeyPressed = false;
+    equalKeyPressed = false;
 }
