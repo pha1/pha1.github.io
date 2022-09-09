@@ -8,20 +8,21 @@ let functionNum = 0;
 let functionString = "default";
 let functionKeyPressed = false;
 let equalKeyPressed = false;
+let clearPressed = false;
 let countKeys = 0;
 const numbers = [];
 
 let zeroKey = function()
 {
 
-    if(!(document.getElementById("calculator-display").value === "0") && !(functionKeyPressed) && !(equalKeyPressed) )
+    if(!(document.getElementById("calculator-display").value === "0") && !(functionKeyPressed) && !(equalKeyPressed)  )
     {
         placeholder = document.getElementById("calculator-display").value;
         placeholder = placeholder + "0";
         document.getElementById("calculator-display").value = placeholder;
     }
     else if (functionKeyPressed || equalKeyPressed) {
-        document.getElementById("calculator-display").value = 0;
+        document.getElementById("calculator-display").value = "0";
         functionKeyPressed = false;
         equalKeyPressed = false;
     }
@@ -38,6 +39,10 @@ let oneKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "1";
+        if (clearPressed) {
+            functionKeyPressed = false;
+            clearPressed = false;
+        }
     }
     // If not the initial state, add 1 to the existing number
     else if (functionKeyPressed || equalKeyPressed)
@@ -60,6 +65,10 @@ let twoKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "2";
+        if (clearPressed) {
+            functionKeyPressed = false;
+            clearPressed = false;
+        }
     }
     else if (functionKeyPressed || equalKeyPressed) {
         document.getElementById("calculator-display").value = "2";
@@ -80,6 +89,10 @@ let threeKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "3";
+        if (clearPressed) {
+            functionKeyPressed = false;
+            clearPressed = false;
+        }
     }
     else if (functionKeyPressed || equalKeyPressed) {
         document.getElementById("calculator-display").value = "3";
@@ -100,6 +113,10 @@ let fourKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "4";
+        if (clearPressed) {
+            functionKeyPressed = false;
+            clearPressed = false;
+        }
     }
     else if (functionKeyPressed || equalKeyPressed) {
         document.getElementById("calculator-display").value = "4";
@@ -120,6 +137,10 @@ let fiveKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "5";
+        if (clearPressed) {
+            functionKeyPressed = false;
+            clearPressed = false;
+        }
     }
     else if (functionKeyPressed || equalKeyPressed) {
         document.getElementById("calculator-display").value = "5";
@@ -140,6 +161,10 @@ let sixKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "6";
+        if (clearPressed) {
+            functionKeyPressed = false;
+            clearPressed = false;
+        }
     }
     else if (functionKeyPressed || equalKeyPressed) {
         document.getElementById("calculator-display").value = "6";
@@ -160,6 +185,10 @@ let sevenKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "7";
+        if (clearPressed) {
+            functionKeyPressed = false;
+            clearPressed = false;
+        }
     }
     else if (functionKeyPressed || equalKeyPressed) {
         document.getElementById("calculator-display").value = "7";
@@ -180,6 +209,10 @@ let eightKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "8";
+        if (clearPressed) {
+            functionKeyPressed = false;
+            clearPressed = false;
+        }
     }
     else if (functionKeyPressed || equalKeyPressed) {
         document.getElementById("calculator-display").value = "8";
@@ -200,6 +233,10 @@ let nineKey = function()
     if(document.getElementById("calculator-display").value === "0" || countKeys == 0)
     {
         document.getElementById("calculator-display").value = "9";
+        if (clearPressed) {
+            functionKeyPressed = false;
+            clearPressed = false;
+        }
     }
     else if (functionKeyPressed || equalKeyPressed) {
         document.getElementById("calculator-display").value = "9";
@@ -243,7 +280,7 @@ let pluskey = function()
 
     currentValue = parseInt(document.getElementById("calculator-display").value);
     functionNum += currentValue;
-    
+
     // Display new value
     document.getElementById("calculator-display").value = functionNum.toString();
 
@@ -301,4 +338,5 @@ let clearkey = function()
     functionNum = 0;
     functionKeyPressed = false;
     equalKeyPressed = false;
+    clearPressed = true;
 }
