@@ -136,7 +136,7 @@
                     // ITERATING THROUGH OBJECTS
                     $.each(data, function (key, value) {
 
-                      if(tradeValue.equals(value.Trade)){
+                      if(tradeValue === value.Trade && levelValue === value.level){
 
                         //CONSTRUCTION OF ROWS HAVING
                         // DATA FROM JSON OBJECT
