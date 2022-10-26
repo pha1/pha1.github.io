@@ -3,7 +3,7 @@ var location;
 
 let searchLocation= function() {
             
-    location = document.getElementById("search").value;
+    location = document.getElementById("searchLocation").value;
     console.log("Location: " + location);
   }
 
