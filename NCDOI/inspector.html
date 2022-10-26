@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="scripts/inspectors.js"></script>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -61,8 +62,8 @@
     <br>
     <h5>To Start, please enter a location or click on a county</h5>
     <form id="form">
-      <input type="search" placeholder="Search...">
-      <button>Search</button>
+      <input type="search" placeholder="Search..." id="search">
+      <button onclick="searchLocation()" type="button">Search</button>
     </form>
     <br>
     <h5>Please select your options:</h5>
@@ -115,6 +116,16 @@
       </section>
 
         <script>
+
+          var location = "";
+
+          function searchLocation() {
+            
+            location = document.getElementById("search").value;
+            console.log("Location: " + location);
+          }
+
+          /*
           function submitForm() {
 
             console.log("Begin here");
@@ -206,6 +217,7 @@
                     $('#inspector_table_body').append(inspector);
                 });
             }
+            */
         </script>
     
   
