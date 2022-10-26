@@ -114,8 +114,9 @@
         <script>
           function submitForm() {
 
-            var trade = document.querySelector("trade");
-            var level = document.querySelector("level");
+            var trade = document.getElementById("trade");
+            var level = document.getElementById("level");
+
 
                 // FETCHING DATA FROM JSON FILE
                 $.getJSON("inspectors.json", 
@@ -125,7 +126,7 @@
                     // ITERATING THROUGH OBJECTS
                     $.each(data, function (key, value) {
 
-                      if(value.Trade.equals(trade)){
+                      if(value.Trade.equals(trade.value)){
 
                         //CONSTRUCTION OF ROWS HAVING
                         // DATA FROM JSON OBJECT
@@ -181,7 +182,7 @@
                             value["Primary contact email"] + '</td>';
 
                         inspector += '</tr>';
-                      }
+                      //}
                     });
                       
                     //INSERTING ROWS INTO TABLE 
