@@ -110,15 +110,15 @@
           <th>Zip Code</th>
           <th>Primary contact email</th>
         </thead>
+        <tbody id="inspector_table_body"></tbody>
 
       </section>
 
         <script>
           function submitForm() {
 
-            var table = document.getElementById("inspector_table");
+            var table = document.getElementById("inspector_table_body");
             table.innerHTML = "";
-
 
             var trade = document.getElementById("trade");
             var level = document.getElementById("level");
@@ -132,10 +132,11 @@
                 $.getJSON("inspectors.json", 
                         function (data) {
 
+                        var inspector = '';
                     // ITERATING THROUGH OBJECTS
                     $.each(data, function (key, value) {
 
-                      var inspector = '';
+                      if(tradeValue.equals(value.Trade)){
 
                         //CONSTRUCTION OF ROWS HAVING
                         // DATA FROM JSON OBJECT
@@ -191,12 +192,10 @@
                             value["Primary contact email"] + '</td>';
 
                         inspector += '</tr>';
-
-                        //INSERTING ROWS INTO TABLE 
-                        if(tradeValue.equals(value.Trade)){
-                          $('#inspector_table').append(inspector);
-                        }
+                      }
                     });
+                    //INSERTING ROWS INTO TABLE 
+                    $('#inspector_table_body').append(inspector);
                 });
             
                 console.log("End function...");
