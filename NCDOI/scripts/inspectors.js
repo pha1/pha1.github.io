@@ -1,7 +1,7 @@
 // Global Variables
 var location;
 
-let searchLocation= function() {
+let searchLocation = function() {
             
     location = document.getElementById("searchLocation").value;
     console.log("Location: " + location);
