@@ -1,11 +1,11 @@
 // Global Variables
 var location;
 
-let searchLocation = function () {
+function searchLocation() {
     console.log("Start");
     location = document.getElementById("searchLocation").value;
     console.log("Location: " + location);
-};
+}
 
 let submitForm = function () {
     console.log("Begin here");
