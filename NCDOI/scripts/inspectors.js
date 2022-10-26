@@ -20,8 +20,9 @@ if (!event.target.matches('.dropbtn')) {
     }
     }
 }
+
 }
-$(document).ready(function () {
+function submit() {
 
     // FETCHING DATA FROM JSON FILE
     $.getJSON("inspectors.json", 
