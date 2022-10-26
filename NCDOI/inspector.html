@@ -66,25 +66,20 @@
     </form>
     <br>
     <h5>Please select your options:</h5>
-    <div class="dropdown1">
-      <button onclick="selectTrade()" class="dropbtn">Select Trade</button>
-      <div id="tradeDropdown" class="dropdown-content">
-        <a href="#">Building</a>
-        <a href="#">Electrical</a>
-        <a href="#">Fire</a>
-        <a href="#">Mechanical</a>
-        <a href="#">Plumbing</a>
-      </div>
-    </div>
-    </div class="dropdown2">
-    <button onclick="selectLevel()" class="dropbtn">Select Level</button>
-      <div id="levelDropdown" class="dropdown-content">
-        <a href="#">Level 1</a>
-        <a href="#">Level 2</a>
-        <a href="#">Level 3</a>
-      </div>
-    </div>
-    <button onclick="submit()" class="submit">Submit</button>
+    <label for="trade">Select Trade:</label>
+      <select name="trade" id="trade">
+        <option value="building">Building</option>
+        <option value="electrical">Electrical</option>
+        <option value="mechanical">Mechanical</option>
+        <option value="plumbing">Plumbing</option>
+      </select>
+    <label for="level">Select Level:</label>
+      <select name="level" id="level">
+        <option value="lvl1">Level 1</option>
+        <option value="lvl2">Level 2</option>
+        <option value="lvl3">Level 3</option>
+      </select>
+    <button onclick="submitForm()" class="submitInspectors">Submit</button>
     <br>
     <h5>Avaible inspectors</h5>
     <br>
@@ -136,7 +131,7 @@
               }
             }
           }
-          function submit() {
+          function submitForm() {
 
                 // FETCHING DATA FROM JSON FILE
                 $.getJSON("inspectors.json", 
