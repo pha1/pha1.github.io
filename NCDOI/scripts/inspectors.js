@@ -1,5 +1,5 @@
 // Global Variables
-let location = '';
+var location = '';
 
 let searchLocation= function() {
             
