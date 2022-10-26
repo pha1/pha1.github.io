@@ -66,7 +66,8 @@
     </form>
     <br>
     <h5>Please select your options:</h5>
-    <label for="trade">Select Trade:</label>
+    <form method="post">
+      <label for="trade">Select Trade:</label>
       <select name="trade" id="trade">
         <option value="building">Building</option>
         <option value="electrical">Electrical</option>
@@ -79,7 +80,10 @@
         <option value="lvl2">Level 2</option>
         <option value="lvl3">Level 3</option>
       </select>
-    <button onclick="submitForm()" class="submitInspectors">Submit</button>
+
+      <button onclick="submitForm()" class="submitInspectors">Submit</button>
+    </form>
+    
     <br>
     <h5>Avaible inspectors</h5>
     <br>
@@ -110,6 +114,9 @@
         <script>
           function submitForm() {
 
+            var trade = document.querySelector("trade");
+            var level = document.querySelector("level");
+
                 // FETCHING DATA FROM JSON FILE
                 $.getJSON("inspectors.json", 
                         function (data) {
@@ -117,6 +124,8 @@
 
                     // ITERATING THROUGH OBJECTS
                     $.each(data, function (key, value) {
+
+                      if(value.Trade.equals(trade)){
 
                         //CONSTRUCTION OF ROWS HAVING
                         // DATA FROM JSON OBJECT
@@ -172,6 +181,7 @@
                             value["Primary contact email"] + '</td>';
 
                         inspector += '</tr>';
+                      }
                     });
                       
                     //INSERTING ROWS INTO TABLE 
