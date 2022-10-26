@@ -117,6 +117,8 @@
         <script>
           function submitForm() {
 
+            console.log("Begin here");
+
             var table = document.getElementById("inspector_table_body");
             table.innerHTML = "";
 
@@ -125,8 +127,6 @@
 
             var tradeValue = trade.options[trade.selectedIndex].value;
             var levelValue = level.options[level.selectedIndex].value;
-
-            console.log("Begin Function...");
 
                 // FETCHING DATA FROM JSON FILE
                 $.getJSON("inspectors.json", 
@@ -195,10 +195,9 @@
                       }
                     });
                     //INSERTING ROWS INTO TABLE 
+                    console.log("Append here");
                     $('#inspector_table_body').append(inspector);
                 });
-            
-                console.log("End function...");
             }
         </script>
     
