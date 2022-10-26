@@ -1,10 +1,10 @@
 
 /* toggle between hiding and showing the dropdown content */
-function selectTrade() {
+let selectTrade = function() {
 document.getElementById("tradeDropdown").classList.toggle("show");
 }
 
-function selectLevel() {
+let selectLevel = function() {
 document.getElementById("levelDropdown").classList.toggle("show");
 }
 
