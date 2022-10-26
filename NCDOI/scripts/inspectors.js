@@ -31,8 +31,8 @@ let submitForm = function () {
         $.each(data, function (key, value) {
 
             if(tradeValue === value.Trade && levelValue === value.Level){
-            console.log(value.Trade);
-            console.log(value.Level);
+            //console.log(value.Trade);
+            //console.log(value.Level);
 
             //CONSTRUCTION OF ROWS HAVING
             // DATA FROM JSON OBJECT
