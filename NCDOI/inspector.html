@@ -131,10 +131,11 @@
                 // FETCHING DATA FROM JSON FILE
                 $.getJSON("inspectors.json", 
                         function (data) {
-                    var inspector = '';
 
                     // ITERATING THROUGH OBJECTS
                     $.each(data, function (key, value) {
+
+                      var inspector = '';
 
                         //CONSTRUCTION OF ROWS HAVING
                         // DATA FROM JSON OBJECT
@@ -190,12 +191,12 @@
                             value["Primary contact email"] + '</td>';
 
                         inspector += '</tr>';
+
+                        //INSERTING ROWS INTO TABLE 
+                        if(tradeValue.equals(value.Trade)){
+                          $('#inspector_table').append(inspector);
+                        }
                     });
-                      
-                    //INSERTING ROWS INTO TABLE 
-                    if(tradeValue.equals(value.Trade)){
-                      $('#inspector_table').append(inspector);
-                    }
                 });
             
                 console.log("End function...");
