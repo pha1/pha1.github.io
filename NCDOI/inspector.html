@@ -110,7 +110,7 @@
           <th>Zip Code</th>
           <th>Primary contact email</th>
         </thead>
-        <tbody id="inspector_table_body"></tbody>
+        <tbody id="inspector_table_body">
 
       </section>
 
@@ -120,7 +120,7 @@
             console.log("Begin here");
 
             var table = document.getElementById("inspector_table_body");
-            table.innerHTML = "";
+            table.innerHTML = '';
 
             var trade = document.getElementById("trade");
             var level = document.getElementById("level");
@@ -194,6 +194,8 @@
                         inspector += '</tr>';
                       }
                     });
+
+                    inspector += '</tbody>';
                     //INSERTING ROWS INTO TABLE 
                     console.log("Append here");
                     $('#inspector_table_body').append(inspector);
