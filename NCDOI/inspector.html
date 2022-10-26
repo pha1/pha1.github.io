@@ -128,6 +128,9 @@
             var tradeValue = trade.options[trade.selectedIndex].value;
             var levelValue = level.options[level.selectedIndex].value;
 
+            console.log(tradeValue);
+            console.log(levelValue);
+
                 // FETCHING DATA FROM JSON FILE
                 $.getJSON("inspectors.json", 
                         function (data) {
