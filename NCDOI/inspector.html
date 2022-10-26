@@ -92,7 +92,7 @@
     <section>
       <!-- TABLE CONSTRUCTION-->
       <table id="inspector_table">
-        <tr>
+        <thead>
           <th>CEO ID</th>
           <th>First Name</th>
           <th>Last Name</th>
@@ -109,18 +109,22 @@
           <th>State</th>
           <th>Zip Code</th>
           <th>Primary contact email</th>
-        </tr>
+        </thead>
 
       </section>
 
         <script>
           function submitForm() {
 
-            //var trade = document.getElementById("trade");
-            //var level = document.getElementById("level");
+            var table = document.getElementById("inspector_table");
+            table.innerHTML = "";
 
-            //var tradeValue = trade.options[trade.selectedIndex].value;
-            //var levelValue = value.options[level.selectedIndex].value;
+
+            var trade = document.getElementById("trade");
+            var level = document.getElementById("level");
+
+            var tradeValue = trade.options[trade.selectedIndex].value;
+            var levelValue = value.options[level.selectedIndex].value;
 
             console.log("Begin Function...");
 
@@ -189,8 +193,9 @@
                     });
                       
                     //INSERTING ROWS INTO TABLE 
-                    //if(tradeValue.equals(value.Trade)){
+                    if(tradeValue.equals(value.Trade)){
                       $('#inspector_table').append(inspector);
+                    }
                 });
             
                 console.log("End function...");
