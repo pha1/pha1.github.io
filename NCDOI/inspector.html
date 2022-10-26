@@ -120,6 +120,7 @@
             //var tradeValue = trade.options[trade.selectedIndex].value;
             //var levelValue = value.options[level.selectedIndex].value;
 
+            console.log("Begin Function...");
 
                 // FETCHING DATA FROM JSON FILE
                 $.getJSON("inspectors.json", 
@@ -189,6 +190,8 @@
                     //if(tradeValue.equals(value.Trade)){
                       $('#inspector_table').append(inspector);
                 });
+
+                console.log("End function...");
             }
         </script>
     </section>
