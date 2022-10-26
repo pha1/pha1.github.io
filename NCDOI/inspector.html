@@ -68,14 +68,21 @@
     <h5>Please select your options:</h5>
     <div class="dropdown">
       <button onclick="selectTrade()" class="dropbtn">Select Trade</button>
-      <div id="myDropdown" class="dropdown-content">
+      <div id="tradeDropdown" class="dropdown-content">
         <a href="#">Building</a>
         <a href="#">Electrical</a>
         <a href="#">Fire</a>
         <a href="#">Mechanical</a>
         <a href="#">Plumbing</a>
       </div>
+      <button onclick="selectLevel()" class="dropbtn">Select Level</button>
+      <div id="levelDropdown" class="dropdown-content">
+        <a href="#">Level 1</a>
+        <a href="#">Level 2</a>
+        <a href="#">Level 3</a>
+      </div>
     </div>
+    <br>
     <h5>Avaible inspectors</h5>
     <br>
     
@@ -106,7 +113,11 @@
 
             /* toggle between hiding and showing the dropdown content */
             function selectTrade() {
-              document.getElementById("myDropdown").classList.toggle("show");
+              document.getElementById("tradeDropdown").classList.toggle("show");
+            }
+
+            function selectLevel() {
+              document.getElementById("levelDropdown").classList.toggle("show");
             }
 
             // Close the dropdown if the user clicks outside of it
