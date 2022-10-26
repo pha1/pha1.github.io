@@ -22,7 +22,7 @@ if (!event.target.matches('.dropbtn')) {
 }
 
 }
-function submit() {
+let submit() = function {
 
     // FETCHING DATA FROM JSON FILE
     $.getJSON("inspectors.json", 
@@ -91,4 +91,4 @@ function submit() {
         //INSERTING ROWS INTO TABLE 
         $('#inspector_table').append(inspector);
     });
-});
+}
