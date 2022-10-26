@@ -1,7 +1,8 @@
 
 /* toggle between hiding and showing the dropdown content */
 let selectTrade = function() {
-document.getElementById("tradeDropdown").classList.toggle("show");
+    alert("Show Trades");
+    //document.getElementById("tradeDropdown").classList.toggle("show");
 }
 
 let selectLevel = function() {
@@ -22,7 +23,7 @@ if (!event.target.matches('.dropbtn')) {
 }
 
 }
-let submit() = function {
+let submit = function() {
 
     // FETCHING DATA FROM JSON FILE
     $.getJSON("inspectors.json", 
