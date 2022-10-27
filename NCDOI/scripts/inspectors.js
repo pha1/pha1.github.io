@@ -1,7 +1,7 @@
 // Global Variables
 var location;
 var parsedJSON;
-var resultJSON;
+var resultJSON = [];
 /**
  * Parse the JSON data into an array
  */
@@ -57,7 +57,7 @@ let submitForm = function () {
     //for loop to iterate through origanal array and place items in new array sorted by county
     for(var i = 0; i < parsedJSON.length; i++) {
         if(searchValue.toLowerCase() === (parsedJSON[i].County).toLowerCase()){
-            resultJSON[x].push(parsedJSON[i]);
+            resultJSON.push(parsedJSON[i]);
             x++;
         }
     }
