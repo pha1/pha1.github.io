@@ -92,6 +92,25 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
   @keyframes backcolor {
     100%{
       background-position: 0 0;
-    }
-    
+    } 
+  }
+
+  /*
+  * Table Formatting
+  */
+  table, th, td 
+  {
+    border: 2px black;
+    margin: 1em;
+    text-align: center;
+    color: #1d2329;
+  }
+  th
+  {
+    background-color: #06edfd;
+  }
+  
+  tr
+  {
+    background-color: #06edfd;
   }
