@@ -9,12 +9,14 @@ $(document).ready(function() {
     // Get JSON data
     $.getJSON("inspectors.json", function(data) {
         const result = JSON.stringify(data);
+        parsedJSON = JSON.parse(result);
+        console.log(parsedJSON.length);
+        /*
         $.each(data, function(key, value){
             parsedJSON = JSON.parse(result);
-            for(var i=0; i<parsedJSON.length; i++) {
-                console.log(parsedJSON[i]);
-            }
+            console.log(parsedJSON.length);
         })
+        */
     })
 });
 
