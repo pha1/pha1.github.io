@@ -17,6 +17,8 @@ $(document).ready(function() {
             console.log(parsedJSON.length);
         })
         */
+       console.log(parsedJSON[0].["First Name"]);
+       console.log(parsedJSON[0].Address);
     })
 });
 
