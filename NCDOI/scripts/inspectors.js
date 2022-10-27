@@ -30,7 +30,8 @@ $(document).ready(function() {
      */
      $('#searchButton').click(function() {
         console.log("Click");
-        location = document.getElementById("searchLocation").value;
+        var inputLine = document.getElementById("searchLocation");
+        location = inputLine.value;
         console.log("Location: " + location);
     });
 });
