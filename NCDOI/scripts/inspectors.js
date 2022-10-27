@@ -1,7 +1,7 @@
 // Global Variables
 var location;
 var parsedJSON;
-var resultJSON = [];
+var resultJSON;
 /**
  * Parse the JSON data into an array
  */
