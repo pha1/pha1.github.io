@@ -1,12 +1,39 @@
 // Global Variables
 var location;
+var parsedJSON;
 
+/**
+ * Parse the JSON data into an array
+ */
+$(document).ready(function() {
+    console.log("Ready");
+    // Get JSON data
+    $.getJSON("inspectors.json", function(data) {
+        // Stringify the Data
+        const result = JSON.stringify(data);
+        // Parse data into array
+        parsedJSON = JSON.parse(result);
+        
+        // Testing purposes
+        console.log(parsedJSON.length);
+        console.log("Inspector 1: " + parsedJSON[0]);
+        console.log(parsedJSON[0]["First Name"]);
+    })
+});
+
+/**
+ * This needs to be worked on
+ * Throws an error - when clicking on the button claims no function
+ */
 function searchLocation() {
     console.log("Start");
     location = document.getElementById("searchLocation").value;
     console.log("Location: " + location);
 }
 
+/**
+ * Submit the requirements to display a list of Inspectors
+ */
 let submitForm = function () {
     console.log("Begin here");
 
@@ -22,17 +49,11 @@ let submitForm = function () {
     console.log(tradeValue);
     console.log(levelValue);
 
-    // FETCHING DATA FROM JSON FILE
-    $.getJSON("inspectors.json", 
-            function (data) {
-
             var inspector = '';
         // ITERATING THROUGH OBJECTS
-        $.each(data, function (key, value) {
+        for(var i = 0; i < parsedJSON.length; i++) {
 
-            if(tradeValue === value.Trade && levelValue === value.Level){
-            //console.log(value.Trade);
-            //console.log(value.Level);
+            if(tradeValue === parsedJSON[i].Trade && levelValue === parsedJSON[i].Level){
 
             //CONSTRUCTION OF ROWS HAVING
             // DATA FROM JSON OBJECT
@@ -40,60 +61,58 @@ let submitForm = function () {
 
             // To get values with spaces, use bracket notation
             inspector += '<td>' + 
-                value["CEO ID"] + '</td>';
+                parsedJSON[i]["CEO ID"] + '</td>';
 
             inspector += '<td>' + 
-                value["First Name"] + '</td>';
+                parsedJSON[i]["First Name"] + '</td>';
 
             inspector += '<td>' + 
-                value["Last Name"] + '</td>';
+                parsedJSON[i]["Last Name"] + '</td>';
 
             inspector += '<td>' + 
-                value["Cert No"] + '</td>';
+                parsedJSON[i]["Cert No"] + '</td>';
 
             inspector += '<td>' + 
-                value.Type + '</td>';
+                parsedJSON[i].Type + '</td>';
 
             inspector += '<td>' + 
-                value.Trade + '</td>';
+                parsedJSON[i].Trade + '</td>';
 
             inspector += '<td>' + 
-                value.Level + '</td>';
+                parsedJSON[i].Level + '</td>';
 
             inspector += '<td>' + 
-                value["Exp Date"] + '</td>';
+                parsedJSON[i]["Exp Date"] + '</td>';
 
             inspector += '<td>' + 
-                value.Employer + '</td>';
+                parsedJSON[i].Employer + '</td>';
 
             inspector += '<td>' + 
-                value["Emp Phone"] + '</td>';
+                parsedJSON[i]["Emp Phone"] + '</td>';
 
             inspector += '<td>' + 
-                value.County + '</td>';
+                parsedJSON[i].County + '</td>';
 
             inspector += '<td>' + 
-                value.Address + '</td>';
+                parsedJSON[i].Address + '</td>';
 
             inspector += '<td>' + 
-                value.City + '</td>';
+                parsedJSON[i].City + '</td>';
 
             inspector += '<td>' + 
-                value.State + '</td>';
+                parsedJSON[i].State + '</td>';
 
             inspector += '<td>' + 
-                value["Zip Code"] + '</td>';
+                parsedJSON[i]["Zip Code"] + '</td>';
 
             inspector += '<td>' + 
-                value["Primary contact email"] + '</td>';
+                parsedJSON[i]["Primary contact email"] + '</td>';
 
             inspector += '</tr>';
             }
-        });
-
+        }
         inspector += '</tbody>';
         //INSERTING ROWS INTO TABLE 
         console.log("Append here");
         $('#inspector_table_body').append(inspector);
-    });
 }
