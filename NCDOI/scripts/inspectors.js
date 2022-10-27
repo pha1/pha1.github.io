@@ -33,6 +33,7 @@ let submitForm = function () {
     // Clear the table every time a new form is submitted
     var table = document.getElementById("inspector_table_body");
     table.innerHTML = '';
+    resultJSON = [];
 
     // Selector elements
     var searchData = document.getElementById("searchLocation");

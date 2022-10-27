@@ -62,20 +62,21 @@
     <br>
     <h5>To Start, please enter a location or click on a county</h5>
     <form method="get">
-      <input type="search" placeholder="Search..." id="searchLocation">
+      <input type="search" required="true" placeholder="Search..." id="searchLocation">
     
     <br>
     <h5>Please select your options:</h5>
       <label for="trade">Select Trade:</label>
-      <select name="trade" id="trade">
+      <select required="true" name="trade" id="trade">
         <option disabled selected value>Select</option>
         <option value="Building">Building</option>
         <option value="Electrical">Electrical</option>
         <option value="Mechanical">Mechanical</option>
         <option value="Plumbing">Plumbing</option>
       </select>
+      
     <label for="level">Select Level:</label>
-      <select name="level" id="level">
+      <select required="true" name="level" id="level">
         <option disabled selected value>Select</option>
         <option value="1.0">Level 1</option>
         <option value="2.0">Level 2</option>
