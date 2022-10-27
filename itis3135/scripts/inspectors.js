@@ -8,8 +8,9 @@ $(document).ready(function() {
     console.log("Ready");
     // Get JSON data
     $.getJSON("inspectors.json", function(data) {
+        const result = JSON.stringify(data);
         $.each(data, function(key, value){
-            parsedJSON = JSON.parse(data);
+            parsedJSON = JSON.parse(result);
             for(var i=0; i<parsedJSON.length; i++) {
                 console.log(parsedJSON[i]);
             }
