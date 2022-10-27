@@ -9,8 +9,10 @@ $(document).ready(function() {
     console.log("Ready");
     // Get JSON data
     $.getJSON("inspectors.json", function(data) {
-        // Stringify the Data
+
+        // Stringify the JSON Object
         const result = JSON.stringify(data);
+
         // Parse data into array
         parsedJSON = JSON.parse(result);
         
@@ -26,6 +28,7 @@ $(document).ready(function() {
  * Throws an error - when clicking on the button claims no function
  */
 function searchLocation() {
+
     console.log("Start");
     location = document.getElementById("searchLocation").value;
     console.log("Location: " + location);
@@ -35,84 +38,97 @@ function searchLocation() {
  * Submit the requirements to display a list of Inspectors
  */
 let submitForm = function () {
-    console.log("Begin here");
 
+    // console.log("Begin here");
+
+    // Clear the table every time a new form is submitted
     var table = document.getElementById("inspector_table_body");
     table.innerHTML = '';
 
+    // Selector elements
     var trade = document.getElementById("trade");
     var level = document.getElementById("level");
 
+    // Selected Values
     var tradeValue = trade.options[trade.selectedIndex].value;
     var levelValue = level.options[level.selectedIndex].value;
 
+    // TESTING
+    // Check the selected values
     console.log(tradeValue);
     console.log(levelValue);
 
-            var inspector = '';
-        // ITERATING THROUGH OBJECTS
-        for(var i = 0; i < parsedJSON.length; i++) {
+    // Used to append to the existing table
+    var inspector = '';
 
-            if(tradeValue === parsedJSON[i].Trade && levelValue === parsedJSON[i].Level){
+    // ITERATING THROUGH OBJECTS
+    for(var i = 0; i < parsedJSON.length; i++) {
 
-            //CONSTRUCTION OF ROWS HAVING
-            // DATA FROM JSON OBJECT
-            inspector += '<tr>';
+        // If the Object's Trade and Level matches, then add it to the table
+        // Else move to the next object
+        if(tradeValue === parsedJSON[i].Trade && levelValue === parsedJSON[i].Level){
 
-            // To get values with spaces, use bracket notation
-            inspector += '<td>' + 
-                parsedJSON[i]["CEO ID"] + '</td>';
+        //CONSTRUCTION OF ROWS HAVING
+        // DATA FROM JSON OBJECT
+        inspector += '<tr>';
 
-            inspector += '<td>' + 
-                parsedJSON[i]["First Name"] + '</td>';
+        // To get values with spaces, use bracket notation
+        inspector += '<td>' + 
+            parsedJSON[i]["CEO ID"] + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i]["Last Name"] + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i]["First Name"] + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i]["Cert No"] + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i]["Last Name"] + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i].Type + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i]["Cert No"] + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i].Trade + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i].Type + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i].Level + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i].Trade + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i]["Exp Date"] + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i].Level + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i].Employer + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i]["Exp Date"] + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i]["Emp Phone"] + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i].Employer + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i].County + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i]["Emp Phone"] + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i].Address + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i].County + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i].City + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i].Address + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i].State + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i].City + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i]["Zip Code"] + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i].State + '</td>';
 
-            inspector += '<td>' + 
-                parsedJSON[i]["Primary contact email"] + '</td>';
+        inspector += '<td>' + 
+            parsedJSON[i]["Zip Code"] + '</td>';
 
-            inspector += '</tr>';
-            }
+        inspector += '<td>' + 
+            parsedJSON[i]["Primary contact email"] + '</td>';
+
+        inspector += '</tr>';
         }
-        inspector += '</tbody>';
-        //INSERTING ROWS INTO TABLE 
-        console.log("Append here");
-        $('#inspector_table_body').append(inspector);
+    }
+
+    // Close the body
+    inspector += '</tbody>';
+    
+    //INSERTING ROWS INTO TABLE 
+    //console.log("Append here");
+    $('#inspector_table_body').append(inspector);
 }
