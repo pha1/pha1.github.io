@@ -17,8 +17,8 @@ $(document).ready(function() {
             console.log(parsedJSON.length);
         })
         */
-       console.log(parsedJSON[0].["First Name"]);
-       console.log(parsedJSON[0].Address);
+       console.log("Inspector 1: " + parsedJSON[0]);
+       console.log("Inspector 2: " + parsedJSON[1]);
     })
 });
 
