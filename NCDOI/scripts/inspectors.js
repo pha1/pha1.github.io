@@ -23,19 +23,6 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    /**
-     * This needs to be worked on
-     * Throws an error - when clicking on the button claims no function
-     */
-     $('#searchButton').click(function() {
-        console.log("Click");
-        var inputLine = document.getElementById("searchLocation");
-        location = inputLine.value;
-        console.log("Location: " + location);
-    });
-});
-
 /**
  * Submit the requirements to display a list of Inspectors
  */
@@ -69,7 +56,7 @@ let submitForm = function () {
     var x = 0;
     //for loop to iterate through origanal array and place items in new array sorted by county
     for(var i = 0; i < parsedJSON.length; i++) {
-        if(searchValue.equalsIgnoreCase() === parsedJSON[i].County.equalsIgnoreCase()){
+        if(searchValue.toLowerCase() === (parsedJSON[i].County).toLowerCase()){
             resultJSON[x].push(parsedJSON[i]);
             x++;
         }
