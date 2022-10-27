@@ -47,7 +47,7 @@ let submitForm = function () {
     // ITERATING THROUGH OBJECTS
     for(var i = 0; i < parsedJSON.length; i++) {
 
-        //if(tradeValue === value.Trade && levelValue === value.Level){
+        //if(tradeValue === parsedJSON[i].Trade && levelValue === parsedJSON[i].Level){
 
         //CONSTRUCTION OF ROWS HAVING
         // DATA FROM JSON OBJECT
