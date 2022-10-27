@@ -2,7 +2,6 @@
 var location;
 var parsedJSON;
 var resultJSON = [];
-var resultJSON = [];
 /**
  * Parse the JSON data into an array
  */
@@ -24,12 +23,11 @@ $(document).ready(function() {
     });
 });
 
-/*
 $(document).ready(function() {
-    
-     //This needs to be worked on
-     //Throws an error - when clicking on the button claims no function
-     
+    /**
+     * This needs to be worked on
+     * Throws an error - when clicking on the button claims no function
+     */
      $('#searchButton').click(function() {
         console.log("Click");
         var inputLine = document.getElementById("searchLocation");
@@ -37,21 +35,6 @@ $(document).ready(function() {
         console.log("Location: " + location);
     });
 });
-*/
-
-let submitSearch = function (){
-    var searchData = document.getElementById("searchLocation");
-    var searchValue = searchData.value;
-    var x = 0;
-    for(var i = 0; i < parsedJSON.length; i++) {
-        if(searchValue.toLowerCase() === parsedJSON[i].County.toLowerCase()){
-            resultJSON[x].push(parsedJSON[i]);
-            console.log(resultJSON[0].County);
-            console.log(resultJSON.length);
-            x++;
-        }
-    }
-}
 
 /**
  * Submit the requirements to display a list of Inspectors
