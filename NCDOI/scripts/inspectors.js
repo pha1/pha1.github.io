@@ -44,8 +44,10 @@ let submitSearch = function (){
     var searchValue = searchData.value;
     var x = 0;
     for(var i = 0; i < parsedJSON.length; i++) {
-        if(searchValue.equalsIgnoreCase() === parsedJSON[i].County.equalsIgnoreCase()){
+        if(searchValue.equalsIgnoreCase(parsedJSON[i].County)){
             resultJSON[x].push(parsedJSON[i]);
+            console.log(resultJSON[0].County);
+            console.log(resultJSON.length);
             x++;
         }
     }
