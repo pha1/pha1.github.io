@@ -20,13 +20,13 @@ $(document).ready(function() {
         console.log(parsedJSON.length);
         console.log("Inspector 1: " + parsedJSON[0]);
         console.log(parsedJSON[0]["First Name"]);
-    })
+    });
 
      /**
      * This needs to be worked on
      * Throws an error - when clicking on the button claims no function
      */
-        $("searchButton").click(function() {
+        $('.searchButton').on('click', function() {
         console.log("Click");
         //location = document.getElementById("searchLocation").value;
         //console.log("Location: " + location);
