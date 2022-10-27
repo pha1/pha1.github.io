@@ -110,7 +110,7 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
     border: 2px solid black;
     text-align: center;
     color: #000000;
-    margin: 1em;
+    padding: 1em;
   }
   
   tr
@@ -119,5 +119,5 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
     border: 2px solid black;
     text-align: center;
     color: #000000;
-    margin: 1em;
+    padding: 1em;
   }
