@@ -27,7 +27,7 @@ $(document).ready(function() {
  * This needs to be worked on
  * Throws an error - when clicking on the button claims no function
  */
-function searchLocation() {
+function findLocation() {
 
     console.log("Start");
     location = document.getElementById("searchLocation").value;
