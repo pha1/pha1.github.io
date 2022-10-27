@@ -101,7 +101,6 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
 
   #inspector_table
   {
-    border-style: solid;
     border: 2px black;
     margin: 1em;
     text-align: center;
@@ -110,7 +109,6 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
   th
   {
     background-color: #999594;
-    border-style: solid;
     border: 2px black;
     margin: 1em;
     text-align: center;
@@ -120,7 +118,6 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
   tr
   {
     background-color: #FFFFFF;
-    border-style: solid;
     border: 2px black;
     margin: 1em;
     text-align: center;
