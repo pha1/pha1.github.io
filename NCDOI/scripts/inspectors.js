@@ -28,7 +28,7 @@ $(document).ready(function() {
      * This needs to be worked on
      * Throws an error - when clicking on the button claims no function
      */
-     $('.searchButton').on('click', function() {
+     $('#searchButton').click(function() {
         console.log("Click");
         //location = document.getElementById("searchLocation").value;
         //console.log("Location: " + location);
