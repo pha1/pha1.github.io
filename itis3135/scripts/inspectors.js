@@ -18,7 +18,7 @@ $(document).ready(function() {
         })
         */
        console.log("Inspector 1: " + parsedJSON[0]);
-       console.log("Inspector 2: " + parsedJSON[1]);
+       console.log(parsedJSON[0]["First Name"]);
     })
 });
 
