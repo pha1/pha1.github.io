@@ -99,7 +99,7 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
   * Table Formatting
   */
 
-  #inspector_table
+  table
   {
     border: 2px black;
     margin: 1em;
