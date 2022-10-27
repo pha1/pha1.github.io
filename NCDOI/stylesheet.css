@@ -98,8 +98,9 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
   /*
   * Table Formatting
   */
-  table, th, td 
+  table, th, td
   {
+    border-style: solid;
     border: 2px black;
     margin: 1em;
     text-align: center;
