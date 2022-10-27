@@ -1,7 +1,7 @@
 // Global Variables
 var location;
 var parsedJSON;
-
+var resultJSON = [];
 /**
  * Parse the JSON data into an array
  */
@@ -42,16 +42,18 @@ $(document).ready(function() {
 let submitForm = function () {
 
     // console.log("Begin here");
-
+    
     // Clear the table every time a new form is submitted
     var table = document.getElementById("inspector_table_body");
     table.innerHTML = '';
 
     // Selector elements
+    var searchData = document.getElementById("searchLocation");
     var trade = document.getElementById("trade");
     var level = document.getElementById("level");
 
     // Selected Values
+    var searchValue = searchData.value;
     var tradeValue = trade.options[trade.selectedIndex].value;
     var levelValue = level.options[level.selectedIndex].value;
 
@@ -63,12 +65,22 @@ let submitForm = function () {
     // Used to append to the existing table
     var inspector = '';
 
-    // ITERATING THROUGH OBJECTS
+    //variable for search by county
+    var x = 0;
+    //for loop to iterate through origanal array and place items in new array sorted by county
     for(var i = 0; i < parsedJSON.length; i++) {
+        if(searchValue.equalsIgnoreCase() === parsedJSON[i].County.equalsIgnoreCase()){
+            resultJSON[x].push(parsedJSON[i]);
+            x++;
+        }
+    }
+
+    // ITERATING THROUGH OBJECTS
+    for(var i = 0; i < resultJSON.length; i++) {
 
         // If the Object's Trade and Level matches, then add it to the table
         // Else move to the next object
-        if(tradeValue === parsedJSON[i].Trade && levelValue === parsedJSON[i].Level){
+        if(tradeValue === resultJSON[i].Trade && levelValue === resultJSON[i].Level){
 
         //CONSTRUCTION OF ROWS HAVING
         // DATA FROM JSON OBJECT
@@ -76,52 +88,52 @@ let submitForm = function () {
 
         // To get values with spaces, use bracket notation
         inspector += '<td>' + 
-            parsedJSON[i]["CEO ID"] + '</td>';
+            resultJSON[i]["CEO ID"] + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i]["First Name"] + '</td>';
+            resultJSON[i]["First Name"] + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i]["Last Name"] + '</td>';
+            resultJSON[i]["Last Name"] + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i]["Cert No"] + '</td>';
+            resultJSON[i]["Cert No"] + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i].Type + '</td>';
+            resultJSON[i].Type + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i].Trade + '</td>';
+            resultJSON[i].Trade + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i].Level + '</td>';
+            resultJSON[i].Level + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i]["Exp Date"] + '</td>';
+            resultJSON[i]["Exp Date"] + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i].Employer + '</td>';
+            resultJSON[i].Employer + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i]["Emp Phone"] + '</td>';
+            resultJSON[i]["Emp Phone"] + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i].County + '</td>';
+            resultJSON[i].County + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i].Address + '</td>';
+            resultJSON[i].Address + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i].City + '</td>';
+            resultJSON[i].City + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i].State + '</td>';
+            resultJSON[i].State + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i]["Zip Code"] + '</td>';
+            resultJSON[i]["Zip Code"] + '</td>';
 
         inspector += '<td>' + 
-            parsedJSON[i]["Primary contact email"] + '</td>';
+            resultJSON[i]["Primary contact email"] + '</td>';
 
         inspector += '</tr>';
         }
