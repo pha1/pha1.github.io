@@ -1,5 +1,21 @@
 // Global Variables
 var location;
+var parsedJSON;
+
+// TEST PURPOSES
+// PARSE INTO OBJECTS ARRAY HERE
+$(document).ready(function() {
+    console.log("Ready");
+    // Get JSON data
+    $.getJSON("inspectors.json", function(data) {
+        $.each(data, function(key, value){
+            parsedJSON = JSON.parse(data);
+            for(var i=0; i<parsedJSON.length; i++) {
+                console.log(parsedJSON[i]);
+            }
+        })
+    })
+});
 
 function searchLocation() {
     console.log("Start");
