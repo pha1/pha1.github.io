@@ -1,10 +1,10 @@
 var location;
 // inspectorArray;
-
+var parsedJSON;
 
 // TEST PURPOSES
 // PARSE INTO OBJECTS ARRAY HERE
-var parsedJSON = $(document).ready(function() {
+$(document).ready(function() {
     console.log("Ready");
     // Get JSON data
     $.getJSON("inspectors.json", function(data) {
@@ -16,7 +16,6 @@ var parsedJSON = $(document).ready(function() {
         console.log(parsedJSON.length);
         console.log("Inspector 1: " + parsedJSON[0]);
         console.log(parsedJSON[0]["First Name"]);
-        return parsedJSON;
     })
 });
 
@@ -32,14 +31,14 @@ let submitForm = function () {
     var table = document.getElementById("inspector_table_body");
     table.innerHTML = '';
 
-    var trade = document.getElementById("trade");
-    var level = document.getElementById("level");
+    //var trade = document.getElementById("trade");
+    //var level = document.getElementById("level");
 
-    var tradeValue = trade.options[trade.selectedIndex].value;
-    var levelValue = level.options[level.selectedIndex].value;
+    //var tradeValue = trade.options[trade.selectedIndex].value;
+    //var levelValue = level.options[level.selectedIndex].value;
 
-    console.log(tradeValue);
-    console.log(levelValue);
+    //console.log(tradeValue);
+    //console.log(levelValue);
 
     // FETCHING DATA FROM JSON FILE
 
