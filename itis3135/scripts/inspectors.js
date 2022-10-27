@@ -1,10 +1,10 @@
 var location;
 // inspectorArray;
-var parsedJSON;
+
 
 // TEST PURPOSES
 // PARSE INTO OBJECTS ARRAY HERE
-$(document).ready(function() {
+var parsedJSON = $(document).ready(function() {
     console.log("Ready");
     // Get JSON data
     $.getJSON("inspectors.json", function(data) {
@@ -16,6 +16,7 @@ $(document).ready(function() {
         console.log(parsedJSON.length);
         console.log("Inspector 1: " + parsedJSON[0]);
         console.log(parsedJSON[0]["First Name"]);
+        return parsedJSON;
     })
 });
 
