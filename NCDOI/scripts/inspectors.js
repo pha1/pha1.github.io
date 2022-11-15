@@ -66,10 +66,9 @@ let submitForm = function () {
 
     // ITERATING THROUGH OBJECTS
     for(var i = 0; i < resultJSON.length; i++) {
-
         // If the Object's Trade and Level matches, then add it to the table
         // Else move to the next object
-        if(tradeValue === resultJSON[i].Trade && resultJSON[i].level >= levelValue){
+        if(tradeValue === resultJSON[i].Trade && resultJSON[i].Level >= levelValue){
             
         //CONSTRUCTION OF ROWS HAVING
         // DATA FROM JSON OBJECT
