@@ -52,6 +52,8 @@ let submitForm = function () {
 
     // Used to append to the existing table
     var inspector = '';
+    var intLevel;
+    var intLevel2;
 
     //variable for search by county
     var x = 0;
@@ -68,7 +70,9 @@ let submitForm = function () {
     for(var i = 0; i < resultJSON.length; i++) {
         // If the Object's Trade and Level matches, then add it to the table
         // Else move to the next object
-        if(tradeValue === resultJSON[i].Trade && resultJSON[i].Level >= levelValue){
+        intLevel = parsedInt(resultJSON[i].Level);
+        intLevel2 = parsedInt(levelValue);
+        if(tradeValue === resultJSON[i].Trade && intLevel >= intLevel2){
             
         //CONSTRUCTION OF ROWS HAVING
         // DATA FROM JSON OBJECT
