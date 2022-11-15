@@ -109,9 +109,6 @@ let submitForm = function () {
         inspector += '<td>' + 
             resultJSON[i]["Primary contact email"] + '</td>';
         
-        inspector += '<td>' + 
-            resultJSON[i].Level + '</td>';
-
         inspector += '</tr>';
         }
     }
