@@ -69,36 +69,18 @@ let submitForm = function () {
 
         // If the Object's Trade and Level matches, then add it to the table
         // Else move to the next object
-        if(tradeValue === resultJSON[i].Trade && levelValue === resultJSON[i].Level){
-
+        if(tradeValue === resultJSON[i].Trade){
+            if(resultJSON[i].level >= levelValue){
         //CONSTRUCTION OF ROWS HAVING
         // DATA FROM JSON OBJECT
         inspector += '<tr>';
 
         // To get values with spaces, use bracket notation
         inspector += '<td>' + 
-            resultJSON[i]["CEO ID"] + '</td>';
-
-        inspector += '<td>' + 
             resultJSON[i]["First Name"] + '</td>';
 
         inspector += '<td>' + 
             resultJSON[i]["Last Name"] + '</td>';
-
-        inspector += '<td>' + 
-            resultJSON[i]["Cert No"] + '</td>';
-
-        inspector += '<td>' + 
-            resultJSON[i].Type + '</td>';
-
-        inspector += '<td>' + 
-            resultJSON[i].Trade + '</td>';
-
-        inspector += '<td>' + 
-            resultJSON[i].Level + '</td>';
-
-        inspector += '<td>' + 
-            resultJSON[i]["Exp Date"] + '</td>';
 
         inspector += '<td>' + 
             resultJSON[i].Employer + '</td>';
@@ -125,7 +107,7 @@ let submitForm = function () {
             resultJSON[i]["Primary contact email"] + '</td>';
 
         inspector += '</tr>';
-        }
+        }}
     }
 
     // Close the body

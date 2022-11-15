@@ -77,12 +77,17 @@
           <option value="Plumbing">Plumbing</option>
         </select>
 
-      <label for="level">Select Level:</label>
+      <input type="checkbox" id="residentialCheck" name="r1" value="1">
+      <label for="r1"> Residential</label><br>
+      <input type="checkbox" id="commericalCheck" name="c1" value="1">
+      <label for="c1"> Commercial</label><br>
+      
+      <label for="level">Select size of construction:</label>
         <select name="level" id="level" required>
           <option disabled selected value>Select</option>
-          <option value="1.0">Level 1</option>
-          <option value="2.0">Level 2</option>
-          <option value="3.0">Level 3</option>
+          <option value="1.0">&#x2264;7500sqft</option>
+          <option value="2.0">&#x2265;75,000 & &#x2264;20,000sqft</option>
+          <option value="3.0">&#x2265;20,000sqft</option>
         </select>
 
         <button onclick="submitForm()" class="submitInspectors" type="submit">Submit</button>
@@ -97,14 +102,8 @@
         <!-- TABLE CONSTRUCTION-->
         <table id="inspector_table">
           <thead>
-            <th>CEO ID</th>
             <th>First Name</th>
             <th>Last Name</th>
-            <th>Cert No</th>
-            <th>Type</th>
-            <th>Trade</th>
-            <th>Level</th>
-            <th>Exp Date</th>
             <th>Employer</th>
             <th>Emp Phone</th>
             <th>County</th>
