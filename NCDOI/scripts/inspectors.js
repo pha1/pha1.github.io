@@ -70,8 +70,8 @@ let submitForm = function () {
     for(var i = 0; i < resultJSON.length; i++) {
         // If the Object's Trade and Level matches, then add it to the table
         // Else move to the next object
-        intLevel = parsedInt(resultJSON[i].Level);
-        intLevel2 = parsedInt(levelValue);
+        intLevel = parseInt(resultJSON[i].Level);
+        intLevel2 = parseInt(levelValue);
         if(tradeValue === resultJSON[i].Trade && intLevel >= intLevel2){
             
         //CONSTRUCTION OF ROWS HAVING
