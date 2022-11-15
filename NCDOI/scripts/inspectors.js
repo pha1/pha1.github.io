@@ -20,6 +20,7 @@ $(document).ready(function() {
         console.log(parsedJSON.length);
         console.log("Inspector 1: " + parsedJSON[0]);
         console.log(parsedJSON[0]["First Name"]);
+        console.log(parsedJSON[parsedJSON.length-1]["First Name"]);
     });
 });
 
