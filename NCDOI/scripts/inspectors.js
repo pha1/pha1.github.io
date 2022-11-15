@@ -69,8 +69,8 @@ let submitForm = function () {
 
         // If the Object's Trade and Level matches, then add it to the table
         // Else move to the next object
-        if(tradeValue === resultJSON[i].Trade){
-            if(resultJSON[i].level >= levelValue){
+        if(tradeValue === resultJSON[i].Trade && resultJSON[i].level >= levelValue){
+            
         //CONSTRUCTION OF ROWS HAVING
         // DATA FROM JSON OBJECT
         inspector += '<tr>';
@@ -107,7 +107,7 @@ let submitForm = function () {
             resultJSON[i]["Primary contact email"] + '</td>';
 
         inspector += '</tr>';
-        }}
+        }
     }
 
     // Close the body
