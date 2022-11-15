@@ -72,7 +72,7 @@ let submitForm = function () {
         // Else move to the next object
         intLevel = parseInt(resultJSON[i].Level);
         intLevel2 = parseInt(levelValue);
-        if(tradeValue === resultJSON[i].Trade && intLevel >= intLevel2 || resultJSON[i].Trade === "all"){
+        if((tradeValue === resultJSON[i].Trade && intLevel >= intLevel2) || resultJSON[i].Trade === "all"){
             
         //CONSTRUCTION OF ROWS HAVING
         // DATA FROM JSON OBJECT
