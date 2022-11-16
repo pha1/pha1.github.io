@@ -18,10 +18,8 @@ function sendEmail() {
     
     
     Email.send({
-      Host: "smtp.gmail.com",
-      Username: "inspectorlocator.noreply@gmail.com",
-      Password: "securityMatters",
-      To: emails,
+      SecureToken: "ce3f016a-55bc-4ab9-bbe0-47807fb4e810",
+      To: "'" + emails + "'",
       From: "inspectorlocator.noreply@gmail.com",
       Subject: "TEST",
       Body: "Well that was easy!!",
