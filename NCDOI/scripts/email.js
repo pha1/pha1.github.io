@@ -10,8 +10,8 @@ function emailList() {
     });
   
     console.log(selectedValues.join());
+    */
   };
-  */
 
 function sendEmail() {
     
