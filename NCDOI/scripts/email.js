@@ -11,6 +11,7 @@ function emailList() {
   
     console.log(selectedValues.join());
     emails = selectedValues.join();
+    console.log(emails);
     sendEmail();
   };
 
