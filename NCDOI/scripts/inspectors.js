@@ -83,7 +83,7 @@ let submitForm = function () {
         // DATA FROM JSON OBJECT
         inspector += '<tr>';
 
-        inspector += '<td><input class="chk" type="checkbox" id="' + i + '"></td>';
+        inspector += '<td><input class="chk" type="checkbox" id="' + i + '" value="' + resultJSON[i]["Primary contact email"] + '"></td>';
 
         // To get values with spaces, use bracket notation
         inspector += '<td>' + 
