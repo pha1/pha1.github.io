@@ -24,7 +24,7 @@ function sendEmail() {
     To : emails,
     From : "inspectorlocator.noreply@gmail.com",
     Subject : "TEST",
-    Body : "sdolkhgvdsriuogfhesuivwesh"
+    Body : "Don't black list me i'm not spam."
   }).then(
     message => alert(message)
 );
