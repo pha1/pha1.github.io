@@ -1,6 +1,6 @@
 src="https://smtpjs.com/v3/smtp.js";
 src="inspector.js";
-
+var emails;
 
 function emailList() {
   console.log("kek");
@@ -10,19 +10,18 @@ function emailList() {
     });
   
     console.log(selectedValues.join());
-  
+    email = selectedValues.join();
+    sendEmail();
   };
 
 function sendEmail() {
-    
-    
     
     
     Email.send({
       Host: "smtp.gmail.com",
       Username: "inspectorlocator.noreply@gmail.com",
       Password: "securityMatters",
-      //To: ,
+      To: email,
       From: "inspectorlocator.noreply@gmail.com",
       Subject: "TEST",
       Body: "Well that was easy!!",
