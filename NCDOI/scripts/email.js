@@ -21,7 +21,7 @@ function sendEmail() {
     Host : "smtp.elasticemail.com",
     Username : "inspectorlocator.noreply@gmail.com",
     Password : "0B48AF72794423808FC6B34FE7EFB909FA3A",
-    To : "'" + emails + "'",
+    To : emails,
     From : "inspectorlocator.noreply@gmail.com",
     Subject : "TEST",
     Body : "sdolkhgvdsriuogfhesuivwesh"
