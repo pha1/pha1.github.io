@@ -9,7 +9,7 @@ var resultJSON = [];
 $(document).ready(function() {
     console.log("Ready");
     // Get JSON data
-    $.getJSON("inspectors.json", function(data) {
+    $.getJSON("files/inspectors.json", function(data) {
 
         // Stringify the JSON Object
         const result = JSON.stringify(data);
