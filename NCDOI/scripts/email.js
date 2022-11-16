@@ -4,13 +4,13 @@ src="inspector.js";
 
 function emailList() {
   console.log("kek");
-  /*
+  
     var selectedValues = $('input.chk:checked').toArray().map(function(chk) {
       return $(chk).val();
     });
   
     console.log(selectedValues.join());
-    */
+  
   };
 
 function sendEmail() {
