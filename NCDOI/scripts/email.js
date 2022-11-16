@@ -2,6 +2,7 @@ src="https://smtpjs.com/v3/smtp.js";
 src="inspector.js";
 
 $('#go').on('click', function() {
+  console.log("kek");
     var selectedValues = $('input.chk:checked').toArray().map(function(chk) {
       return $(chk).val();
     });
