@@ -1,6 +1,12 @@
 src="https://smtpjs.com/v3/smtp.js";
 src="inspector.js";
 var emails;
+var name ='';
+var name ='';
+var name ='';
+var name ='';
+var name ='';
+var name ='';
 
 function emailList() {
   console.log("kek");
