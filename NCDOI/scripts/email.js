@@ -20,7 +20,7 @@ function sendEmail() {
     
     Email.send({
       SecureToken: "ce3f016a-55bc-4ab9-bbe0-47807fb4e810",
-      To: emails.toString(),
+      To: "'" + emails.toString() + "'",
       From: "inspectorlocator.noreply@gmail.com",
       Subject: "TEST",
       Body: "Well that was easy!!",
