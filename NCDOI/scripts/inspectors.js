@@ -127,3 +127,7 @@ let submitForm = function () {
     //console.log("Append here");
     $('#inspector_table_body').append(inspector);
 }
+
+function showDiv() {
+    document.getElementById('welcomeDiv').style.display = "block";
+ }
