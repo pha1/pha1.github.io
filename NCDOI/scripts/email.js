@@ -16,16 +16,16 @@ function emailList() {
   };
 
 function sendEmail() {
-    
-    
-    Email.send({
-      SecureToken: "ce3f016a-55bc-4ab9-bbe0-47807fb4e810",
-      To: "'" + emails.toString() + "'",
-      From: "inspectorlocator.noreply@gmail.com",
-      Subject: "TEST",
-      Body: "Well that was easy!!",
-    })
-      .then(function (message) {
-        alert("mail sent successfully")
-      });
+
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "inspectorlocator.noreply@gmail.com",
+    Password : "0B48AF72794423808FC6B34FE7EFB909FA3A",
+    To : "'" + emails + "'",
+    From : "inspectorlocator.noreply@gmail.com",
+    Subject : "TEST",
+    Body : "sdolkhgvdsriuogfhesuivwesh"
+  }).then(
+    message => alert(message)
+);
   }
