@@ -10,7 +10,7 @@ function emailList() {
     });
   
     console.log(selectedValues.join());
-    email = selectedValues.join();
+    emails = selectedValues.join();
     sendEmail();
   };
 
@@ -21,7 +21,7 @@ function sendEmail() {
       Host: "smtp.gmail.com",
       Username: "inspectorlocator.noreply@gmail.com",
       Password: "securityMatters",
-      To: email,
+      To: emails,
       From: "inspectorlocator.noreply@gmail.com",
       Subject: "TEST",
       Body: "Well that was easy!!",
