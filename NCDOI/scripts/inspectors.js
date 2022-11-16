@@ -129,5 +129,5 @@ let submitForm = function () {
 }
 
 function showDiv() {
-    document.getElementById('welcomeDiv').style.display = "block";
+    document.getElementById('submitButtonPressed').style.display = "block";
  }
