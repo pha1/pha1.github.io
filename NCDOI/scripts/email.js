@@ -26,6 +26,6 @@ function sendEmail() {
     Subject : "TEST",
     Body : "Don't black list me i'm not spam."
   }).then(
-    message => alert(message)
+    message => alert('The inspectors that you have selected have been emailed your information')
 );
   }
