@@ -73,6 +73,26 @@
         <input type="search" placeholder="Search..." id="searchLocation" required>
       
       <div id = "map">
+        <script>
+          let map;
+
+          function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 35.7079, lng: -79.8136 },
+            zoom: 7,
+            restriction:{
+              latLngBounds:{
+                north: 38,
+                south: 33,
+                east: -74,
+                west: -86
+                }
+              }
+            });
+          }
+        </script>
+
+window.initMap = initMap;
       </div>
 
 
@@ -172,6 +192,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 </body>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE&callback=initMap">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE&callback=initMap" async defer>
 </script>
 </html>
