@@ -30,7 +30,8 @@ function emailList() {
     if(comments.length === 3){
       comments = "";
     }
-    
+    console.log( "Hello this is " + userName + ", I would like to hire you to inspect my new construction at " + address + " by no later than " + date +
+    "\n Contact information: \n Email: " + userEmail + "\n Phone Number: " + phoneNumber + " \n Permit Number: " + permitNumber + " \n Thank you. \n" + comments )
     sendEmail();
   };
 
