@@ -122,6 +122,7 @@ let submitForm = function () {
 
     // Close the body
     inspector += '</tbody>';
+    inspector += '</table>';
     
     //INSERTING ROWS INTO TABLE 
     //console.log("Append here");
