@@ -95,61 +95,62 @@
         <button onclick="submitForm();showDiv()" class="submitInspectors" type="submit">Submit</button>
       </form>
           
-    </div>
-    <div id = "submitButtonPressed" style="display:none">
-      <form>
+    </div id = "contactButton">
+      <div id = "submitButtonPressed" style="display:none">
+        <form>
+          <br>
+          <h5>Contact Information</h5>
+          <br>
+          <input type="text" placeholder="Name" id="name" required>
+          <p><label for="name">First and Last Name</label></p>
+
+          <input type="text" placeholder="Construction address" id="address" required>
+          <p><label for="Construction address">Construction Address</label></p>
+          
+          <input type="text" placeholder="Permit number" id="permitNumber" required>
+          <p><label for="permitNumber">Permit Number</label></p>
+          
+          <input type="text" placeholder="Phone Number" id="phoneNumber" required>
+          <p><label for="phoneNumber">Phone Number</label></p>
+          
+          <input type="text" placeholder="Email" id="email" required>
+          <p><label for="email">Email</label></p>
+
+          <input type="date" id="dateSelect" name="dateSelect" value="2022-11-01" min="2022-01-01" max="2025-12-31">
+          <p><label for="dateSelect">Select required date of inspection.</label></p>
+
+          <br>
+          <textarea placeholder = "Any additional comments you would like to send?" id="comments" rows="4" cols="50"></textarea>
+        </form>
+
+      <!-- Optional JavaScript; choose one of the two! -->
+      <section>
+          
         <br>
-        <h5>Contact Information</h5>
+        <h5>Available inspectors</h5>
         <br>
-        <input type="text" placeholder="Name" id="name" required>
-        <p><label for="name">First and Last Name</label></p>
 
-        <input type="text" placeholder="Construction address" id="address" required>
-        <p><label for="Construction address">Construction Address</label></p>
-        
-        <input type="text" placeholder="Permit number" id="permitNumber" required>
-        <p><label for="permitNumber">Permit Number</label></p>
-        
-        <input type="text" placeholder="Phone Number" id="phoneNumber" required>
-        <p><label for="phoneNumber">Phone Number</label></p>
-        
-        <input type="text" placeholder="Email" id="email" required>
-        <p><label for="email">Email</label></p>
+        <!-- TABLE CONSTRUCTION-->
+        <table id="inspector_table">
+          <thead>
+            <th></th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Employer</th>
+            <th>Emp Phone</th>
+            <th>County</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+            <th>Primary contact email</th>
+          </thead>
+          <tbody id="inspector_table_body">
 
-        <input type="date" id="dateSelect" name="dateSelect" value="2022-11-01" min="2022-01-01" max="2025-12-31">
-        <p><label for="dateSelect">Select required date of inspection.</label></p>
+        </section>
 
-        <br>
-        <textarea placeholder = "Any additional comments you would like to send?" id="comments" rows="4" cols="50"></textarea>
-      </form>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-    <section>
-        
-      <br>
-      <h5>Available inspectors</h5>
-      <br>
-
-      <!-- TABLE CONSTRUCTION-->
-      <table id="inspector_table">
-        <thead>
-          <th></th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Employer</th>
-          <th>Emp Phone</th>
-          <th>County</th>
-          <th>Address</th>
-          <th>City</th>
-          <th>State</th>
-          <th>Zip Code</th>
-          <th>Primary contact email</th>
-        </thead>
-        <tbody id="inspector_table_body">
-
-      </section>
+      </div>
       <button onclick="emailList()" id="go">Contact</button>
-
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

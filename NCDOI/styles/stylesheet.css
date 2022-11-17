@@ -132,6 +132,6 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
     padding: .5em;
   }
 
-  #inspector_div {
+  #inspector_div, #submitButtonPressed {
     margin: 1em;
   }
