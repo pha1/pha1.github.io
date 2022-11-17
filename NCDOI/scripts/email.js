@@ -42,7 +42,7 @@ function sendEmail() {
     Username : "inspectorlocator.noreply@gmail.com",
     Password : "0B48AF72794423808FC6B34FE7EFB909FA3A",
     To : emails,
-    From : userEmail,
+    From : "inspectorlocator.noreply@gmail.com",
     Subject : "TEST",
     Body : "Hello this is " + userName + ", I would like to hire you to inspect my new construction at " + address + " by no later than " + date +
       "\n Contact information: \n Email: " + userEmail + "\n Phone Number: " + phoneNumber + " \n Permit Number: " + permitNumber + " \n Thank you. \n" + comments 
