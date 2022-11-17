@@ -1,7 +1,9 @@
 //AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE
 
+async 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE&callback=initMap"
 
-let map;
+    let map;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
