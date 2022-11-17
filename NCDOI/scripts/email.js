@@ -26,7 +26,7 @@ function emailList() {
     phoneNumber = document.getElementById('phoneNumber').value.toString();
     userEmail = document.getElementById('email').value.toString();
     date = document.getElementById('dateSelect').value.toString();
-    comments = document.getElementById('comments').value.toString();
+    comments += document.getElementById('comments').value.toString();
     if(comments.length === 3){
       comments = "";
     }
