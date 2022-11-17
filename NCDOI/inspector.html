@@ -63,7 +63,7 @@
   </header>
 </head>
 
-<body>
+<body onload = "initMap()">
   <! Image from: https://wallpaperaccess.com/charlotte-city -->
 
     <h1 class="textColor centerText">NC DOI Inspector Locator</h1>
@@ -75,27 +75,6 @@
         <input type="search" placeholder="Search..." id="searchLocation" required>
       
       <div id = "map">
-        <script>
-        let map;
-
-        function initMap() {
-          map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 35.7079, lng: -79.8136 },
-          zoom: 7,
-          restriction:{
-            latLngBounds:{
-              north: 38,
-              south: 33,
-              east: -74,
-              west: -86
-            }
-          }
-          });
-        }
-
-        window.initMap = initMap;
-        </script>
-
       </div>
 
 
