@@ -1,5 +1,5 @@
 //AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE&callback=initMap&v=weekly"
+
 let map;
 
           function initMap() {
