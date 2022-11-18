@@ -60,7 +60,20 @@ function initMap() {
         marker.setVisible(true);
         place.formatted_address;
 
-        console.log(place);
+        // After the map pans over
+        // Update the County
+        var address = document.getElementById('searchLocation').value;
+        geocoder.geocode( { 'address': address}, function(results, status) {
+            // If OK 
+            if (status == 'OK') {
+                // Update County
+                var resultJSON = JSON.stringify(results);
+                console.log(resultJSON);
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+            });
+
     });
 
 }
