@@ -55,6 +55,7 @@ function initMap() {
         */
 
         marker.setPosition(place.geometry.location);
+        map.setZoom(11);
         map.panTo(marker.getPosition());
         marker.setVisible(true);
         place.formatted_address;
