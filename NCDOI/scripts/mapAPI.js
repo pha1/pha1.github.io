@@ -59,6 +59,8 @@ function initMap() {
         map.panTo(marker.getPosition());
         marker.setVisible(true);
         place.formatted_address;
+
+        console.log(place.types["administrative_area_level_2"]);
     });
 
 }
