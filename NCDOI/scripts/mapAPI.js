@@ -72,7 +72,18 @@ function initMap() {
                 address: userAddress,
                 sensor: "false"
               })
-            .done(function( data ) { console.log(data.results[0].address_components[3].short_name);})
+            .done(function( data )
+                { console.log(data.results[0].address_components[3].short_name);
+                    var county = '';
+                    for (var i = 0; i < data.results[0].address_components.length; i++) {
+                        for (var j = 0; j < data.results[0].address_components[i].types.length; j++) {
+                            if (data.results[0].address_components[i].types[j] == "administrative_area_level_2") {
+                            county = data.results[0].address_components[i];
+                            console.log(county);
+                    }
+  }
+}
+                });
     });
 
 }
