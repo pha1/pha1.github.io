@@ -127,7 +127,7 @@ let submitForm = function () {
     //INSERTING ROWS INTO TABLE 
     //console.log("Append here");
     $('#inspector_table_body').append(inspector);
-    
+    return;
 }
 $.when(submitForm()).then(FUCKYOU());
 function FUCKYOU(){
