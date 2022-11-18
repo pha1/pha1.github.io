@@ -127,6 +127,9 @@ let submitForm = function () {
     //INSERTING ROWS INTO TABLE 
     //console.log("Append here");
     $('#inspector_table_body').append(inspector);
+    FUCKYOU();
+}
+function FUCKYOU(){
     var botton = '<button class="barDesign2" onclick="emailList()" id="go">Contact</button>'
     $('#stayAtTheFuckingBottom').append(botton);
 }
