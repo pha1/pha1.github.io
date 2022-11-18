@@ -66,7 +66,7 @@ function initMap() {
         let geocoder;
 
         geocoder = new google.maps.Geocoder();
-        
+
         var address = document.getElementById('searchLocation').value;
         geocoder.geocode( { 'address': address}, function(results, status) {
             // If OK 
@@ -74,6 +74,7 @@ function initMap() {
                 // Update County
                 var resultJSON = JSON.stringify(results);
                 console.log(resultJSON);
+                console.log(resultJSON[0].address_components[3]);
             } else {
                 alert('Geocode was not successful for the following reason: ' + status);
             }
