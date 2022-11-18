@@ -123,6 +123,8 @@ let submitForm = function () {
     // Close the body
     inspector += '</tbody>';
     inspector += '</table>';
+
+    inspector += '<button class="barDesign2" style="text-align:center" onclick="emailList()" id="go">Contact</button>';
     
     //INSERTING ROWS INTO TABLE 
     //console.log("Append here");
