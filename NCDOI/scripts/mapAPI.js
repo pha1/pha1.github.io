@@ -68,13 +68,17 @@ function initMap() {
         geocoder = new google.maps.Geocoder();
 
         var address = document.getElementById('searchLocation').value;
-        geocoder.geocode( { 'address': address}, function(results, status) {
+        geocoder.geocode( { 'address': address}, function(geoResult, status) {
             // If OK 
             if (status == 'OK') {
                 // Update County
-                var resultJSON = JSON.stringify(results);
-                console.log(resultJSON);
-                console.log(resultJSON.results[0].address_components);
+
+                const results = geoResult.results;
+                const address_components = geoResult.results[0].address_components;
+                address_components.forEach(address_component => {
+                console.log(JSON.stringify(address_component));
+                });
+
             } else {
                 alert('Geocode was not successful for the following reason: ' + status);
             }
