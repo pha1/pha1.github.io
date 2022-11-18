@@ -1,7 +1,7 @@
 //AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE
 
 let map;
-
+var county = '';
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 35.7079, lng: -79.8136 },
@@ -74,7 +74,7 @@ function initMap() {
               })
             .done(function( data )
                 { console.log(data.results[0].address_components[3].short_name);
-                    var county = '';
+                    
                     for (var i = 0; i < data.results[0].address_components.length; i++) {
                         for (var j = 0; j < data.results[0].address_components[i].types.length; j++) {
                             if (data.results[0].address_components[i].types[j] == "administrative_area_level_2") {
