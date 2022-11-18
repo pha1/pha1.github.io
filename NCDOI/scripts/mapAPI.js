@@ -76,18 +76,13 @@ function initMap() {
         let geocoder;
 
         geocoder = new google.maps.Geocoder();
-
-        var address = document.getElementById('searchLocation').value;
-        geocoder.geocode( { 'address': address}, function(geoResult, status) {
-            // If OK 
-            if (status == 'OK') {
-                // Update County
-
-            } else {
-                alert('Geocode was not successful for the following reason: ' + status);
-            }
-            });
-
+        var googleAPI = "http://maps.googleapis.com/maps/api/geocode/json?";
+        var userAddress = document.getElementById('searchLocation').value;
+            $.getJSON( googleAPI, {
+                address: addressCombined,
+                sensor: "false"
+              })
+            .done(function( data ) { console.log(data.results[0].address_components[3].short_name);})
     });
 
 }
