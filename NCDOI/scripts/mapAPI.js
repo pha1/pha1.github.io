@@ -71,6 +71,7 @@ function initMap() {
                         }
                     }
                 }
+        console.log(country);
 
         let geocoder;
 
