@@ -63,16 +63,6 @@ function initMap() {
         // After the map pans over
         // Update the County
 
-        var country = '';
-                for (var i = 0; i < place.address_components.length; i++) {
-                    for (var j = 0; j < place.address_components[i].types.length; j++) {
-                        if (place.address_components[i].types[j] == "country") {
-                            country = place.address_components[i];
-                        }
-                    }
-                }
-        console.log(country);
-
         let geocoder;
 
         geocoder = new google.maps.Geocoder();
