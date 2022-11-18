@@ -74,7 +74,7 @@ function initMap() {
                 // Update County
 
                 const results = geoResult.results;
-                const address_components = geoResult.results[0].address_components;
+                const address_components = results.results[0].address_components;
                 address_components.forEach(address_component => {
                 console.log(JSON.stringify(address_component));
                 });
