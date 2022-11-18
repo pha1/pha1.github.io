@@ -79,7 +79,7 @@ function initMap() {
         var googleAPI = "http://maps.googleapis.com/maps/api/geocode/json?";
         var userAddress = document.getElementById('searchLocation').value;
             $.getJSON( googleAPI, {
-                address: addressCombined,
+                address: userAddress,
                 sensor: "false"
               })
             .done(function( data ) { console.log(data.results[0].address_components[3].short_name);})
