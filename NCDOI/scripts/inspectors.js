@@ -129,11 +129,7 @@ let submitForm = function () {
     $('#inspector_table_body').append(inspector);
     return;
 }
-$.when(submitForm()).then(FUCKYOU());
-function FUCKYOU(){
-    var botton = '<button class="barDesign2" onclick="emailList()" id="go">Contact</button>'
-    $('#stayAtTheFuckingBottom').append(botton);
-}
+
 
 function showDiv() {
     document.getElementById('submitButtonPressed').style.display = "block";
