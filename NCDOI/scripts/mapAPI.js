@@ -63,6 +63,15 @@ function initMap() {
         // After the map pans over
         // Update the County
 
+        var country = '';
+                for (var i = 0; i < place.address_components.length; i++) {
+                    for (var j = 0; j < place.address_components[i].types.length; j++) {
+                        if (place.address_components[i].types[j] == "country") {
+                            country = place.address_components[i];
+                        }
+                    }
+                }
+
         let geocoder;
 
         geocoder = new google.maps.Geocoder();
@@ -72,12 +81,6 @@ function initMap() {
             // If OK 
             if (status == 'OK') {
                 // Update County
-
-                const results = geoResult.results;
-                const address_components = results.results[0].address_components;
-                address_components.forEach(address_component => {
-                console.log(JSON.stringify(address_component));
-                });
 
             } else {
                 alert('Geocode was not successful for the following reason: ' + status);
