@@ -55,9 +55,23 @@
 <body>
   <! Image from: https://wallpaperaccess.com/charlotte-city -->
 
-  <h1 class="textColor centerText">Help</h1>
+  <h1 class=" ">Help</h1>
     <br>
-    <h5>Toll Free 855-408-1212 </h5>
+    <form class=" ">
+      <div class="">
+          <label id="email">Enter your Email:</label>
+          <input type="text" name="Email" placeholder="Email...." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              class="textColor" id="eml" required>
+      </div>
+
+      <div class="">
+          <label id="password">Enter your Password:</label>
+          <input type="text" name="password" placeholder="Phone Number..." pattern="[0-9]{10}" size="25"
+              class="textColor" id="ph" required>
+      </div>
+      
+      <button type="submit" form="form" value="submit" class="buttonColor" onclick="getValue()">Submit</button>
+  </form>
     
     
     <!-- Optional JavaScript; choose one of the two! -->

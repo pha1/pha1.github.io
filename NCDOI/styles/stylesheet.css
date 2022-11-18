@@ -12,6 +12,10 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
     float: left;
   }
   
+  .title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+  }
   /*
   This set up the the logo on the right side of the nav menu.
   */
@@ -132,11 +136,72 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
     padding: .5em;
   }
 
+  .formBox{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom:15px;
+    letter-spacing: 1px;
+    border-bottom: 4px solid grey;
+    display: inline-block;
+  }
+  
+  .optionBox{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 630;
+    padding-top: 15px;
+  }
+
+  .barDesign{
+    border: 1px solid gray;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    color: gray;
+    background: transparent;
+    width: 55%;
+    outline: none;
+  }
+
+  .barDesign2{
+    border: 1px solid gray;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    color: gray;
+    background: transparent;
+    width: 15%;
+    outline: none;
+  }
+
+ 
   #inspector_div, #submitButtonPressed {
     margin: 1em;
   }
 
   #map{
-    height: 400px;
-    width: 800px;
+    height: 550px;
+    width: 850px;
   }
+
+  .hr{
+    height: 1px;
+    background-color: white;
+    border: none;
+  }
+
+.boxForLogin{
+  width: 400px;
+  height: 450px;
+  border-radius: 10px;
+  background: gray;
+  position: relative;
+  text-align: center;
+}
+
+.boxForLogin::before{
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  animation: animate 6s linear;
+  background: linear-gradient(0deg, transparent, transparent, black);
+}
