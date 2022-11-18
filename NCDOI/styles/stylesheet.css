@@ -205,3 +205,7 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
   animation: animate 6s linear;
   background: linear-gradient(0deg, transparent, transparent, black);
 }
+footer{
+  position: absolute;
+  bottom:0;
+}
