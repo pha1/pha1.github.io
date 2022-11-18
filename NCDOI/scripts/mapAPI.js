@@ -49,7 +49,7 @@ function initMap() {
             map.fitBounds(place.geometry.viewport);
           } else {
             map.setCenter(place.geometry.location);
-            map.setZoom(11);
+            map.setZoom(7);
           }
 
         marker.setPosition(place.geometry.location);
