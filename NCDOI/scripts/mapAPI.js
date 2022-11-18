@@ -66,7 +66,7 @@ function initMap() {
         let geocoder;
 
         geocoder = new google.maps.Geocoder();
-        var googleAPI = "http://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE&libraries=places&v=weekly";
+        var googleAPI = "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE&libraries=places&v=weekly";
         var userAddress = document.getElementById('searchLocation').value;
             $.getJSON( googleAPI, {
                 address: userAddress,
