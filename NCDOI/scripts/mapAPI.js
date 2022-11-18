@@ -78,7 +78,7 @@ function initMap() {
                     for (var i = 0; i < data.results[0].address_components.length; i++) {
                         for (var j = 0; j < data.results[0].address_components[i].types.length; j++) {
                             if (data.results[0].address_components[i].types[j] == "administrative_area_level_2") {
-                            county = data.results[0].address_components[i];
+                            county = data.results[0].address_components[i].short_name;
                             console.log(county);
                     }
   }
