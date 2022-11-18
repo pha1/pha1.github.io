@@ -35,3 +35,6 @@ hr
     border: none;
     height: 2px;
 }
+#footer {
+    position: absolute;
+  }
