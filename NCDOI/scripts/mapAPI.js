@@ -62,6 +62,11 @@ function initMap() {
 
         // After the map pans over
         // Update the County
+
+        let geocoder;
+
+        geocoder = new google.maps.Geocoder();
+        
         var address = document.getElementById('searchLocation').value;
         geocoder.geocode( { 'address': address}, function(results, status) {
             // If OK 
