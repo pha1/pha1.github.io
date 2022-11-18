@@ -74,7 +74,7 @@ function initMap() {
                 // Update County
                 var resultJSON = JSON.stringify(results);
                 console.log(resultJSON);
-                console.log(resultJSON[0].address_components[3]);
+                console.log(resultJSON.address_components);
             } else {
                 alert('Geocode was not successful for the following reason: ' + status);
             }
