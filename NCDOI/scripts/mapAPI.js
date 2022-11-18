@@ -60,7 +60,7 @@ function initMap() {
         marker.setVisible(true);
         place.formatted_address;
 
-        console.log(place.types);
+        console.log(place.address_components);
     });
 
 }
