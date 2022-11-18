@@ -45,14 +45,17 @@ function initMap() {
           return;
         }
 
+        /*
         if (place.geometry.viewport) {
             map.fitBounds(place.geometry.viewport);
           } else {
             map.setCenter(place.geometry.location);
             map.setZoom(7);
           }
+        */
 
         marker.setPosition(place.geometry.location);
+        map.panTo(marker.getPosition());
         marker.setVisible(true);
         place.formatted_address;
     });
