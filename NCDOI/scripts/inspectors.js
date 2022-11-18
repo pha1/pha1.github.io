@@ -124,7 +124,7 @@ let submitForm = function () {
     inspector += '</tbody>';
     inspector += '</table>';
 
-    //inspector += '<button class="barDesign2" style="text-align:center" onclick="emailList()" id="go">Contact</button>';
+    inspector += '</div><button class="barDesign2" style="text-align:center" onclick="emailList()" id="go">Contact</button><hr class="hr"></div>';
     
     //INSERTING ROWS INTO TABLE 
     //console.log("Append here");
