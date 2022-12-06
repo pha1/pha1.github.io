@@ -5,6 +5,11 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -50,28 +55,44 @@
       </div>
     </nav>
   </header>
-</head>
-
+</head>  
 <body>
-  <! Image from: https://wallpaperaccess.com/charlotte-city -->
+    <div id="content_container">
+        <div id="form_container">
+            <div id="form_header_container">
+                <h2 id="form_header"> Admin Login </h2>
+            </div>
 
-  <h1 class=" ">Help</h1>
-    <br>
-    <form class=" ">
-      <div class="">
-          <label id="email">Enter your Email:</label>
-          <input type="text" name="Email" placeholder="Email...." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              class="textColor" id="eml" required>
-      </div>
+            <div id="form_content_container">
+                <div id="form_content_inner_container">
+                    <input type="text" id="full_name" placeholder="Full name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="New Password">
 
-      <div class="">
-          <label id="password">Enter your Password:</label>
-          <input type="text" name="password" placeholder="Phone Number..." pattern="[0-9]{10}" size="25"
-              class="textColor" id="ph" required>
+                    <input type="text" id="favourite_song" placeholder="The Best Song Ever">
+                    <input type="text" id="milk_before_cereal" placeholder="Milk Before Cereal? ( Yes | No )">
+
+                    <div id="button_container">
+                      <button onclick="login()">Login</button>
+                      <button onclick="register()">Register</button>
+                    </div>
+
+                  </div>
+              </div>
+          </div>
       </div>
-      
-      <button type="submit" form="form" value="submit" class="buttonColor" onclick="getValue()">Submit</button>
-  </form>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="index.js"></script>
+
+</html>
     
     
     <!-- Optional JavaScript; choose one of the two! -->
