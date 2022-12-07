@@ -152,8 +152,10 @@ var firebaseConfig = {
 
 
   var key = 123456;
-  var userKey = document.getElementById('adminKey').value;
   function validateKey(){
+    var userKey = document.getElementById('adminKey').value;
+    console.log(x);
+    console.log(userKey);
     if(userKey === key && x === 1){
       //redirect to login page
       window.location.href = "login.html";
