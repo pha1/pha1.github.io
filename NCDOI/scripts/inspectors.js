@@ -128,10 +128,9 @@ let submitForm = function () {
     //console.log("Append here");
     $('#inspector_table_body').append(inspector);
 
-    var button = document.createElement('button');
-    button.innerText = "Contact";
-    button.onclick = emailList();
-    $('#contactButton').append(button);
+    var r= $('<input type="button" value="Contact" onclick="emailList()"/>');
+    $('#contactButton').append(r);
+
     return;
 }
 
