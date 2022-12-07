@@ -80,7 +80,7 @@ var firebaseConfig = {
       var user = auth.currentUser
   
       // Add this user to Firebase Database
-      var database_ref = database().ref()
+      var database_ref = database.ref()
   
       // Create User data
       var user_data = {
