@@ -151,7 +151,7 @@ var firebaseConfig = {
   }
 
 
-  var key = 123456;
+  var key = "123456";
   var userKey = document.getElementById('adminKey').value;
   function validateKey(){
     if(userKey === key && x === 1){
