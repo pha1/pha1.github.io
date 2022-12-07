@@ -131,7 +131,7 @@ let submitForm = function () {
     var button = document.createElement('button');
     button.innerText = "Contact";
     button.onclick = emailList();
-    $('#contactButton').append();
+    $('#contactButton').append(button);
     return;
 }
 
