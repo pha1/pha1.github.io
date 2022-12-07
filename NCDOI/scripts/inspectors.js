@@ -126,7 +126,8 @@ let submitForm = function () {
     
     //INSERTING ROWS INTO TABLE 
     //console.log("Append here");
-    $('#inspector_table_body').append(inspector);
+    //$('#inspector_table_body').append(inspector);
+    $(inspector).insertBefore("#submitButtonPressed");
 
     var r= $('<input type="button" value="Contact" onclick="emailList()"/>');
     $('#contactButton').append(r);
