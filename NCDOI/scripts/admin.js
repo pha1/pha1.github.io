@@ -12,7 +12,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   // Initialize variables
   const auth = firebase.auth()
-  const database = firebase.firestore()
+  const database = firebase.database()
   
   // Set up our register function
   function register () {
@@ -32,10 +32,10 @@ var firebaseConfig = {
     auth.createUserWithEmailAndPassword(email, password)
     .then(function() {
       // Declare user variable
-      var user = auth.currentUser
+      var user = auth.currentUser;
   
       // Add this user to Firebase Database
-      var database_ref = database.ref()
+      var database_ref = database.ref();
   
       // Create User data
       var user_data = {
@@ -78,7 +78,7 @@ var firebaseConfig = {
       var user = auth.currentUser
   
       // Add this user to Firebase Database
-      var database_ref = database.ref()
+      var database_ref = database().ref()
   
       // Create User data
       var user_data = {
