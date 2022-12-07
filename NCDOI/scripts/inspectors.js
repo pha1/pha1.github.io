@@ -127,7 +127,11 @@ let submitForm = function () {
     //INSERTING ROWS INTO TABLE 
     //console.log("Append here");
     $('#inspector_table_body').append(inspector);
-    var button = document.createElement('input');button.setAttribute('type', 'button');button.setAttribute('value', 'Contact');button.setAttribute('onclick', 'emailList()');
+
+    var button = document.createElement('button');
+    button.innerText = "Contact";
+    button.onclick = emailList();
+    $('#contactButton').append();
     return;
 }
 
