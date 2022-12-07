@@ -57,28 +57,17 @@
   </header>
 </head>  
 <body>
-    <div id="content_container">
-        <div id="form_container">
-            <div id="form_header_container">
-                <h2 id="form_header"> Admin Login </h2>
-            </div>
-
-            <div id="form_content_container">
-                <div id="form_content_inner_container">
-                    <input type="text" id="full_name" placeholder="Full name">
-                    <input type="email" id="email" placeholder="Email">
-                    <input type="password" id="password" placeholder="New Password">
-
-                    <div id="button_container">
-                      <button onclick="login()">Login</button>
-                      <button onclick="register()">Register</button>
-                    </div>
-
-                  </div>
-              </div>
-          </div>
-      </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  
+  
+  <form>
+    <label for="adminKey">Admin Key:</label>
+    <input type="text" id="adminKey" name="adminKey"><br>
+    <input type="submit" onclick="red1(),validateKey()" value="Login">
+    <input type="submit" onclick="red2(),validateKey()" value="Register">
+  </form>
+    
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use

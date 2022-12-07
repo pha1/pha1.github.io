@@ -49,6 +49,7 @@ var firebaseConfig = {
   
       // DOne
       alert('User Created')
+      /////////////////////////////////////////////////////////////////////redirect to login page
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -90,6 +91,7 @@ var firebaseConfig = {
   
       // DOne
       alert('User Logged In')
+      //////////////////////////////////////////////////////////////////////redirect to admin.html
   
     })
     .catch(function(error) {
@@ -134,5 +136,29 @@ var firebaseConfig = {
       return false
     } else {
       return true
+    }
+  }
+  var x;
+
+  function red1(){
+    x = 1;
+  }
+
+  function red2(){
+    x = 2;
+  }
+
+
+  var key = 123456;
+  var userKey = document.getElementById('adminKey').value;
+  function validateKey(){
+    if(userKey === key && x === 1){
+      //redirect to login page
+    }
+    else if(userKey === key && x === 2){
+      //redirect to register page
+    }
+    else{
+      alert('User was not authenticated');
     }
   }
