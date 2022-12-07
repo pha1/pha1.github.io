@@ -157,11 +157,11 @@ var firebaseConfig = {
     var userKey = document.getElementById('adminKey').value;
     if(userKey === key && x === 1){
       //redirect to login page
-      window.location.href = "login.html";
+      window.location.href = "./login.html";
     }
     else if(userKey === key && x === 2){
       //redirect to register page
-      window.location.href = "register";
+      window.location.href = "./register.html";
     }
     else{
       alert('User was not authenticated');
