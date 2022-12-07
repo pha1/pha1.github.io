@@ -55,7 +55,7 @@ let submitForm = function () {
     console.log(levelValue);
 
     // Used to append to the existing table
-    var inspector = '';
+    var inspector = '<table id="inspector_table"><thead><th></th><th>First Name</th><th>Last Name</th><th>Employer</th><th>Emp Phone</th><th>County</th><th>Address</th><th>City</th><th>State</th> <th>Zip Code</th><th>Primary contact email</th></thead><tbody id="inspector_table_body">';
     var intLevel;
     var intLevel2;
 
@@ -80,7 +80,6 @@ let submitForm = function () {
         intLevel = parseInt(resultJSON[i].Level);
         intLevel2 = parseInt(levelValue);
 
-        inspector += '<table id="inspector_table"><thead><th></th><th>First Name</th><th>Last Name</th><th>Employer</th><th>Emp Phone</th><th>County</th><th>Address</th><th>City</th><th>State</th> <th>Zip Code</th><th>Primary contact email</th></thead><tbody id="inspector_table_body">';
         if((tradeValue === resultJSON[i].Trade && intLevel >= intLevel2) || resultJSON[i].Trade === "all"){
             
         //CONSTRUCTION OF ROWS HAVING
