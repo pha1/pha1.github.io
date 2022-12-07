@@ -50,7 +50,7 @@ var firebaseConfig = {
       // DOne
       alert('User Created')
       /////////////////////////////////////////////////////////////////////redirect to login page
-      window.location.href = "login.html";
+      window.location.href = "https://pha1.github.io/NCDOI/login.html";
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -93,7 +93,7 @@ var firebaseConfig = {
       // DOne
       alert('User Logged In')
       //////////////////////////////////////////////////////////////////////redirect to admin.html
-      window.location.href = "admin.html";
+      window.location.href = "https://pha1.github.io/NCDOI/admin.html";
   
     })
     .catch(function(error) {
@@ -157,11 +157,11 @@ var firebaseConfig = {
     var userKey = document.getElementById('adminKey').value;
     if(userKey === key && x === 1){
       //redirect to login page
-      window.location.href = "./login.html";
+      window.location.href="https://pha1.github.io/NCDOI/login.html";
     }
     else if(userKey === key && x === 2){
       //redirect to register page
-      window.location.href = "./register.html";
+      window.location.href="https://pha1.github.io/NCDOI/register.html";
     }
     else{
       alert('User was not authenticated');
