@@ -48,7 +48,7 @@ var firebaseConfig = {
       database_ref.child('users/' + user.uid).set(user_data)
   
       // DOne
-      alert('User Created!!')
+      alert('User Created')
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -67,7 +67,7 @@ var firebaseConfig = {
   
     // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-      alert('Email or Password is Outta Line!!')
+      alert('Email or Password does not meet requirments')
       return
       // Don't continue running the code
     }
@@ -89,7 +89,7 @@ var firebaseConfig = {
       database_ref.child('users/' + user.uid).update(user_data)
   
       // DOne
-      alert('User Logged In!!')
+      alert('User Logged In')
   
     })
     .catch(function(error) {
