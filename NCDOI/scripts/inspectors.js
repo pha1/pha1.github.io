@@ -126,6 +126,7 @@ let submitForm = function () {
     
     //INSERTING ROWS INTO TABLE 
     //console.log("Append here");
+    inspector += 'var button = document.createElement("input");button.setAttribute("type", "button");button.setAttribute("value", "Contact");button.setAttribute("onclick", "emailList()")';
     $('#inspector_table_body').append(inspector);
     return;
 }

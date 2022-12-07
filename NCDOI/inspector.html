@@ -106,7 +106,31 @@
           <button onclick="submitForm();showDiv()" class="submitInspectors" type="submit">Submit</button>
         </form>
 
-      </div id="contactButton">
+        <section>
+
+          <br>
+          <h5 class="textColor formBox" style="text-align:center">Available inspectors</h5>
+          <br>
+
+          <!-- TABLE CONSTRUCTION-->
+          <table id="inspector_table">
+            <thead>
+              <th></th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Employer</th>
+              <th>Emp Phone</th>
+              <th>County</th>
+              <th>Address</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Zip Code</th>
+              <th>Primary contact email</th>
+            </thead>
+            <tbody id="inspector_table_body">
+
+        </section>
+
       <div id="submitButtonPressed" style="display:none">
         <form>
           <br>
@@ -141,36 +165,10 @@
           <textarea placeholder="Any additional comments you would like to send?" id="comments" rows="4"
             cols="50"></textarea>
         </form>
-
-        <!-- Optional JavaScript; choose one of the two! -->
-        <section>
-
-          <br>
-          <h5 class="textColor formBox" style="text-align:center">Available inspectors</h5>
-          <br>
-
-          <!-- TABLE CONSTRUCTION-->
-          <table id="inspector_table">
-            <thead>
-              <th></th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Employer</th>
-              <th>Emp Phone</th>
-              <th>County</th>
-              <th>Address</th>
-              <th>City</th>
-              <th>State</th>
-              <th>Zip Code</th>
-              <th>Primary contact email</th>
-            </thead>
-            <tbody id="inspector_table_body">
-
-        </section>
-
       </div>
-      <div id = "stayAtTheFuckingBottom">
-        <button class="barDesign2" onclick="emailList()" id="go">Contact</button>
+
+      <div id = "contactButton">
+        <!-- <button class="barDesign2" onclick="emailList()" id="go">Contact</button> -->
       </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
