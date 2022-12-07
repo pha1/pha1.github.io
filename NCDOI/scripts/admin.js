@@ -50,6 +50,7 @@ var firebaseConfig = {
       // DOne
       alert('User Created')
       /////////////////////////////////////////////////////////////////////redirect to login page
+      window.location.href = "login.html";
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -92,6 +93,7 @@ var firebaseConfig = {
       // DOne
       alert('User Logged In')
       //////////////////////////////////////////////////////////////////////redirect to admin.html
+      window.location.href = "admin.html";
   
     })
     .catch(function(error) {
@@ -154,9 +156,11 @@ var firebaseConfig = {
   function validateKey(){
     if(userKey === key && x === 1){
       //redirect to login page
+      window.location.href = "login.html";
     }
     else if(userKey === key && x === 2){
       //redirect to register page
+      window.location.href = "register";
     }
     else{
       alert('User was not authenticated');
