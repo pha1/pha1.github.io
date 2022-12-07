@@ -33,9 +33,9 @@ let submitForm = function () {
     // console.log("Begin here");
     
     // Clear the table every time a new form is submitted
-    var table = document.getElementById("inspector_table_body");
+    var table = document.getElementById("inspector_table");
     if (table !== null){
-        table.innerHTML = '';
+        if (table) table.parentNode.removeChild(table);
     }
     resultJSON = [];
 
