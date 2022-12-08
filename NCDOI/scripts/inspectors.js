@@ -140,7 +140,7 @@ let submitForm = function () {
     return;
 }
 
-window.$("#contactButton").click(function () {
+$("#contactButton").click(function () {
     console.log("This works!");
 	"use strict";
 	window.$("#overlay").fadeIn();
