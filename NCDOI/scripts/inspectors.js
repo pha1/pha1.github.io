@@ -27,7 +27,7 @@ $(document).ready(function() {
     });
 });
 */
-for(var i = 0; i < parsedJSON.length; i++) {
+for(var i = 0; i < inspectors.length; i++) {
     parsedJSON[i].push(inspectors[i]);
 }
 console.log(parsedJSON[0]);
