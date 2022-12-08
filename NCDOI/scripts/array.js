@@ -23,11 +23,12 @@ const inspectorCollection = db.collection("inspectors");
 
 inspectorCollection.doc("00Gisau75CRdpkl7EFC5").get().then((doc) => {
     if (doc.exists) {
-        console.log("Document data: " + doc.data);
+        console.log("Document data: " + doc.data());
         var obj = {}
         obj['CEO ID'] = doc.data().ceoId
         obj['Trade'] = doc.data().trade
         inspectors.push(obj);
+        console.log(inspectors);
     } else {
         console.log("Document doesn't exist");
     }
