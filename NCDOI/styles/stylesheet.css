@@ -99,6 +99,10 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
     } 
   }
 
+  body {
+    background-color: midnightblue;
+  }
+
   /*
   * Table Formatting
   */
