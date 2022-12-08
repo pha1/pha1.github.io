@@ -144,8 +144,7 @@ function showForm() {
 	"use strict";
 	window.$("#overlay").fadeIn();
 	window.$("#submitButtonPressed").show();
-	window.$("#submitButtonPressed").animate({top: (($(window).height() - this.outerHeight()) / 2) + $(window).scrollTop()});
-    window.$("#submitButtonPressed").animate({left: (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft()});
+	window.$("#submitButtonPressed").animate({top: .7*outerHeight});
 }
 
 window.$("#overlay").click(function () {
