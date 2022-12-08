@@ -241,3 +241,8 @@ footer{
 	background-color: transparent;
 	border: 0
 }
+#contactButtonDiv{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-content: center;
+}
