@@ -229,7 +229,7 @@ footer{
 	position: relative;
 	top: -310px;
 }
-#ovrly,#submitButtonPressed{
+#overly,#submitButtonPressed{
   display: none;
 }
 #cross{
