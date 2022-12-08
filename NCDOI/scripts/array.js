@@ -24,7 +24,8 @@ const inspectorCollection = db.collection("inspectors");
 inspectorCollection.get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
-        inspectors.push(doc.data());
+        //console.log(doc.id, " => ", doc.data());
+        inspectors.push(doc.id.data());
         console.log(inspectors);
     });
 });
