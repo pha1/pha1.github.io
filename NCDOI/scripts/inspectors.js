@@ -1,5 +1,6 @@
 // Global Variables
 src = "mapAPI.js";
+src = "array.js";
 var location;
 var parsedJSON = [];
 var resultJSON = [];
@@ -26,7 +27,7 @@ $(document).ready(function() {
     });
 });
 */
-parsedJSON = inspectors
+parsedJSON = inspectors;
 /**
  * Submit the requirements to display a list of Inspectors
  */
