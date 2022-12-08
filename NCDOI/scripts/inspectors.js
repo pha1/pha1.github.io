@@ -35,7 +35,7 @@ $(document).ready(function() {
 let submitForm = function () {
 
     for(var i = 0; i < inspectors.length; i++) {
-        parsedJSON[i].push(inspectors[i]);
+        parsedJSON.push(inspectors[i]);
         console.log(parsedJSON[i]);
     }    
     // console.log("Begin here");
