@@ -67,107 +67,114 @@
     <h1 class="textColor title centerText">NC DOI Inspector Locator</h1>
 
     <div id="inspector_div">
-        <h5 class="textColor formBox">To Start, please enter a location</h5>
+      <h5 class="textColor formBox">To Start, please enter a location</h5>
+      <br>
+      <input class="barDesign" type="search" placeholder="Search..." id="searchLocation" required>
+      <form method="get" onsubmit="return false">
         <br>
-        <input class="barDesign" type="search" placeholder="Search..." id="searchLocation" required>
-        <form method="get" onsubmit="return false">
-          <br>
-          <hr class="hr">
-          <div id="map">
-            <script defer
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE&libraries=places&callback=initMap&v=weekly"></script>
+        <hr class="hr">
+        <div id="map">
+          <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE&libraries=places&callback=initMap&v=weekly"></script>
+        </div>
+
+
+        <br>
+        <h5 class="textColor formBox">Please Select Your Options:</h5>
+        <br>
+        <label class="textColor optionBox" for="trade">Select Trade:</label>
+        <select name="trade" id="trade" required>
+          <option disabled selected value>Select</option>
+          <option value="Building">Building</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Plumbing">Plumbing</option>
+        </select>
+        <br>
+        <input type="checkbox" id="residentialCheck" name="r1" value="1">
+        <label class="textColor optionBox" for="r1"> Residential</label><br>
+        <input type="checkbox" id="commericalCheck" name="c1" value="1">
+        <label class="textColor optionBox for="c1"> Commercial</label><br>
+
+        <label class="textColor optionBox for="level">Select Size Of Construction:</label>
+        <select name="level" id="level" required>
+          <option disabled selected value>Select</option>
+          <option value="1.0">&#x2264;7,500sqft</option>
+          <option value="2.0">&#x2265;7,500 & &#x2264;20,000sqft</option>
+          <option value="3.0">&#x2265;20,000sqft</option>
+        </select>
+        <button onclick="submitForm();showDiv()" class="submitInspectors" type="submit">Submit</button>
+      </form>
+
+
+      <br>
+      <h5 class="textColor formBox" id="availableInspectors" style="text-align:center;display:none">Available inspectors</h5>
+      <br>
+
+      <!-- TABLE CONSTRUCTION
+      <table id="inspector_table">
+        <thead>
+          <th></th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Employer</th>
+          <th>Emp Phone</th>
+          <th>County</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Zip Code</th>
+          <th>Primary contact email</th>
+        </thead>
+        <tbody id="inspector_table_body">
+        -->
+
+        <section>
+          <div id ="overlay"></div>
+          <div id="submitButtonPressed" style="display:none">
+            <button id="cross">&cross;</button>
+            <form>
+              <br>
+              <h5 class="textColor formBox">Contact Information</h5>
+
+              <br>
+              <p class="textColor optionBox"><label for="name">First and Last Name:</label></p>
+              <input class="barDesign2" type="text" placeholder="Name..." id="name" required>
+
+              <br>
+              <p class="textColor optionBox"><label for="Construction address">Construction Address:</label></p>
+              <input class="barDesign2" type="text" placeholder="Construction Address..." id="address" required>
+
+              <br>
+              <p class="textColor optionBox"><label for="permitNumber">Permit Number:</label></p>
+              <input class="barDesign2" type="text" placeholder="Permit Number..." id="permitNumber" required>
+
+              <br>
+              <p class="textColor optionBox"><label for="phoneNumber">Phone Number: </label></p>
+              <input class="barDesign2" type="text" placeholder="Phone Number..." id="phoneNumber" required>
+
+              <br>
+              <p class="textColor optionBox"><label for="email">Email: </label></p>
+              <input class="barDesign2" type="text" placeholder="Email..." id="email" required>
+
+              <br>
+              <p class="textColor optionBox"><label for="dateSelect">Select required date of inspection:</label></p>
+              <input class="barDesign2" type="date" id="dateSelect" name="dateSelect" value="2022-11-01" min="2022-01-01" max="2025-12-31">
+
+              <br>
+              <hr class="hr">
+              <textarea placeholder="Any additional comments you would like to send?" id="comments" rows="4"
+                cols="50"></textarea>
+
+              <input type="button" value="Send Email" id="btn" onclick="emailList()"/>
+            </form>
           </div>
+        </section>
 
-
-          <br>
-          <h5 class="textColor formBox">Please Select Your Options:</h5>
-          <br>
-          <label class="textColor optionBox" for="trade">Select Trade:</label>
-          <select name="trade" id="trade" required>
-            <option disabled selected value>Select</option>
-            <option value="Building">Building</option>
-            <option value="Electrical">Electrical</option>
-            <option value="Mechanical">Mechanical</option>
-            <option value="Plumbing">Plumbing</option>
-          </select>
-          <br>
-          <input type="checkbox" id="residentialCheck" name="r1" value="1">
-          <label class="textColor optionBox" for="r1"> Residential</label><br>
-          <input type="checkbox" id="commericalCheck" name="c1" value="1">
-          <label class="textColor optionBox for="c1"> Commercial</label><br>
-
-          <label class="textColor optionBox for="level">Select Size Of Construction:</label>
-          <select name="level" id="level" required>
-            <option disabled selected value>Select</option>
-            <option value="1.0">&#x2264;7,500sqft</option>
-            <option value="2.0">&#x2265;7,500 & &#x2264;20,000sqft</option>
-            <option value="3.0">&#x2265;20,000sqft</option>
-          </select>
-          <button onclick="submitForm();showDiv()" class="submitInspectors" type="submit">Submit</button>
-        </form>
-
-
-        <br>
-        <h5 class="textColor formBox" id="availableInspectors" style="text-align:center;display:none">Available inspectors</h5>
-        <br>
-
-        <!-- TABLE CONSTRUCTION
-        <table id="inspector_table">
-          <thead>
-            <th></th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Employer</th>
-            <th>Emp Phone</th>
-            <th>County</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Zip Code</th>
-            <th>Primary contact email</th>
-          </thead>
-          <tbody id="inspector_table_body">
-          -->
-
-
-      <div id="submitButtonPressed" style="display:none">
-        <form>
-          <br>
-          <h5 class="textColor formBox">Contact Information</h5>
-
-          <br>
-          <p class="textColor optionBox"><label for="name">First and Last Name:</label></p>
-          <input class="barDesign2" type="text" placeholder="Name..." id="name" required>
-
-          <br>
-          <p class="textColor optionBox"><label for="Construction address">Construction Address:</label></p>
-          <input class="barDesign2" type="text" placeholder="Construction Address..." id="address" required>
-
-          <br>
-          <p class="textColor optionBox"><label for="permitNumber">Permit Number:</label></p>
-          <input class="barDesign2" type="text" placeholder="Permit Number..." id="permitNumber" required>
-
-          <br>
-          <p class="textColor optionBox"><label for="phoneNumber">Phone Number: </label></p>
-          <input class="barDesign2" type="text" placeholder="Phone Number..." id="phoneNumber" required>
-
-          <br>
-          <p class="textColor optionBox"><label for="email">Email: </label></p>
-          <input class="barDesign2" type="text" placeholder="Email..." id="email" required>
-
-          <br>
-          <p class="textColor optionBox"><label for="dateSelect">Select required date of inspection:</label></p>
-          <input class="barDesign2" type="date" id="dateSelect" name="dateSelect" value="2022-11-01" min="2022-01-01" max="2025-12-31">
-
-          <br>
-          <hr class="hr">
-          <textarea placeholder="Any additional comments you would like to send?" id="comments" rows="4"
-            cols="50"></textarea>
-        </form>
+      <div id = "contactButtonDiv">
+        <!-- <button class="barDesign2" onclick="emailList()" id="go">Contact</button> -->
       </div>
 
-      <div id = "contactButton">
-        <!-- <button class="barDesign2" onclick="emailList()" id="go">Contact</button> -->
       </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

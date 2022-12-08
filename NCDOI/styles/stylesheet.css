@@ -210,3 +210,35 @@ footer{
   left: 50%;
   margin-top:100%;
 }
+#overly{
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	opacity: 0.7;
+}
+#submitButtonPressed{
+	background-color: #fff;
+	width: 30%;
+	margin: auto;
+	border: 3px solid rgb(128, 128, 128);
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	top: -310px;
+}
+#ovrly,#submitButtonPressed{
+  display: none;
+}
+#cross{
+	position: absolute;
+    left: 94%;
+    top: 0px;
+    color: #000000;
+	font-size: 18;
+	font-weight: bold;
+	background-color: transparent;
+	border: 0
+}

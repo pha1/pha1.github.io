@@ -134,12 +134,30 @@ let submitForm = function () {
     //$('#inspector_table_body').append(inspector);
     $(inspector).insertBefore("#submitButtonPressed");
 
-    var r= $('<input type="button" value="Contact" onclick="emailList()"/>');
-    $('#contactButton').append(r);
+    var r= $('<input type="button" id="contactButton" value="Contact"/>');
+    $('#contactButtonDiv').append(r);
 
     return;
 }
 
+window.$("#contactButton").click(function () {
+	"use strict";
+	window.$("#ovrly").fadeIn();
+	window.$("#login").show();
+	window.$("#login").animate({top: "100"});
+});
+window.$("#ovrly").click(function () {
+	"use strict";
+	window.$("#ovrly").hide();
+	window.$("#login").hide();
+	window.$("#login").css("top", "-310px");
+});
+window.$("#cross").click(function () {
+	"use strict";
+	window.$("#ovrly").hide();
+	window.$("#login").hide();
+	window.$("#login").css("top", "-310px");
+});
 
 function showDiv() {
     document.getElementById('availableInspectors').style.display = "inline-block";
