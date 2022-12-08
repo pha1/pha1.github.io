@@ -34,8 +34,10 @@ let submitForm = function () {
     
     // Clear the table every time a new form is submitted
     var table = document.getElementById("inspector_table");
+    var contactButton = document.getElementById("contactButton");
     if (table !== null){
         if (table) table.parentNode.removeChild(table);
+        contactButton.innerHTML = "";
     }
     resultJSON = [];
 
