@@ -13,7 +13,7 @@ var firebaseConfig = {
     };
 
     // Initialize Firebase
-const firebase = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
     // Initialize variables
 const auth = firebase.auth()
