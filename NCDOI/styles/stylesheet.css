@@ -187,6 +187,7 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
   #map{
     height: 550px;
     width: 850px;
+    align-content: center;
   }
 
   .hr{
