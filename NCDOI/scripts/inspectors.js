@@ -141,7 +141,6 @@ let submitForm = function () {
 }
 
 function showForm() {
-    console.log("This works!");
 	"use strict";
 	window.$("#overlay").fadeIn();
 	window.$("#submitButtonPressed").show();
@@ -160,7 +159,7 @@ function closeForm() {
 	window.$("#overlay").hide();
 	window.$("#submitButtonPressed").hide();
 	window.$("#submitButtonPressed").css("top", "-310px");
-});
+}
 
 function showDiv() {
     document.getElementById('availableInspectors').style.display = "inline-block";
