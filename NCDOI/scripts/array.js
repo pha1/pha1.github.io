@@ -10,11 +10,11 @@ var firebaseConfig = {
     };
 
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    const firebaseApp = firebase.initializeApp(firebaseConfig);
 
     // Initialize variables
     const auth = firebase.auth()
-    const database = firebase.firestore();
+    const database = firebaseApp.firestore();
 
     const inspectorCollection = db.collection("inspectors");
 
