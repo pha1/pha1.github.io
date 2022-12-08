@@ -21,7 +21,7 @@ const db = firebaseApp.firestore();
 
 const inspectorCollection = db.collection("inspectors");
 
-inspectorCollection.get("Gisau75CRdpkl7EFC5").then((doc) => {
+inspectorCollection.get("00Gisau75CRdpkl7EFC5").then((doc) => {
     if (doc.exists) {
         console.log("Document data: " + doc.data);
         var obj = {}
