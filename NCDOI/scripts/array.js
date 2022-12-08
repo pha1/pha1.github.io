@@ -3,13 +3,13 @@
 var inspectors = [];
 
 var firebaseConfig = {
-    apiKey: "AIzaSyAoNHpW6B3UNJ0KV8DXKhoMSdOJ3m4bkNY",
-    authDomain: "inspectorlocator.firebaseapp.com",
-    projectId: "inspectorlocator",
-    storageBucket: "inspectorlocator.appspot.com",
-    messagingSenderId: "373749984697",
-    appId: "1:373749984697:web:3a894f81fc10e3bd4bda68",
-    measurementId: "G-GE2S58262L"
+    apiKey: "AIzaSyA4UoQh1ErFeB23aUlww4pYCvliXIS6I60",
+    authDomain: "inspector-locator-ef89c.firebaseapp.com",
+    projectId: "inspector-locator-ef89c",
+    storageBucket: "inspector-locator-ef89c.appspot.com",
+    messagingSenderId: "253182318432",
+    appId: "1:253182318432:web:cd18b909058d28e81ff005",
+    measurementId: "G-16PTXW98PR"
     };
 
     // Initialize Firebase
