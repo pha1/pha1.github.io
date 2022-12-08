@@ -155,7 +155,7 @@ window.$("#overlay").click(function () {
 	window.$("#submitButtonPressed").css("top", "-310px");
 });
 
-window.$("#cross").click(function () {
+function closeForm() {
 	"use strict";
 	window.$("#overlay").hide();
 	window.$("#submitButtonPressed").hide();
