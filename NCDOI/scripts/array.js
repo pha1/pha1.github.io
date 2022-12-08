@@ -17,7 +17,7 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 
     // Initialize variables
 const auth = firebase.auth()
-const db = firebaseApp.firestore();
+const db = firebase.database();
 
 const inspectorCollection = db.collection("inspectors");
 
