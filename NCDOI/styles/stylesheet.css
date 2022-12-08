@@ -220,13 +220,13 @@ footer{
 }
 #submitButtonPressed{
 	background-color: #fff;
-	width: 30%;
+	width: 40%;
 	margin: auto;
 	border: 3px solid rgb(128, 128, 128);
 	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
-	position: relative;
+	position: absolute;
 	top: -310px;
 }
 #overlay,#submitButtonPressed{

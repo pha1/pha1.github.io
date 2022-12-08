@@ -34,10 +34,10 @@ let submitForm = function () {
     
     // Clear the table every time a new form is submitted
     var table = document.getElementById("inspector_table");
-    var contactButton = document.getElementById("contactButton");
+    var contactButtonDiv = document.getElementById("contactButtonDiv");
     if (table !== null){
         if (table) table.parentNode.removeChild(table);
-        contactButton.innerHTML = "";
+        contactButtonDiv.innerHTML = "";
     }
     resultJSON = [];
 
@@ -144,7 +144,8 @@ function showForm() {
 	"use strict";
 	window.$("#overlay").fadeIn();
 	window.$("#submitButtonPressed").show();
-	window.$("#submitButtonPressed").animate({top: "100"});
+	window.$("#submitButtonPressed").animate({top: (($(window).height() - this.outerHeight()) / 2) + $(window).scrollTop()});
+    window.$("#submitButtonPressed").animate({left: (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft()});
 }
 
 window.$("#overlay").click(function () {
