@@ -22,7 +22,7 @@ const db = firebase.database();
 firebase.database().ref('inspectors').once('value',   function(snapshot) {
     snapshot.forEach(function(childSnapshot) {
       var childData = childSnapshot.val();
-      inspectors.push(childData.toString());
+      inspectors.push(childData);
       // ...
     });
     console.log(inspectors);
