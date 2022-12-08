@@ -180,7 +180,7 @@ https://www.pexels.com/video/drone-footage-of-a-car-on-a-road-6942638/
   #margin_div {
     background-color: white;
     margin: 0 20% 0 20%;
-    border: 2px solid gray;
+    border: 3px solid gray;
     padding: 10px;
   }
 
@@ -256,6 +256,7 @@ footer{
 .sidebar{
   height: 100%;
   width: 200px;
+  border:3px solid rgb(128, 128, 128);
   position: absolute;
   right: 0;
   padding-top: 40px;
