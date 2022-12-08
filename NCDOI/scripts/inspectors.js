@@ -6,6 +6,7 @@ var resultJSON = [];
 /**
  * Parse the JSON data into an array
  */
+/** 
 $(document).ready(function() {
     console.log("Ready");
     // Get JSON data
@@ -24,7 +25,8 @@ $(document).ready(function() {
         console.log(parsedJSON[parsedJSON.length-1]["First Name"]);
     });
 });
-
+*/
+parsedJSON = inspectors
 /**
  * Submit the requirements to display a list of Inspectors
  */
