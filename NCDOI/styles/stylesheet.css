@@ -255,10 +255,9 @@ footer{
 }
 .sidebar{
   height: 100%;
-  width: 150px;
+  width: 300px;
   position: absolute;
   right: 0;
-  top: 0;
   padding-top: 40px;
   background-color: gray;
 }
