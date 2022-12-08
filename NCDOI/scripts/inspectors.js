@@ -134,19 +134,19 @@ let submitForm = function () {
     //$('#inspector_table_body').append(inspector);
     $(inspector).insertBefore("#submitButtonPressed");
 
-    var r= $('<input type="button" id="contactButton" value="Contact"/>');
+    var r= $('<input type="button" id="contactButton" value="Contact" onclick="showForm()"/>');
     $('#contactButtonDiv').append(r);
 
     return;
 }
 
-$("#contactButton").click(function () {
+function showForm() {
     console.log("This works!");
 	"use strict";
 	window.$("#overlay").fadeIn();
 	window.$("#submitButtonPressed").show();
 	window.$("#submitButtonPressed").animate({top: "100"});
-});
+}
 
 window.$("#overlay").click(function () {
 	"use strict";
