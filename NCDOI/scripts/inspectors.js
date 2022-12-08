@@ -30,6 +30,7 @@ $(document).ready(function() {
 for(var i = 0; i < parsedJSON.length; i++) {
     parsedJSON[i].push(inspectors[i]);
 }
+console.log(parsedJSON[0]);
 /**
  * Submit the requirements to display a list of Inspectors
  */
