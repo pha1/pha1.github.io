@@ -1,5 +1,6 @@
 // Your web app's Firebase configuration
 
+var inspectors = [];
 
 var firebaseConfig = {
     apiKey: "AIzaSyA4UoQh1ErFeB23aUlww4pYCvliXIS6I60",
@@ -23,6 +24,7 @@ const inspectorCollection = db.collection("inspectors");
 inspectorCollection.get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
-        console.log(doc.id, " => ", doc.data());
+        inspectors.push(doc.data());
+        console.log(inspectors);
     });
 });
