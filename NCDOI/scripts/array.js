@@ -13,14 +13,19 @@ var firebaseConfig = {
     };
 
     // Initialize Firebase
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firebase = firebase.initializeApp(firebaseConfig);
 
     // Initialize variables
 const auth = firebase.auth()
 const db = firebase.database();
 
-const inspectorCollection = db.collection("inspectors");
+// once() method
+firebase.database().ref('inspectors').on('value',(snap)=>{
+    console.log(snap.val());
+  });
 
+//const inspectorCollection = db.collection("inspectors");
+/*
 inspectorCollection.get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
@@ -32,3 +37,4 @@ inspectorCollection.get().then((querySnapshot) => {
         console.log(inspectors);
     });
 });
+*/
