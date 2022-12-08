@@ -141,6 +141,7 @@ let submitForm = function () {
 }
 
 window.$("#contactButton").click(function () {
+    console.log("This works!");
 	"use strict";
 	window.$("#overlay").fadeIn();
 	window.$("#submitButtonPressed").show();
