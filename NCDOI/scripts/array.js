@@ -22,10 +22,13 @@ const db = firebaseApp.firestore();
 const inspectorCollection = db.collection("inspectors");
 
 inspectorCollection.get().then((querySnapshot) => {
-    querySnapshot.once((doc) => {
+    querySnapshot.forEach((doc) => {
         // doc.data() is never undefined for query doc snapshots
         //console.log(doc.id, " => ", doc.data());
-        inspectors.push(doc.id.data());
+        var obj = {}
+      obj['CEO ID'] = doc.data()["CEO ID"]
+      obj['Trade'] = doc.data().Trade
+        inspectors.push(obj);
         console.log(inspectors);
     });
 });
