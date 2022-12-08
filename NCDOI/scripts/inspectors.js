@@ -142,24 +142,25 @@ let submitForm = function () {
 
 window.$("#contactButton").click(function () {
 	"use strict";
-	window.$("#ovrly").fadeIn();
-	window.$("#login").show();
-	window.$("#login").animate({top: "100"});
+	window.$("#overlay").fadeIn();
+	window.$("#submitButtonPressed").show();
+	window.$("#submitButtonPressed").animate({top: "100"});
 });
-window.$("#ovrly").click(function () {
+
+window.$("#overlay").click(function () {
 	"use strict";
-	window.$("#ovrly").hide();
-	window.$("#login").hide();
-	window.$("#login").css("top", "-310px");
+	window.$("#overlay").hide();
+	window.$("#submitButtonPressed").hide();
+	window.$("#submitButtonPressed").css("top", "-310px");
 });
+
 window.$("#cross").click(function () {
 	"use strict";
-	window.$("#ovrly").hide();
-	window.$("#login").hide();
-	window.$("#login").css("top", "-310px");
+	window.$("#overlay").hide();
+	window.$("#submitButtonPressed").hide();
+	window.$("#submitButtonPressed").css("top", "-310px");
 });
 
 function showDiv() {
     document.getElementById('availableInspectors').style.display = "inline-block";
-    document.getElementById('submitButtonPressed').style.display = "block";
  }

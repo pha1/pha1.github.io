@@ -210,7 +210,7 @@ footer{
   left: 50%;
   margin-top:100%;
 }
-#overly{
+#overlay{
 	background-color: #000;
 	height: 100%;
 	width: 100%;
@@ -229,7 +229,7 @@ footer{
 	position: relative;
 	top: -310px;
 }
-#overly,#submitButtonPressed{
+#overlay,#submitButtonPressed{
   display: none;
 }
 #cross{
