@@ -1,4 +1,6 @@
 // Your web app's Firebase configuration
+
+
 var firebaseConfig = {
     apiKey: "AIzaSyA4UoQh1ErFeB23aUlww4pYCvliXIS6I60",
     authDomain: "inspector-locator-ef89c.firebaseapp.com",
@@ -10,17 +12,17 @@ var firebaseConfig = {
     };
 
     // Initialize Firebase
-    const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
     // Initialize variables
-    const auth = firebase.auth()
-    const database = firebaseApp.firestore();
+const auth = firebase.auth()
+const db = firebaseApp.firestore();
 
-    const inspectorCollection = db.collection("inspectors");
+const inspectorCollection = db.collection("inspectors");
 
-    inspectorCollection.get().then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-            // doc.data() is never undefined for query doc snapshots
-            console.log(doc.id, " => ", doc.data());
-        });
+inspectorCollection.get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        // doc.data() is never undefined for query doc snapshots
+        console.log(doc.id, " => ", doc.data());
     });
+});
