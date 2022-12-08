@@ -27,7 +27,9 @@ $(document).ready(function() {
     });
 });
 */
-parsedJSON = inspectors;
+for(var i = 0; i < parsedJSON.length; i++) {
+    parsedJSON[i].push(inspectors[i]);
+}
 /**
  * Submit the requirements to display a list of Inspectors
  */
