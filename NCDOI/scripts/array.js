@@ -22,7 +22,7 @@ const db = firebaseApp.firestore();
 const inspectorCollection = db.collection("inspectors");
 
 inspectorCollection.get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
+    querySnapshot.once((doc) => {
         // doc.data() is never undefined for query doc snapshots
         //console.log(doc.id, " => ", doc.data());
         inspectors.push(doc.id.data());
