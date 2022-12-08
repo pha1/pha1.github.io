@@ -14,6 +14,7 @@ var firebaseConfig = {
     measurementId: "G-16PTXW98PR"
     };
 
+    $(document).ready(function() {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
@@ -29,3 +30,5 @@ var firebaseConfig = {
             console.log(doc.id, " => ", doc.data());
         });
     });
+
+});
