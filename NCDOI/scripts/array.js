@@ -1,8 +1,3 @@
-
-src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"
-src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"
-src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"
-
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyA4UoQh1ErFeB23aUlww4pYCvliXIS6I60",
