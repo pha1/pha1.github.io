@@ -1,4 +1,4 @@
-function updateJSON(){
+function deleteJSON(){
 
 }
 function addJSON(){
