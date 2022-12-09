@@ -8,6 +8,7 @@ var phoneNumber = '';
 var userEmail = '';
 var date = '';
 var comments = 'ps. ';
+var subject = '';
 
 function emailList() {
   console.log("kek");
@@ -48,5 +49,25 @@ function sendEmail() {
       "\n Contact information: \n Email: " + userEmail + "\n Phone Number: " + phoneNumber + " \n Permit Number: " + permitNumber + " \n Thank you. \n" + comments 
   }).then(
     message => alert('The inspectors that you have selected have been emailed your information')
-);
-  }
+  );
+}
+
+function sendHelpEmail() {
+
+  userName = document.getElementById('name').value.toString();
+  userEmail = document.getElementById('email').value.toString();
+  subject = document.getElementById('subject').value.toString();
+  comments = document.getElementById('comments').value.toString();
+
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "inspectorlocator.noreply@gmail.com",
+    Password : "0B48AF72794423808FC6B34FE7EFB909FA3A",
+    To : "inspectorlocator.noreply@gmail.com",
+    From : "inspectorlocator.noreply@gmail.com",
+    Subject : subject,
+    Body : "Hello this is " + userName + ", I am sending this email through the Help Page. My email is " + userEmail + ". And these are my concerns/comments: " + comments 
+    }).then(
+    message => alert('Your message has been sent! Thank you!')
+  );
+}
