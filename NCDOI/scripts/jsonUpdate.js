@@ -38,7 +38,7 @@ var firebaseConfig = {
  */
 function deleteJSON(){
     var userId = 0;
-    ceoId = parseInt(document.getElementById("CEO ID").value);
+    ceoId = parseInt(document.getElementById("CEO ID DELETE").value);
     for(var i = 0; i < inspectors.length; i++) {
         if(ceoId === parseInt(inspectors[i]["CEO ID"])){
             userId = i;
