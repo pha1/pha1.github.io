@@ -38,15 +38,22 @@ var firebaseConfig = {
  */
 function deleteJSON(){
     var userId = 0;
-    ceoId = document.getElementById("CEO ID").value;
+    ceoId = parseInt(document.getElementById("CEO ID").value);
     for(var i = 0; i < inspectors.length; i++) {
         if(ceoId === parseInt(inspectors[i]["CEO ID"])){
             userId = i;
             console.log(userId);
+            let userRef = firebase.database().ref('inspectors/' + userId);
+            console.log("that shit gone");
+            //alert guy deleted
+        }
+        else{
+            console.log("could not find user");
+            //alert could not find guy
         }
     } 
-    let userRef = firebase.database().ref('inspectors/' + userId);
-    console.log("that shit gone");
+    
+    
     //userRef.remove()
 }
 
