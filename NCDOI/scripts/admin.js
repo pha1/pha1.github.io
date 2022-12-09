@@ -71,7 +71,7 @@ var firebaseConfig = {
   
     // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-      alert('Email or Password does not meet requirments')
+      messageBox.innerHTML = 'Email or Password does not meet requirments';
       return
       // Don't continue running the code
     }
