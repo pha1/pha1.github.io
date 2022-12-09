@@ -243,6 +243,16 @@ footer{
 	top: 0px;
 	opacity: 0.7;
 }
+#contactMessage{
+	background-color: #fff;
+	width: 60%;
+	border: 3px solid rgb(128, 128, 128);
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	position: absolute;
+	top: -310px;
+}
 #submitButtonPressed{
 	background-color: #fff;
 	width: 60%;
