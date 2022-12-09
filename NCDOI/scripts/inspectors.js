@@ -155,7 +155,7 @@ function showForm() {
       });
 
     emails = selectedValues.join();
-    console.log(emails);
+    console.log("emails: " + emails);
 
 	"use strict";
 	window.$("#overlay").fadeIn();
