@@ -17,7 +17,7 @@ var state;
 var zipCode;
 var email;
 
-// Firebase Config Information
+ // Firebase Config Information
 var firebaseConfig = {
     apiKey: "AIzaSyA4UoQh1ErFeB23aUlww4pYCvliXIS6I60",
     authDomain: "inspector-locator-ef89c.firebaseapp.com",
@@ -29,7 +29,7 @@ var firebaseConfig = {
     };
 
 // Initialize the Firebase
-firebase.initializeApp(firebaseConfig);
+//firebase.initializeApp(firebaseConfig);
 
 /**
  * This function accesses the database and searches for the CEO ID
@@ -75,7 +75,7 @@ function addJSON(){
     email = document.getElementById("Primary contact email").value;
 
     // Method to add the inspector information
-    firebase.database().ref('inspectors/' + (inspector.length+1)).set({
+    firebase.database().ref('inspectors/' + ceoId).set({
         ["CEO ID"]: ceoId,
         ["First Name"]: firstName,
         ["Last Name"]: lastName,
