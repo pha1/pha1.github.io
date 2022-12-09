@@ -1,3 +1,4 @@
+// Global Variables
 var ceoId;
 var firstName;
 var lastName;
@@ -15,6 +16,7 @@ var state;
 var zipCode;
 var email;
 
+// Firebase Config Information
 var firebaseConfig = {
     apiKey: "AIzaSyA4UoQh1ErFeB23aUlww4pYCvliXIS6I60",
     authDomain: "inspector-locator-ef89c.firebaseapp.com",
@@ -25,13 +27,25 @@ var firebaseConfig = {
     measurementId: "G-16PTXW98PR"
     };
 
+// Initialize the Firebase
 firebase.initializeApp(firebaseConfig);
 
+/**
+ * This function accesses the database and searches for the CEO ID
+ * of an inspector, retrieves the id of the data to remove it from the 
+ * database
+ */
 function deleteJSON(){
 
 }
+
+/**
+ * This function accesses the Firebase Real-Time Database and 
+ * adds a new inspector to the database
+ */
 function addJSON(){
 
+    // Get the form data
     ceoId = document.getElementById("CEO ID").value;
     firstName = document.getElementById("First Name").value;
     lastName = document.getElementById("Last Name").value;
@@ -49,6 +63,7 @@ function addJSON(){
     zipCode = document.getElementById("Zip Code").value;
     email = document.getElementById("Primary contact email").value;
 
+    // Method to add the inspector information
     firebase.database().ref('inspectors/' + ceoId).set({
         ["CEO ID"]: ceoId,
         ["First Name"]: firstName,
@@ -69,10 +84,12 @@ function addJSON(){
     });
 }
 
+// Show the Add Form
 function showDiv1() {
     document.getElementById('add').style.display = "block";
 }
 
+// Show the Delete Form
  function showDiv2() {
     document.getElementById('edit').style.display = "block";
 }
