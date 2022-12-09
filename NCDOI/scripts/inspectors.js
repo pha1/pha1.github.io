@@ -149,6 +149,14 @@ let submitForm = function () {
 }
 
 function showForm() {
+
+    var selectedValues = $('input.chk:checked').toArray().map(function(chk) {
+        return $(chk).val();
+      });
+
+    emails = selectedValues.join();
+    console.log(emails);
+
 	"use strict";
 	window.$("#overlay").fadeIn();
 	window.$("#submitButtonPressed").show();
