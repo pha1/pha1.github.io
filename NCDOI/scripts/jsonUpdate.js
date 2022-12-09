@@ -1,4 +1,3 @@
-
 var ceoId;
 var firstName;
 var lastName;
@@ -27,9 +26,6 @@ var firebaseConfig = {
     };
 
 firebase.initializeApp(firebaseConfig);
-
-    // Initialize variables
-const db = firebase.database();
 
 function deleteJSON(){
 
