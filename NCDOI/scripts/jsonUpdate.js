@@ -45,7 +45,7 @@ function deleteJSON(){
             console.log(userId);
         }
     } 
-    let userRef = this.database().ref('inspectors/' + userId);
+    let userRef = firebase.database().ref('inspectors/' + userId);
     console.log("that shit gone");
     //userRef.remove()
 }
