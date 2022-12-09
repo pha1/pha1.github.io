@@ -266,7 +266,7 @@ footer{
 #overlay,#submitButtonPressed{
   display: none;
 }
-#cross{
+#cross, #cross2{
 	position: absolute;
     left: 94%;
     top: 0px;
