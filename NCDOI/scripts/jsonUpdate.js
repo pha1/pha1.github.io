@@ -51,7 +51,7 @@ function deleteJSON(){
         console.log("could not find user");
         //alert could not find guy
     }
-    //userRef.remove()
+    userRef.remove()
 }
 
 /**
