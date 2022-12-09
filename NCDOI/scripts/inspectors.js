@@ -160,30 +160,36 @@ function showForm() {
 
     if (emails === "") {
         console.log("Empty");
-    } else if(emails === null) {
-        console.log("null");
+        "use strict";
+        window.$(".overlay").fadeIn();
+        window.$("#contactMessage").show();
+        window.$("#contactMessage").animate({top: document.documentElement.scrollTop});
     } else {
         "use strict";
-	window.$("#overlay").fadeIn();
-	window.$("#submitButtonPressed").show();
-	//window.$("#submitButtonPressed").animate({top: .5*outerHeight});
-    window.$("#submitButtonPressed").animate({top: document.documentElement.scrollTop});
-    //window.$("#submitButtonPressed").animate({top: window.pageYOffset});
+        window.$(".overlay").fadeIn();
+        window.$("#submitButtonPressed").show();
+        window.$("#submitButtonPressed").animate({top: document.documentElement.scrollTop});
     }
 }
 
 window.$("#overlay").click(function () {
 	"use strict";
-	window.$("#overlay").hide();
+	window.$(".overlay").hide();
 	window.$("#submitButtonPressed").hide();
 	window.$("#submitButtonPressed").css("top", "-310px");
 });
 
 function closeForm() {
 	"use strict";
-	window.$("#overlay").hide();
+	window.$(".overlay").hide();
 	window.$("#submitButtonPressed").hide();
 	window.$("#submitButtonPressed").css("top", "-310px");
+}
+
+function closeMessage() {
+    window.$(".Overlay").hide();
+	window.$("#contactMessage").hide();
+	window.$("#contactMessage").css("top", "-310px");
 }
 
 function showDiv() {
