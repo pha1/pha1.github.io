@@ -15,8 +15,10 @@ function initMap() {
             }
         }
     });
+    // Load the county overlay
     map.data.loadGeoJson('files/NC_Counties.geojson');
 
+    // Search Bar
     const input = document.getElementById("searchLocation");
     const options = {
         fields: ["formatted_address", "geometry", "name"],
@@ -24,6 +26,7 @@ function initMap() {
         types: ["address"],
       };
 
+    // Create AutoComplete
     const autocomplete = new google.maps.places.Autocomplete(input, options);
     
     autocomplete.bindTo("bounds", map);
@@ -33,6 +36,7 @@ function initMap() {
         anchorPoint: new google.maps.Point(0, -29),
     });
 
+    // When a location is selected or "enter" is pressed
     autocomplete.addListener("place_changed", () => {
         marker.setVisible(false);
     
@@ -72,6 +76,7 @@ function initMap() {
                 address: userAddress,
                 sensor: "false"
               })
+              // Get the County from json response
             .done(function( data )
                 { console.log(data.results[0].address_components[3].short_name);
                     

@@ -28,9 +28,6 @@ var firebaseConfig = {
     measurementId: "G-16PTXW98PR"
     };
 
-// Initialize the Firebase
-//firebase.initializeApp(firebaseConfig);
-
 /**
  * This function accesses the database and searches for the CEO ID
  * of an inspector, retrieves the id of the data to remove it from the 

@@ -19,6 +19,10 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth()
 const db = firebase.database();
 
+/**
+ * Get inspector list from Firebase
+ * Set to array
+ */
 firebase.database().ref('inspectors').once('value',   function(snapshot) {
     snapshot.forEach(function(childSnapshot) {
       var childData = childSnapshot.val();

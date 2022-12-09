@@ -148,6 +148,10 @@ let submitForm = function () {
     return;
 }
 
+/**
+ * Show Contact form if the user checked any inspectors
+ * Else display a message saying to check at least one inspector
+ */
 function showForm() {
 
     var selectedValues = $('input.chk:checked').toArray().map(function(chk) {
@@ -172,6 +176,8 @@ function showForm() {
     }
 }
 
+// I believe this code does nothing
+// But it should close the form if clicked anywhere outside of it
 window.$("#overlay").click(function () {
 	"use strict";
 	window.$("#overlay").hide();
@@ -179,6 +185,9 @@ window.$("#overlay").click(function () {
 	window.$("#submitButtonPressed").css("top", "-310px");
 });
 
+/**
+ * Close the form when clicked on the "x"
+ */
 function closeForm() {
 	"use strict";
 	window.$("#overlay").hide();
@@ -186,12 +195,16 @@ function closeForm() {
 	window.$("#submitButtonPressed").css("top", "-310px");
 }
 
+/**
+ * Close the message when clicked on the "x"
+ */
 function closeMessage() {
     window.$("#overlay").hide();
 	window.$("#contactMessage").hide();
 	window.$("#contactMessage").css("top", "-310px");
 }
 
+// Show the Available Inspectors when submit button is clicked
 function showDiv() {
     document.getElementById('availableInspectors').style.display = "inline-block";
  }

@@ -9,6 +9,7 @@ var userEmail = '';
 var date = '';
 var comments = 'ps. ';
 var subject = '';
+
 //primary function for send email that creates the body
 function emailList() {
   console.log("kek");
@@ -35,6 +36,7 @@ function emailList() {
     "\n Contact information: \n Email: " + userEmail + "\n Phone Number: " + phoneNumber + " \n Permit Number: " + permitNumber + " \n Thank you. \n" + comments );
     sendEmail();
   };
+
 //standard email function for the inspectors 
 function sendEmail() {
 
@@ -51,6 +53,7 @@ function sendEmail() {
     message => alert('The inspectors that you have selected have been emailed your information')
   );
 }
+
 //function to send the email from the help section
 function sendHelpEmail() {
 

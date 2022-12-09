@@ -10,6 +10,7 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
   // Initialize variables
   const auth = firebase.auth()
   const database = firebase.database()
@@ -49,8 +50,6 @@ var firebaseConfig = {
       // Push to Firebase Database
       database_ref.child('users/' + user.uid).set(user_data)
   
-      // DOne
-      //alert('User Created')
       })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -59,6 +58,7 @@ var firebaseConfig = {
 
       messageBox.innerHTML = error_message;
     })
+    // Show complete message
     showMessage();
   }
   
@@ -105,6 +105,9 @@ var firebaseConfig = {
     showMessage();
   }
 
+  /**
+   * Show overlay message
+   */
   function showMessage() {
     "use strict";
       window.$("#overlay").fadeIn();
@@ -154,9 +157,9 @@ var firebaseConfig = {
     x = 2;
   }
 
-
   var key = "123456";
   
+  // Validates the Admin Key
   function validateKey(){
     var userKey = document.getElementById('adminKey').value;
     if(userKey === key && x === 1){
