@@ -234,7 +234,7 @@ footer{
   left: 50%;
   margin-top:100%;
 }
-.overlay{
+#overlay{
 	background-color: #000;
   left: 0;
   right: 0;
@@ -253,7 +253,7 @@ footer{
 	position: absolute;
 	top: -310px;
 }
-.overlay,#submitButtonPressed{
+#overlay,#submitButtonPressed{
   display: none;
 }
 #cross{
