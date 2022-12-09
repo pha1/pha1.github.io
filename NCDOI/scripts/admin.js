@@ -179,7 +179,8 @@ var firebaseConfig = {
    * This function redirects to the Admin Page
    */
   function redirectAdmin() {
-    window.location.href = "https://pha1.github.io/NCDOI/admin.html";
+    //window.location.href = "https://pha1.github.io/NCDOI/admin.html";
+    window.location.href = "/admin.html";
   }
 
   /**
