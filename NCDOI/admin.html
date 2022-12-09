@@ -55,7 +55,7 @@
 <body>
   <div id="margin_div">
       <button onclick="showDiv1()">Add</button>
-      <div id="add">
+      <div id="add" style="display:none">
         <form>
           <p class="textColor optionBox"><label for="CEO ID">CEO ID:</label></p>
           <input class="barDesign2" type="text" placeholder="CEO ID" id="CEO ID" required>
@@ -122,13 +122,15 @@
           <input class="barDesign2" type="text" id="Zip Code" name="Zip Code"><br>
           <input class="barDesign2" type="text" id="Primary contact email" name="Email"><br>
           -->
+          <br>
           <button type="button" onclick="addJSON()">Submit New</button>
         </form>
       </div>
       
       <button onclick="showDiv2()">Delete</button>
-      <div id="edit">
+      <div id="edit" style="display:none">
         <input class="barDesign2" type="text" id="CEO ID" name="CEO ID">
+        <br>
         <button type="button" onclick="deleteJSON()">Remove Inspector</button>
       </div>
   </div>
