@@ -50,10 +50,12 @@ var firebaseConfig = {
       database_ref.child('users/' + user.uid).set(user_data)
   
       // DOne
-      alert('User Created')
-      /////////////////////////////////////////////////////////////////////redirect to login page
-      window.location.href = "https://pha1.github.io/NCDOI/login.html";
-    })
+      //alert('User Created')
+      "use strict";
+      window.$("#overlay").fadeIn();
+      window.$("#contactMessage").show();
+      window.$("#contactMessage").animate({top: document.documentElement.scrollTop});
+      })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
       var error_code = error.code
@@ -92,11 +94,12 @@ var firebaseConfig = {
       // Push to Firebase Database
       database_ref.child('users/' + user.uid).update(user_data)
   
-      // DOne
-      alert('User Logged In')
-      //////////////////////////////////////////////////////////////////////redirect to admin.html
-      window.location.href = "https://pha1.github.io/NCDOI/admin.html";
-  
+      // Done
+      //alert('User Logged In')
+      "use strict";
+      window.$("#overlay").fadeIn();
+      window.$("#contactMessage").show();
+      window.$("#contactMessage").animate({top: document.documentElement.scrollTop});
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -168,4 +171,18 @@ var firebaseConfig = {
     else{
       messageBox.innerHTML = 'User was not authenticated. Please enter valid Admin Key.';
     }
+  }
+
+  /**
+   * This function redirects to the Admin Page
+   */
+  function redirectAdmin() {
+    window.location.href = "https://pha1.github.io/NCDOI/admin.html";
+  }
+
+  /**
+   * This function redirects to Login Page
+   */
+  function redirectLogin() {
+    window.location.href="https://pha1.github.io/NCDOI/login.html";
   }
