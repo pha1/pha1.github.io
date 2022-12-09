@@ -4,6 +4,10 @@ src = "array.js";
 var location;
 var parsedJSON = [];
 var resultJSON = [];
+
+// THIS CODE WAS FROM PRIOR VERSION
+// Before moving to Firebase Database, we were using the JSON file as a database
+
 /**
  * Parse the JSON data into an array
  */
@@ -27,7 +31,6 @@ $(document).ready(function() {
     });
 });
 */
-
 
 /**
  * Submit the requirements to display a list of Inspectors

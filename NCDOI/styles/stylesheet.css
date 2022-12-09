@@ -234,6 +234,13 @@ footer{
   left: 50%;
   margin-top:100%;
 }
+
+/*
+  This is for any animated overlay messages
+  The overlay is the faded background
+  Javascript controls how the message box or form slides into view
+*/
+
 #overlay{
 	background-color: #000;
   left: 0;
@@ -287,6 +294,11 @@ footer{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/*
+  This is for the side resources on About Page
+*/
+
 .sidebar{
   height: 100%;
   width: 200px;
@@ -301,6 +313,9 @@ footer{
   font-size: 12px;
   display: block;
 }
+/*
+  Center contact button
+*/
 .vertical-center {
   margin: 100 0 0 0;
   position:absolute;
@@ -308,6 +323,9 @@ footer{
   -ms-transform: translate(0, -50%);
   transform: translate(0%, -50%);
 }
+/*
+  Login/Sign Up Button on Home Page
+*/
 #adminButton {
   position: absolute;
   right: 10px;

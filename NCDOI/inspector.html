@@ -115,24 +115,7 @@
       <br>
       <h5 class="textColor formBox" id="availableInspectors" style="text-align:center;display:none">Available inspectors</h5>
       <br>
-
-      <!-- TABLE CONSTRUCTION
-      <table id="inspector_table">
-        <thead>
-          <th></th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Employer</th>
-          <th>Emp Phone</th>
-          <th>County</th>
-          <th>Address</th>
-          <th>City</th>
-          <th>State</th>
-          <th>Zip Code</th>
-          <th>Primary contact email</th>
-        </thead>
-        <tbody id="inspector_table_body">
-        -->
+      <!-- This overlay is to make the background darker when the form comes into screen -->
         <div id="overlay"></div>
         <section>
           <div id="submitButtonPressed" style="display:none">
@@ -174,7 +157,7 @@
             </form>
           </div>
         </section>
-
+        <!-- This form is not visible until submitting all information. Then it will only show if at least one inspector is selected. -->
         <section>
           <div id="contactMessage" style="display:none">
             <button id="cross2" onclick="closeMessage()">&cross;</button>
