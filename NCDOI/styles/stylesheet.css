@@ -265,9 +265,6 @@ footer{
 }
 #submitButtonPressed2{
 	background-color: #fff;
-	width: 60%;
-	border: 3px solid rgb(128, 128, 128);
-	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
 	position: absolute;
