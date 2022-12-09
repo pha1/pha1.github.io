@@ -43,7 +43,7 @@ function sendEmail() {
   Email.send({
     Host : "smtp.elasticemail.com",
     Username : "inspectorlocator.noreply@gmail.com",
-    Password : "2B9FDD9DCAD6312B51B4EA5C2BA0A46B358A",
+    Password : "B5285A311105728215E18CF5F7656E4EB4BF",
     To : emails,
     From : "inspectorlocator.noreply@gmail.com",
     Subject : "TEST",
@@ -65,7 +65,7 @@ function sendHelpEmail() {
   Email.send({
     Host : "smtp.elasticemail.com",
     Username : "inspectorlocator.noreply@gmail.com",
-    Password : "2B9FDD9DCAD6312B51B4EA5C2BA0A46B358A",
+    Password : "B5285A311105728215E18CF5F7656E4EB4BF",
     To : "inspectorlocator.noreply@gmail.com",
     From : "inspectorlocator.noreply@gmail.com",
     Subject : subject,
