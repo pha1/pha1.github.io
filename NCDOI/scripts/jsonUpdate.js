@@ -1,4 +1,3 @@
-src = "array.js";
 
 var ceoId;
 var firstName;
@@ -37,22 +36,22 @@ function deleteJSON(){
 }
 function addJSON(){
 
-    ceoId = document.getElementById("CEO ID");
-    firstName = document.getElementById("First Name");
-    lastName = document.getElementById("Last Name");
-    certNo = document.getElementById("Cert No");
-    type = document.getElementById("Type");
-    trade = document.getElementById("Trade");
-    level = document.getElementById("Level");
-    expDate = document.getElementById("Exp Date");
-    employer = document.getElementById("Employer");
-    empPhone = document.getElementById("Emp Phone");
-    county = document.getElementById("County");
-    address = document.getElementById("Address");
-    city = document.getElementById("City");
-    state = document.getElementById("State");
-    zipCode = document.getElementById("Zip Code");
-    email = document.getElementById("Primary contact email");
+    ceoId = document.getElementById("CEO ID").value;
+    firstName = document.getElementById("First Name").value;
+    lastName = document.getElementById("Last Name").value;
+    certNo = document.getElementById("Cert No").value;
+    type = document.getElementById("Type").value;
+    trade = document.getElementById("Trade").value;
+    level = document.getElementById("Level").value;
+    expDate = document.getElementById("Exp Date").value;
+    employer = document.getElementById("Employer").value;
+    empPhone = document.getElementById("Emp Phone").value;
+    county = document.getElementById("County").value;
+    address = document.getElementById("Address").value;
+    city = document.getElementById("City").value;
+    state = document.getElementById("State").value;
+    zipCode = document.getElementById("Zip Code").value;
+    email = document.getElementById("Primary contact email").value;
 
     firebase.database().ref('inspectors/' + ceoId).set({
         ["CEO ID"]: ceoId,
