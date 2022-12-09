@@ -285,7 +285,7 @@ footer{
   display: block;
 }
 .vertical-center {
-  margin-top: 10px;
+  margin: 100 0 0 0;
   position:absolute;
   left: 50%;
   -ms-transform: translate(0, -50%);
