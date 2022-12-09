@@ -51,10 +51,6 @@ var firebaseConfig = {
   
       // DOne
       //alert('User Created')
-      "use strict";
-      window.$("#overlay").fadeIn();
-      window.$("#contactMessage").show();
-      window.$("#contactMessage").animate({top: document.documentElement.scrollTop});
       })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -63,6 +59,7 @@ var firebaseConfig = {
 
       messageBox.innerHTML = error_message;
     })
+    showMessage();
   }
   
   // Set up our login function
@@ -96,7 +93,6 @@ var firebaseConfig = {
   
       // Done
       //alert('User Logged In')
-      showMessage();
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -104,7 +100,9 @@ var firebaseConfig = {
       var error_message = error.message
   
       messageBox.innerHTML = error_message;
-    })
+    });
+
+    showMessage();
   }
 
   function showMessage() {
