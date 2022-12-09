@@ -54,7 +54,7 @@ function addJSON(){
     zipCode = document.getElementById("Zip Code");
     email = document.getElementById("Primary contact email");
 
-    firebase.database().ref('inspectors/' + (inspectors.length+1)).set({
+    firebase.database().ref('inspectors/' + ceoId).set({
         ["CEO ID"]: ceoId,
         ["First Name"]: firstName,
         ["Last Name"]: lastName,
