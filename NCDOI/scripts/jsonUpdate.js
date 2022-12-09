@@ -30,7 +30,6 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
     // Initialize variables
-const auth = firebase.auth()
 const db = firebase.database();
 
 function deleteJSON(){
