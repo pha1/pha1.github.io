@@ -1,3 +1,5 @@
+src = "array.js";
+
 var ceoId;
 var firstName;
 var lastName;
@@ -14,6 +16,12 @@ var city;
 var state;
 var zipCode;
 var email;
+
+firebase.initializeApp(firebaseConfig);
+
+    // Initialize variables
+const auth = firebase.auth()
+const db = firebase.database();
 
 function deleteJSON(){
 
@@ -37,7 +45,7 @@ function addJSON(){
     zipCode = document.getElementById("Zip Code");
     email = document.getElementById("Primary contact email");
 
-    firebase.database().ref('users/' + userId).set({
+    firebase.database().ref('inspectors/' + (inspectors.length+1)).set({
         ["CEO ID"]: ceoId,
         ["First Name"]: firstName,
         ["Last Name"]: lastName,
