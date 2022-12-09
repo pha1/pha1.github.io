@@ -1,5 +1,5 @@
 //AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE
-
+//code from google to have a map within the web page
 let map;
 var county = '';
 function initMap() {
@@ -64,7 +64,7 @@ function initMap() {
         // Update the County
 
         let geocoder;
-
+        //reverse geocoding allowing us to hash through the layered arrays saved in googles json files
         geocoder = new google.maps.Geocoder();
         var googleAPI = "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA1-_yQ50-uJIIrykNyDlcktIH8wNhxkbE&libraries=places&v=weekly";
         var userAddress = document.getElementById('searchLocation').value;
