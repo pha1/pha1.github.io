@@ -165,12 +165,12 @@ var firebaseConfig = {
     if(userKey === key && x === 1){
       //redirect to login page
       //window.location.href="https://pha1.github.io/NCDOI/login.html";
-      window.location.href = "/login.html";
+      window.location.href = "/NCDOI/login.html";
     }
     else if(userKey === key && x === 2){
       //redirect to register page
       //window.location.href="https://pha1.github.io/NCDOI/register.html";
-      window.location.href = "/register.html";
+      window.location.href = "/NCDOI/register.html";
     }
     else{
       messageBox.innerHTML = 'User was not authenticated. Please enter valid Admin Key.';
@@ -182,7 +182,7 @@ var firebaseConfig = {
    */
   function redirectAdmin() {
     //window.location.href = "https://pha1.github.io/NCDOI/admin.html";
-    window.location.href = "/admin.html";
+    window.location.href = "/NCDOI/admin.html";
   }
 
   /**
@@ -190,5 +190,5 @@ var firebaseConfig = {
    */
   function redirectLogin() {
     //window.location.href="https://pha1.github.io/NCDOI/login.html";
-    window.location.href = "/login.html";
+    window.location.href = "/NCDOI/login.html";
   }
