@@ -86,10 +86,20 @@ function addJSON(){
 
 // Show the Add Form
 function showDiv1() {
-    document.getElementById('add').style.display = "block";
+    var x = document.getElementById("add");
+    if (window.getComputedStyle(x).display === "none") {
+        document.getElementById('add').style.display = "block";
+    } else {
+        document.getElementById('add').style.display = "none";
+    }
 }
 
 // Show the Delete Form
  function showDiv2() {
-    document.getElementById('edit').style.display = "block";
+    var x = document.getElementById("delete");
+    if (window.getComputedStyle(x).display === "none") {
+        document.getElementById('delete').style.display = "block";
+    } else {
+        document.getElementById('delete').style.display = "none";
+    }
 }
