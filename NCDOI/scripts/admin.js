@@ -13,6 +13,8 @@ var firebaseConfig = {
   // Initialize variables
   const auth = firebase.auth()
   const database = firebase.database()
+
+  var messageBox = document.getElementById('errorMessage');
   
   // Set up our register function
   function register () {
@@ -56,8 +58,8 @@ var firebaseConfig = {
       // Firebase will use this to alert of its errors
       var error_code = error.code
       var error_message = error.message
-  
-      alert(error_message)
+
+      messageBox.innerHTML = error_message;
     })
   }
   
@@ -101,7 +103,7 @@ var firebaseConfig = {
       var error_code = error.code
       var error_message = error.message
   
-      alert(error_message)
+      messageBox.innerHTML = error_message;
     })
   }
   
@@ -164,6 +166,6 @@ var firebaseConfig = {
       window.location.href="https://pha1.github.io/NCDOI/register.html";
     }
     else{
-      alert('User was not authenticated');
+      messageBox.innerHTML = 'User was not authenticated. Please enter valid Admin Key.';
     }
   }
