@@ -56,7 +56,7 @@
   <div id="margin_div" style="margin-top: 10%">
       <button onclick="showDiv1()">Add</button>
       <div id="add" style="display:none">
-        <form>
+        <form onsubmit="addJSON(); return false">
           <p class="textColor optionBox2"><label for="CEO ID">CEO ID:</label>
           <input class="barDesign3" type="text" id="CEO ID" required></p>
 
@@ -123,7 +123,7 @@
           <input class="barDesign2" type="text" id="Primary contact email" name="Email"><br>
           -->
           <br>
-          <button type="button" onclick="addJSON()">Submit New</button>
+          <button type="submit">Submit New</button>
         </form>
         <br>
       </div>
