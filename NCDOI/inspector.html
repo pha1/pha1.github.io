@@ -70,11 +70,11 @@
   <! Image from: https://wallpaperaccess.com/charlotte-city -->
 
     <div id="margin_div">
-      <h1 class="textColor title centerText">NC DOI Inspector Locator</h1>
+      <h1 class="textColor title centerText container">NC DOI Inspector Locator</h1>
 
-      <h5 class="textColor formBox">To Start, please enter a location</h5>
+      <h5  class="textColor formBox container">To Start, please enter a location</h5>
       <br>
-      <input class="barDesign" type="search" placeholder="Search..." id="searchLocation" required>
+      <input  class="form-control" type="search" placeholder="Search..." id="searchLocation" required>
       <form method="get" onsubmit="return false">
         <br>
         <hr class="hr">
@@ -108,7 +108,7 @@
           <option value="2.0">&#x2265;7,500 & &#x2264;20,000sqft</option>
           <option value="3.0">&#x2265;20,000sqft</option>
         </select>
-        <button onclick="submitForm();showDiv()" class="submitInspectors" type="submit">Submit</button>
+        <button onclick="submitForm();showDiv()" class="submitInspectors" type="submit" >Submit</button>
       </form>
 
 
@@ -153,7 +153,7 @@
               <textarea placeholder="Any additional comments you would like to send?" id="comments" rows="4"
                 cols="50"></textarea>
 
-              <input type="submit" value="Send Email" id="btn"/>
+              <input  type="submit" value="Send Email" id="btn"/>
             </form>
           </div>
         </section>
@@ -164,7 +164,7 @@
             <br>
             <p>Please select at least one inspector to contact!</p>
             <br>
-            <input type="button" id="msgButton" value="Ok" onclick="closeMessage()"/>
+            <input class="btn-secondary" type="button" id="msgButton" value="Ok" onclick="closeMessage()"/>
           </div>
         </section>
 

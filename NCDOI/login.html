@@ -63,17 +63,18 @@
                   <h2 class="textColor formBox" id="form_header"> Admin Login </h2>
               </div>
 
-              <div id="form_content_container">
-                  <div id="form_content_inner_container">
+              <div class="container" id="form_content_container">
+                  <div class="form-group" id="form_content_inner_container">
                     <p class="textColor optionBox"><label for="email">Email:</label></p>
-                    <input class="barDesign2" type="email" id="email" placeholder="Email">
+                    <input class="form-control" type="email" id="email" placeholder="Email">
+
                     <p class="textColor optionBox"><label for="password">Password:</label></p>
-                    <input class="barDesign2" type="password" id="password" placeholder="Password">
+                    <input class="form-control" type="password" id="password" placeholder="Password">
                     <br>
                     <br>
                     <p id="errorMessage" style="color: red;"></p>
                     <div id="button_container">
-                      <button onclick="login()">Login</button>
+                      <button onclick="login()" class="btn-secondary">Login</button>
                     </div>
 
                     </div>
@@ -85,7 +86,7 @@
             <br>
             <p>Successfully logged in.</p>
             <br>
-            <input type="button" id="msgButton" value="Ok" onclick="redirectAdmin()"/>
+            <input class="btn-secondary" type="button" id="msgButton" value="Ok" onclick="redirectAdmin()"/>
           </div>
         </section>
       </div>

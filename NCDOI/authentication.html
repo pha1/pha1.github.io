@@ -55,46 +55,47 @@
       </div>
     </nav>
   </header>
-</head>  
+</head>
+
 <body>
-  
+
   <div id="margin_div" style="margin-top: 10%">
     <br>
     <h5 class="textColor formBox">Please Enter Admin Key and Choose Your Option:</h5>
     <br>
+    <div class="container">
+      <form>
+        <label class="textColor optionBox" for="adminKey">Admin Key:</label>
+        <input class="form-control" type="text" id="adminKey" name="adminKey">
+        <br>
+        <br>
+        <p id="errorMessage" style="color: red;"></p>
 
-    <form>
-      <label class="textColor optionBox" for="adminKey">Admin Key:</label>
-      <input class="barDesign2" type="text" id="adminKey" name="adminKey">
-      <br>
-      <br>
-      <p id="errorMessage" style="color: red;"></p>
-
-      <input type="button" onclick="red1(),validateKey()" value="Login">
-      <input type="button" onclick="red2(),validateKey()" value="Register">
-    </form>
+        <input type="button" onclick="red1(),validateKey()" value="Login" class="btn-secondary">
+        <input type="button" onclick="red2(),validateKey()" value="Register" class="btn-secondary">
+      </form>
+    </div>
   </div>
-  
+
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
+  <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
-    <!-- Our script must be loaded after firebase references -->
-    <script src="scripts/admin.js"></script>
+  <!-- Our script must be loaded after firebase references -->
+  <script src="scripts/admin.js"></script>
 
 </html>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->

@@ -63,22 +63,22 @@
                   <h2 class="textColor formBox" id="form_header"> Admin Register </h2>
               </div>
 
-              <div id="form_content_container">
-                  <div id="form_content_inner_container">
+              <div class="container" id="form_content_container">
+                  <div class="form-group" id="form_content_inner_container">
                     <p class="textColor optionBox"><label for="">Full Name:</label></p>
-                    <input class="barDesign2" type="text" id="full_name" placeholder="Full name">
+                    <input class="form-control" type="text" id="full_name" placeholder="Full name">
 
                     <p class="textColor optionBox"><label for="">Email:</label></p>
-                    <input  class="barDesign2" type="email" id="email" placeholder="Email">
+                    <input  class="form-control" type="email" id="email" placeholder="Email">
 
                     <p class="textColor optionBox"><label for="email">Password:</label></p>
-                    <input class="barDesign2" type="password" id="password" placeholder="Password">
+                    <input class="form-control" type="password" id="password" placeholder="Password">
                     <br>
                     <br>
                     <p id="errorMessage" style="color: red;"></p>
                     
                     <div id="button_container">
-                      <button onclick="register()">Register</button>
+                      <button onclick="register()" class="btn-secondary">Register</button>
                     </div>
 
                     </div>
@@ -90,7 +90,7 @@
             <br>
             <p>Successfully registered.</p>
             <br>
-            <input type="button" id="msgButton" value="Ok" onclick="redirectLogin()"/>
+            <input  type="button" id="msgButton" value="Ok" onclick="redirectLogin()"/>
           </div>
         </section>
       </div>
