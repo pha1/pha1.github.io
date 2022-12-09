@@ -157,12 +157,18 @@ function showForm() {
     emails = selectedValues.join();
     console.log("emails: " + emails);
 
-	"use strict";
+    if (emails === "") {
+        console.log("Empty");
+    } else if(emails === null) {
+        console.log("null");
+    } else {
+        "use strict";
 	window.$("#overlay").fadeIn();
 	window.$("#submitButtonPressed").show();
 	//window.$("#submitButtonPressed").animate({top: .5*outerHeight});
     window.$("#submitButtonPressed").animate({top: document.documentElement.scrollTop});
     //window.$("#submitButtonPressed").animate({top: window.pageYOffset});
+    }
 }
 
 window.$("#overlay").click(function () {
