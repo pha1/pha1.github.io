@@ -156,6 +156,7 @@ function showForm() {
 
     emails = selectedValues.join();
     console.log("emails: " + emails);
+    console.log(typeof emails);
 
     if (emails === "") {
         console.log("Empty");
