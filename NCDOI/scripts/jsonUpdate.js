@@ -1,3 +1,4 @@
+src = "array.js";
 // Global Variables
 var ceoId;
 var firstName;
@@ -36,7 +37,17 @@ firebase.initializeApp(firebaseConfig);
  * database
  */
 function deleteJSON(){
-
+    var userId = 0;
+    ceoId = document.getElementById("CEO ID").value;
+    for(var i = 0; i < inspectors.length; i++) {
+        if(ceoId === parseInt(inspectors[i]["CEO ID"])){
+            userId = i;
+            console.log(userId);
+        }
+    } 
+    let userRef = this.database.ref('inspectors/' + userId);
+    console.log("that shit gone");
+    //userRef.remove()
 }
 
 /**
@@ -64,7 +75,7 @@ function addJSON(){
     email = document.getElementById("Primary contact email").value;
 
     // Method to add the inspector information
-    firebase.database().ref('inspectors/' + ceoId).set({
+    firebase.database().ref('inspectors/' + (inspector.length+1)).set({
         ["CEO ID"]: ceoId,
         ["First Name"]: firstName,
         ["Last Name"]: lastName,
