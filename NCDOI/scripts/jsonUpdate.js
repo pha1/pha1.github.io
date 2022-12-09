@@ -45,7 +45,6 @@ function deleteJSON(){
     } 
     if(userId != 0){
         let userRef = firebase.database().ref('inspectors/' + userId);
-        console.log("that shit gone");
     }
     else{
         console.log("could not find user");
