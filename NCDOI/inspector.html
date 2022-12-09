@@ -139,7 +139,7 @@
           <div id ="overlay"></div>
           <div id="submitButtonPressed" style="display:none">
             <button id="cross" onclick="closeForm()">&cross;</button>
-            <form>
+            <form onsubmit="emailList(); return false">
               <br>
               <h5 class="textColor formBox">Contact Information</h5>
 
@@ -172,7 +172,7 @@
               <textarea placeholder="Any additional comments you would like to send?" id="comments" rows="4"
                 cols="50"></textarea>
 
-              <input type="button" value="Send Email" id="btn" onclick="emailList()"/>
+              <input type="submit" value="Send Email" id="btn"/>
             </form>
           </div>
         </section>
