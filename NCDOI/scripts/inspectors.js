@@ -142,7 +142,7 @@ let submitForm = function () {
     //$('#inspector_table_body').append(inspector);
     $(inspector).insertBefore("#submitButtonPressed");
 
-    var r= $('<div class="vertical-center" id = "contactButtonDiv"><input type="button" id="contactButton" value="Contact" onclick="showForm()"/></div>');
+    var r= '<div class="vertical-center" id = "contactButtonDiv"><input type="button" id="contactButton" value="Contact" onclick="showForm()"/></div>';
     $(r).insertBefore("#filler");
 
     return;
