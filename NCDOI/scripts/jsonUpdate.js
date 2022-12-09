@@ -43,17 +43,17 @@ function deleteJSON(){
         if(ceoId === parseInt(inspectors[i]["CEO ID"])){
             userId = i;
             console.log(userId);
-            let userRef = firebase.database().ref('inspectors/' + userId);
-            console.log("that shit gone");
-            //alert guy deleted
         }
-        else{
-            console.log("could not find user");
-            //alert could not find guy
-        }
+       
     } 
-    
-    
+    if(userId != 0){
+        let userRef = firebase.database().ref('inspectors/' + userId);
+        console.log("that shit gone");
+    }
+    else{
+        console.log("could not find user");
+        //alert could not find guy
+    }
     //userRef.remove()
 }
 
