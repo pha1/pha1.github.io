@@ -96,10 +96,7 @@ var firebaseConfig = {
   
       // Done
       //alert('User Logged In')
-      "use strict";
-      window.$("#overlay").fadeIn();
-      window.$("#contactMessage").show();
-      window.$("#contactMessage").animate({top: document.documentElement.scrollTop});
+      showMessage();
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -109,9 +106,13 @@ var firebaseConfig = {
       messageBox.innerHTML = error_message;
     })
   }
-  
-  
-  
+
+  function showMessage() {
+    "use strict";
+      window.$("#overlay").fadeIn();
+      window.$("#contactMessage").show();
+      window.$("#contactMessage").animate({top: document.documentElement.scrollTop});
+  }
   
   // Validate Functions
   function validate_email(email) {
