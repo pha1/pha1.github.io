@@ -9,10 +9,13 @@
   <script>
     function closeResources() {
       var sidebar = document.getElementById("sidebar");
+      var menuItems = document.getElementById("menuItems");
       if (sidebar.style.height == "10px") {
         sidebar.style.height = "100%";
+        menuItems.style.display = "block";
       } else {
         sidebar.style.height = "10px";
+        menuItems.style.display = "none";
       }
     }
   </script>
@@ -67,16 +70,18 @@
   <! Image from: https://wallpaperaccess.com/charlotte-city -->
 
   <div class="sidebar" id="sidebar">
-    <button id="cross" onclick="closeResources()" style="margin: 3px">&#95;</button>
-    <h6 style="text-align: center;">Additional Resources</h6>
-    <p>NCDOI</p>
-    <div><a href="https://www.ncdoi.gov/">NCDOI Website</a></div>
-    <p>OSFM</p>
-    <div><a href="https://www.ncosfm.gov/">OSFM Official Website</a></div>
-    <p>Code Official Qualifications</p>
-    <div><a href="https://www.ncosfm.gov/media/484/open">PDF Code Official Qualifications</a></div>
-    <p>Inspection Process for Residential Projects</p>
-    <div><a href="https://www.mecknc.gov/LUESA/CodeEnforcement/Inspections/Pages/Inspection%20Schedule-Res.aspx">Inspection Process</a></div>
+    <div id="menuItems">
+      <button id="cross" onclick="closeResources()" style="margin: 3px">&#95;</button>
+      <h6 style="text-align: center;">Additional Resources</h6>
+      <p>NCDOI</p>
+      <div><a href="https://www.ncdoi.gov/">NCDOI Website</a></div>
+      <p>OSFM</p>
+      <div><a href="https://www.ncosfm.gov/">OSFM Official Website</a></div>
+      <p>Code Official Qualifications</p>
+      <div><a href="https://www.ncosfm.gov/media/484/open">PDF Code Official Qualifications</a></div>
+      <p>Inspection Process for Residential Projects</p>
+      <div><a href="https://www.mecknc.gov/LUESA/CodeEnforcement/Inspections/Pages/Inspection%20Schedule-Res.aspx">Inspection Process</a></div>
+    </div>
   </div>
 
   <div id="margin_div">
