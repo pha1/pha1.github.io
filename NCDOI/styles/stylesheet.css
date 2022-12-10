@@ -290,6 +290,14 @@ footer{
 	background-color: transparent;
 	border: 0
 }
+#cross3{
+	position: absolute;
+    color: #000000;
+	font-size: 18;
+	font-weight: bold;
+	background-color: transparent;
+	border: 0
+}
 #contactButtonDiv{
   margin-top: 20px;
   margin-bottom: 20px;
