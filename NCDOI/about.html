@@ -10,11 +10,14 @@
     function closeResources() {
       var sidebar = document.getElementById("sidebar");
       var menuItems = document.getElementById("menuItems");
-      if (sidebar.style.height == "5px") {
+      var cross = document.getElementById("cross");
+      if (sidebar.style.height == "10px") {
         sidebar.style.height = "100%";
+        cross.innerHTML = "Open";
         menuItems.style.display = "block";
       } else {
-        sidebar.style.height = "5px";
+        sidebar.style.height = "10px";
+        cross.innerHTML = "Close";
         menuItems.style.display = "none";
       }
     }
@@ -70,7 +73,8 @@
   <! Image from: https://wallpaperaccess.com/charlotte-city -->
 
   <div class="sidebar" id="sidebar">
-    <h6 style="text-align: center; margin:0">Additional Resources<button id="cross" onclick="closeResources()" style="float: right">&#95;</button></h6>
+    <button id="cross" onclick="closeResources()" style="float: right">Close</button>
+    <h6 style="text-align: center; margin:0">Additional Resources</h6>
     <div id="menuItems">
       <p>NCDOI</p>
       <div><a href="https://www.ncdoi.gov/">NCDOI Website</a></div>
