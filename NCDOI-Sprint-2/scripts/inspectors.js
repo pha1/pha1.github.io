@@ -53,7 +53,7 @@ let submitForm = function () {
     var level = document.getElementById("level");
 
     // Selected Values
-    var searchValue = searchData.value;
+    var searchValue = searchData.value.toString();
     var tradeValue = trade.options[trade.selectedIndex].value;
     var levelValue = level.options[level.selectedIndex].value;
 
