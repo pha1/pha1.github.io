@@ -69,7 +69,7 @@ let submitForm = function () {
     var x = 0;
     //for loop to iterate through origanal array and place items in new array sorted by county
     for(var i = 0; i < parsedJSON.length; i++) {
-        if(searchValue.equalsIgnoreCase() === parsedJSON[i].County.equalsIgnoreCase()){
+        if(searchValue === parsedJSON[i].County){
             resultJSON[x].push(parsedJSON[i]);
             x++;
         }
