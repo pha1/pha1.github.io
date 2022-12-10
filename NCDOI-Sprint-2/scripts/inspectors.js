@@ -53,7 +53,7 @@ let submitForm = function () {
     var level = document.getElementById("level");
 
     // Selected Values
-    var searchValue = searchData.value.toString();
+    var searchValue = searchData.value;
     var tradeValue = trade.options[trade.selectedIndex].value;
     var levelValue = level.options[level.selectedIndex].value;
 
@@ -67,13 +67,9 @@ let submitForm = function () {
 
     //variable for search by county
     var x = 0;
-    var searchLower = searchValue.toLowercase();
-    var parsedLower;
     //for loop to iterate through origanal array and place items in new array sorted by county
     for(var i = 0; i < parsedJSON.length; i++) {
-        parsedText = parsedJSON[i].County;
-        parsedLower = parsedText.toLowerCase();
-        if(searchLower === parsedLower){
+        if(searchValue.equalsIgnoreCase() === parsedJSON[i].County.equalsIgnoreCase()){
             resultJSON[x].push(parsedJSON[i]);
             x++;
         }
