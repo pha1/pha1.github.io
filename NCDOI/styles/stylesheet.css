@@ -292,6 +292,7 @@ footer{
 }
 #cross3{
 	position: absolute;
+  top: 0px;
     color: #000000;
 	font-size: 18;
 	font-weight: bold;
