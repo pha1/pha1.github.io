@@ -2,6 +2,13 @@ body {
     background-color: rgb(73, 70, 70);
 }
 
+nav {
+    background-color: black;
+    border: 2px;
+    border-color: azure;
+    color: white;
+}
+
 h1 {
     text-align: center;
 }
