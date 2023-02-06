@@ -8,13 +8,14 @@ nav {
     border-top: 1px solid azure;
     border-bottom: 1px solid azure;
     padding: 5px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 #navbar {
     padding: 5px;
     position: fixed;
     top: 0px;
+    width: 100%;
 }
 
 a {
