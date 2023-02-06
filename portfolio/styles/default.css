@@ -3,11 +3,6 @@ body {
 }
 
 nav {
-    padding: 5px;
-    /*width: 100%;*/
-}
-
-#navbar {
     background-color: black;
     border-style: solid;
     border-top: 1px solid azure;
