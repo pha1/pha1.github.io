@@ -12,9 +12,12 @@ nav {
     border-style: solid;
     border-top: 1px solid azure;
     border-bottom: 1px solid azure;
+    border-left: 1px solid azure;
+    border-right: 1px solid azure;
     position: fixed;
     top: 0px;
     width: 100%;
+    display: block;
 }
 
 a {
