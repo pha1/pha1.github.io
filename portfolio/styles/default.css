@@ -1,9 +1,11 @@
 body {
     background-color: rgb(73, 70, 70);
+    padding-top: 10px;
 }
 
 nav {
     top: 0px;
+    left: 0px;
     width: 100%;
     padding: 10px;
     background-color: black;
