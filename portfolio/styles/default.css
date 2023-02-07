@@ -25,6 +25,10 @@ body {
     background-color: gray;
 }
 
+.dropdown-container {
+    float: left;
+}
+
 /* Dropdown Class */
 .dropdown-menu {
     /* display: none; */
