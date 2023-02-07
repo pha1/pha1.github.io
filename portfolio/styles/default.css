@@ -15,20 +15,20 @@ body {
     position: fixed;
 }
 
-#projects {
+.sub-nav {
     position: relative;
+    float: left;
 }
 
 #replace-with-navbar a{
     text-decoration: none;
-    float: left;
 }
 
 #replace-with-navbar a:hover {
     background-color: gray;
 }
 
-#projects:hover .dropdown-menu{
+.sub-nav:hover .dropdown-menu{
     display: block;
 }
 
