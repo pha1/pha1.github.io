@@ -14,7 +14,6 @@ body {
     border-top: 1px solid azure;
     border-bottom: 1px solid azure;
     position: fixed;
-    display: flex;
 }
 
 #projects {
@@ -23,6 +22,7 @@ body {
 
 #replace-with-navbar a{
     text-decoration: none;
+    float: left;
 }
 
 #replace-with-navbar a:hover {
@@ -39,7 +39,7 @@ body {
 
 /* Dropdown Class */
 .dropdown-menu {
-    /*display: none;*/
+    display: none;
     position: inherit;
     background-color: gray;
     width: auto;
