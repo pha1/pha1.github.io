@@ -36,10 +36,7 @@ body {
     display: none;
     position: absolute;
     background-color: gray;
-}
-
-.dropdown-container:hover .dropdown-menu{
-    display: block;
+    min-width: 150px;
 }
 
 .dropdown-menu a {
@@ -52,6 +49,10 @@ body {
 
 .dropdown-menu a:hover {
     background-color: lightgrey;
+}
+
+.dropdown-container:hover .dropdown-menu{
+    display: block;
 }
 
 /* Links */
