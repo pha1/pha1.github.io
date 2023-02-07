@@ -34,9 +34,8 @@ body {
 /* Dropdown Class */
 .dropdown-menu {
     display: none;
-    position: inherit;
+    position: absolute;
     background-color: gray;
-    width: auto;
 }
 
 .dropdown-container:hover .dropdown-menu{
