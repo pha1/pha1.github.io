@@ -42,6 +42,9 @@ body {
     position: inherit;
     background-color: gray;
     width: auto;
+}
+
+.dropdown-menu a {
     float: none;
 }
 
