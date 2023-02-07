@@ -39,7 +39,7 @@ nav {
 
 /* Dropdown Class */
 .dropdown-menu {
-    display: none;
+    /*display: none;*/
     position: inherit;
     background-color: gray;
     width: auto;
