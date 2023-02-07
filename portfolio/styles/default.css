@@ -16,19 +16,20 @@ body {
 }
 
 #replace-with-navbar a{
-    text-decoration: none;
     float: left;
+    text-decoration: none;
+    text-align: center;
 }
 
 #replace-with-navbar a:hover {
     background-color: gray;
 }
 
-.sub-nav {
+.dropdown-container {
     float: left;
 }
 
-.sub-nav:hover .dropdown-menu{
+.dropdown-container:hover .dropdown-menu{
     display: block;
 }
 
@@ -42,6 +43,12 @@ body {
 
 .dropdown-menu a {
     float: none;
+    color: red;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: lightgrey;
 }
 
 /* Links */
