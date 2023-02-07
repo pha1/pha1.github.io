@@ -23,7 +23,7 @@ body {
 }
 
 .dropdown-container {
-    float: left;
+    display: inline-block;
     overflow: hidden;
 }
 
