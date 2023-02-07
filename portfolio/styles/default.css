@@ -15,17 +15,18 @@ body {
     position: fixed;
 }
 
-.sub-nav {
-    position: relative;
-    float: left;
-}
-
 #replace-with-navbar a{
     text-decoration: none;
+    float: left;
 }
 
 #replace-with-navbar a:hover {
     background-color: gray;
+}
+
+.sub-nav {
+    position: relative;
+    float: left;
 }
 
 .sub-nav:hover .dropdown-menu{
