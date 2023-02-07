@@ -15,7 +15,7 @@ nav {
     position: fixed;
 }
 
-#replace_with_navbar {
+#replace_with_navbar a{
     text-decoration: none;
 }
 
