@@ -15,6 +15,10 @@ nav {
     position: fixed;
 }
 
+#replace_with_navbar {
+    text-decoration: none;
+}
+
 a {
     color: azure;
     padding: 10px;
