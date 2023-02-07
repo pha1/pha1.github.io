@@ -34,7 +34,7 @@ body {
 /* Dropdown Class */
 .dropdown-menu {
     /* display: none; */
-    position: absolute;
+    position: inherit;
     background-color: gray;
     width: auto;
 }
