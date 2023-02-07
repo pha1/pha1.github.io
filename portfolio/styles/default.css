@@ -28,10 +28,6 @@ body {
     background-color: gray;
 }
 
-#dropdown-projects {
-    position: absolute;
-}
-
 #projects:hover .dropdown-menu{
     display: block;
 }
@@ -39,7 +35,7 @@ body {
 /* Dropdown Class */
 .dropdown-menu {
     display: none;
-    position: inherit;
+    position: absolute;
     background-color: gray;
     width: auto;
 }
