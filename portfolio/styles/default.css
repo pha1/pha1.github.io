@@ -13,6 +13,7 @@ body {
     border-top: 1px solid azure;
     border-bottom: 1px solid azure;
     position: fixed;
+    overflow: hidden;
 }
 
 #replace-with-navbar a{
@@ -21,7 +22,12 @@ body {
     text-align: center;
 }
 
-#replace-with-navbar a:hover {
+.dropdown-container {
+    float: left;
+    overflow: hidden;
+}
+
+#replace-with-navbar a:hover, .dropdown-container a:hover {
     background-color: gray;
 }
 
@@ -41,6 +47,8 @@ body {
     float: none;
     color: red;
     text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 .dropdown-menu a:hover {
