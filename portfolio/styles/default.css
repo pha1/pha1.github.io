@@ -24,13 +24,13 @@ nav {
     background-color: gray;
 }
 
-#projects:hover #dropdown-projects{
+#projects a:hover #dropdown-projects{
     display: block;
 }
 
 /* Dropdown Class */
 .dropdown-menu {
-    display: none;
+    /*display: none;*/
     position: inherit;
     background-color: gray;
     width: auto;
