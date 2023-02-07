@@ -29,16 +29,16 @@ body {
     float: left;
 }
 
-.dropdown-container:hover .dropdown-menu{
-    display: block;
-}
-
 /* Dropdown Class */
 .dropdown-menu {
     display: none;
     position: absolute;
     background-color: gray;
     width: auto;
+}
+
+.dropdown-container:hover .dropdown-menu{
+    display: block;
 }
 
 .dropdown-menu a {
