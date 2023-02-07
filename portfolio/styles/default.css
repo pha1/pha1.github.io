@@ -25,6 +25,14 @@ nav {
     background-color: gray;
 }
 
+#projects {
+    position: relative;
+}
+
+#dropdown-projects {
+    position: absolute;
+}
+
 #projects:hover .dropdown-menu{
     display: block;
 }
