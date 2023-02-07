@@ -14,6 +14,11 @@ body {
     border-top: 1px solid azure;
     border-bottom: 1px solid azure;
     position: fixed;
+    display: flex;
+}
+
+#projects {
+    position: relative;
 }
 
 #replace-with-navbar a{
