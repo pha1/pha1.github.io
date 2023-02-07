@@ -3,6 +3,7 @@ body {
     padding-top: 20px;
 }
 
+/* NAVIGATION BAR */
 nav {
     top: 0px;
     left: 0px;
@@ -15,17 +16,30 @@ nav {
     position: fixed;
 }
 
-#replace_with_navbar a{
+#replace-with-navbar a{
     text-decoration: none;
 }
 
+#replace-with-navbar a:hover {
+    background-color: gray;
+}
+
+#projects:hover #dropdown-projects{
+    display: block;
+}
+
+/* Dropdown Class */
+.dropdown-menu {
+    display: none;
+    position: inherit;
+    background-color: gray;
+    width: auto;
+}
+
+/* Links */
 a {
     color: azure;
     padding: 10px;
-}
-
-a:hover {
-    background-color: gray;
 }
 
 h1 {
