@@ -25,7 +25,7 @@ nav {
     background-color: gray;
 }
 
-#projects a:hover #dropdown-projects{
+#projects:hover .dropdown-menu{
     display: block;
 }
 
