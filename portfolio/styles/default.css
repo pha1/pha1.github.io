@@ -1,11 +1,10 @@
 body {
     background-color: rgb(73, 70, 70);
-    padding-top: 25px;
+    padding-top: 30px;
     margin: 0px;
 }
 
 #navbar {
-    overflow: hidden;
     background-color: #333;
     border-bottom: 2px solid azure;
     position: fixed;
