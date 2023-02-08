@@ -39,7 +39,7 @@ body {
 }
 
 #navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: lightgray;
+    background-color: gray;
 }
 
 .dropdown-content {
