@@ -5,6 +5,7 @@ body {
 #navbar {
     overflow: hidden;
     background-color: #333;
+    border-bottom: 2px solid azure;
   }
   
 #navbar a {
@@ -33,7 +34,7 @@ margin: 0;
 }
 
 #navbar a:hover, .dropdown:hover .dropbtn {
-background-color: red;
+background-color: lightgray;
 }
 
 .dropdown-content {
