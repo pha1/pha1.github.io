@@ -6,6 +6,7 @@ body {
     overflow: hidden;
     background-color: #333;
     border-bottom: 2px solid azure;
+    position: fixed;
     top: 0;
     width: 100%;
   }
