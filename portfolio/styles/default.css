@@ -1,7 +1,7 @@
 body {
     background-color: rgb(73, 70, 70);
     padding-top: 50px;
-    margin: 0px;
+    margin: 8px;
 }
 
 #navbar {
@@ -9,6 +9,7 @@ body {
     border-bottom: 2px solid azure;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
 }
   
