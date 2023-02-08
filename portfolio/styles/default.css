@@ -1,6 +1,7 @@
 body {
     background-color: rgb(73, 70, 70);
-    padding-top: 20px;
+    padding-top: 25px;
+    margin: 0px;
 }
 
 #navbar {
@@ -50,7 +51,7 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
 }
 
-.dropdown .dropdown-content a {
+#navbar .dropdown .dropdown-content a {
 float: none;
 color: black;
 padding: 12px 16px;
