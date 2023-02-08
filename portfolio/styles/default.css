@@ -83,14 +83,16 @@ body {
     display: block;
 }
 
-/* Links
-a {
-    color: azure;
-    padding: 10px;
-}
-*/
-
+/* Possibly needs a new font */
 h1 {
     text-align: center;
     padding-bottom: 10px;
+}
+
+/** DUNGEON CRAWLER **/
+
+#game-container {
+    align-self: center;
+    border: 2px solid azure;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
