@@ -10,7 +10,6 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    overflow: visible;
 }
   
 #navbar a {
@@ -61,7 +60,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #999;
 }
 
 .dropdown:hover .dropdown-content {
