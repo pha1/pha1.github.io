@@ -37,6 +37,10 @@ body {
     margin: 0;
 }
 
+#projects {
+    position: absolute;
+}
+
 #navbar a:hover, .dropdown:hover .dropbtn {
     background-color: lightgray;
 }
