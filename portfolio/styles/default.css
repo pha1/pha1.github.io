@@ -1,6 +1,6 @@
 body {
     background-color: rgb(73, 70, 70);
-    padding-top: 30px;
+    padding-top: 50px;
     margin: 0px;
 }
 
@@ -10,6 +10,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    font-size: 20px;
 }
   
 #navbar a {
@@ -61,7 +62,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #999;
+    background-color: #777;
 }
 
 .dropdown:hover .dropdown-content {
