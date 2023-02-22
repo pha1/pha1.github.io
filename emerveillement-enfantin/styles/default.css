@@ -37,6 +37,7 @@ label {
     padding: 20px;
 }
 
+/** Mobile CSS */
 @media screen and (max-width: 767px) {
     #jerome-logo {
         width: 100%;
@@ -56,6 +57,11 @@ label {
     label {
         color: limegreen;
         font-size: 3vw;
+    }
+
+    #intro-logo {
+        width: 75px;
+        height: 75px;
     }
 }
 
