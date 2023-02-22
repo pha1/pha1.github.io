@@ -1,0 +1,104 @@
+h1 {
+    color: limegreen;
+    font-size: 6vw;
+}
+
+p {
+    color: limegreen;
+    font-size: 2vw;
+}
+
+label {
+    color: limegreen;
+    font-size: 2vw;
+}
+
+button {
+    /*border: 1.5px solid limegreen;*/
+    border-radius: 8px;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+.content {
+    top: 30%;
+    text-align: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    #jerome-logo {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
+    h1 {
+        color: limegreen;
+        font-size: 6vw;
+    }
+    
+    p {
+        color: limegreen;
+        font-size: 3vw;
+    }
+    
+    label {
+        color: limegreen;
+        font-size: 3vw;
+    }
+}
+/*
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width:100%;
+        height: auto;
+    }
+    .content {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #myVideo { 
+        width:auto;
+        height: 100%;
+    }
+    .content { 
+        width:auto;
+        height: 100%;
+    }
+}
+*/
+.videoContainer{
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+  }
+
+#jerome-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: auto;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
