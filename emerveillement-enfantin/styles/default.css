@@ -1,3 +1,4 @@
+/** General CSS **/
 h1 {
     color: limegreen;
     font-size: 6vw;
@@ -13,10 +14,7 @@ label {
     font-size: 2vw;
 }
 
-button {
-    /*border: 1.5px solid limegreen;*/
-    border-radius: 8px;
-}
+/** Video CSS **/
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
@@ -28,7 +26,7 @@ button {
     z-index: -100;
   }
   
-  /* Add some content at the bottom of the video/page */
+  /* Add some content in the center of the video/page */
 .content {
     top: 30%;
     text-align: center;
@@ -60,29 +58,7 @@ button {
         font-size: 3vw;
     }
 }
-/*
-@media (min-aspect-ratio: 16/9) {
-    #myVideo {
-        width:100%;
-        height: auto;
-    }
-    .content {
-        width:100%;
-        height: auto;
-    }
-}
 
-@media (max-aspect-ratio: 16/9) {
-    #myVideo { 
-        width:auto;
-        height: 100%;
-    }
-    .content { 
-        width:auto;
-        height: 100%;
-    }
-}
-*/
 .videoContainer{
     z-index: -100;
     width: 100%;
@@ -102,3 +78,89 @@ button {
     max-width: 100%;
     height: auto;
   }
+
+  /** Splash Screen **/
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+#intro-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeInOut 1.8s linear 1 forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /** Submit Button **/
+.btn-container {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    position: relative;
+    font-size: 8px;
+}
+
+.button, .tick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.button {
+    border: 1px #161616 solid;
+    width: 100px;
+    height: 30px;
+    background: dodgerblue;
+    border-radius: 6px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+}
+
+.button svg {
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+
+.button__circle {
+    width: 50px;
+    height: 50px;
+    background: limegreen;
+    border-radius: 50%;
+    transform: rotate(-180deg);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.tick {
+    color: white;
+    font-size: 2em;
+    transition: all .9s;
+}
