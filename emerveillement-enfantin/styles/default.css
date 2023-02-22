@@ -37,34 +37,6 @@ label {
     padding: 20px;
 }
 
-/** Mobile CSS */
-@media screen and (max-width: 767px) {
-    #jerome-logo {
-        width: 100%;
-        max-width: 100px;
-        height: auto;
-    }
-    h1 {
-        color: limegreen;
-        font-size: 6vw;
-    }
-    
-    p {
-        color: limegreen;
-        font-size: 3vw;
-    }
-    
-    label {
-        color: limegreen;
-        font-size: 3vw;
-    }
-
-    #intro-logo {
-        width: 100px;
-        height: 100px;
-    }
-}
-
 .videoContainer{
     z-index: -100;
     width: 100%;
@@ -169,4 +141,43 @@ label {
     color: white;
     font-size: 2em;
     transition: all .9s;
+}
+
+/** Mobile CSS */
+@media screen and (max-width: 767px) {
+    #jerome-logo {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
+    h1 {
+        color: limegreen;
+        font-size: 6vw;
+    }
+    
+    p {
+        color: limegreen;
+        font-size: 3vw;
+    }
+    
+    label {
+        color: limegreen;
+        font-size: 3vw;
+    }
+
+    #intro-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .button {
+        width: 80px;
+        height: 25px;
+        font-size: 6px;
+    }
+
+    .button__circle {
+        width: 35px;
+        height: 35px;
+    }
 }
