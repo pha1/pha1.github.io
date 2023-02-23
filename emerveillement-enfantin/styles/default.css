@@ -58,6 +58,13 @@ label {
   }
 
   /** Splash Screen **/
+.blank-container{
+    position: fixed;
+    z-index: 1;
+    background-color: #161616;
+    height: 100%;
+    width: 100%;
+}
 
 .intro {
     position: fixed;
@@ -89,15 +96,6 @@ label {
       opacity: 0;
     }
   }
-
-.blank-container{
-    position: fixed;
-    z-index: 1;
-    background-color: #161616;
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-}
 
   /** Submit Button **/
 .btn-container {

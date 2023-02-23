@@ -4,7 +4,7 @@ let container = document.querySelector('.blank-container');
 
 window.addEventListener('DOMContentLoaded', ()=>{
     setTimeout(()=> {
-        container.style.opacity = '1.0';
+        container.style.display = 'none';
         intro.style.top = '-100vh';
     }, 2000);
 })
