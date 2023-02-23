@@ -36,7 +36,7 @@ function submit() {
   email = document.getElementById('email').value;
 
   if (email == "") {
-    console.log("Please enter an email!");
+    document.getElementById('emailLabel').innerHTML = "Please enter an email!";
   } else {
     add_email();
   }
