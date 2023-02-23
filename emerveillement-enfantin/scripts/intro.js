@@ -1,8 +1,10 @@
 /** This is for the SplashScreen transition out */
 let intro = document.querySelector('.intro');
+let container = document.querySelector('.blank-container');
 
 window.addEventListener('DOMContentLoaded', ()=>{
     setTimeout(()=> {
+        container.style.opacity = '1.0';
         intro.style.top = '-100vh';
     }, 2000);
 })

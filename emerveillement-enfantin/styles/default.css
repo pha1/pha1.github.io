@@ -90,6 +90,11 @@ label {
     }
   }
 
+.blank-container{
+    background-color: #161616;
+    opacity: 0;
+}
+
   /** Submit Button **/
 .btn-container {
     display: flex;
