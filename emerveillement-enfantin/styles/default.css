@@ -91,6 +91,7 @@ label {
   }
 
 .blank-container{
+    position: fixed;
     z-index: 1;
     background-color: #161616;
     opacity: 0;
