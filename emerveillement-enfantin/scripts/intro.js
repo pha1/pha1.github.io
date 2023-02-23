@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
   }, 2000);
 })
 
-/** The Submit Button */
+/** Submit Button */
 let button = document.querySelector('.button');
 let buttonText = document.querySelector('.tick');
 
@@ -19,27 +19,15 @@ const tickMark = "<svg width=\"58\" height=\"45\" viewBox=\"0 0 58 45\" xmlns=\"
 
 buttonText.innerHTML = "Submit";
 
-/** This needs to be changed so that it will submit the email to Google Firebase
-button.addEventListener('click', function() {
+document.getElementById ("btn").addEventListener ("click", submitEmail, false);
 
+function submitEmail() {
   email = document.getElementById('email').value;
 
-  if (email == "") {
-    console.log("Please enter an email!");
-  } else {
+  if (document.getElementById('email').checkValidity()) {
     add_email();
   }
-});
-*/
-
-function submit() {
-  email = document.getElementById('email').value;
-
-  if (email == "") {
-    document.getElementById('emailLabel').innerHTML = "Please enter an email!";
-  } else {
-    add_email();
-  }
+  document.getElementById('emailLabel').innerHTML = "Please enter your email here:";
 }
 
 
@@ -91,6 +79,7 @@ function add_email() {
         buttonText.innerHTML = tickMark;
         button.classList.toggle('button__circle');
         document.getElementById("btn").onclick = null;
+        document.getElementById('btn').disabled = true;
     }
   });
 }

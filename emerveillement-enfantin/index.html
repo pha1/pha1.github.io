@@ -29,7 +29,9 @@
 
         <div class="blank-container"></div>
 
-        <img id="jerome-logo" class="responsive" src="images/jerome-limegreen.png">
+        <a href="index.html">
+            <img id="jerome-logo" class="responsive" src="images/jerome-limegreen.png" onclick="homePage()">
+        </a>
         
         <video class="videoContainer" id="videoJerome" autoplay muted loop playsinline>
             <source src="videos/jerome-background-video.mp4" type="video/mp4"/>
@@ -38,17 +40,19 @@
        
         <div class="content">
             <h1>&#201;merveillement Enfantin</h1><br>
-            <label id="emailLabel" for="email">Please enter your email here:</label><br><br>
-            <input type="text" id="email" name="email" placeholder="Email..."><br><br>
             
-            <div class="btn-container">
-                <div id="btn" class="button" onclick="submit()">
-                    <div class="container">
-                        <div class="tick">
+            <form onsubmit="return false">
+                <label id="emailLabel" for="email">Please enter your email here:</label><br><br>
+                <input type="email" id="email" name="email" placeholder="Email..." required><br><br>
+                <div class="btn-container">
+                    <button id="btn" class="button" type="submit">
+                        <div class="container">
+                            <div class="tick">
+                            </div>
                         </div>
-                    </div>
+                    </button>
                 </div>
-            </div>
+            </form>
         </div>
 
         <!-- Firebase Import -->
