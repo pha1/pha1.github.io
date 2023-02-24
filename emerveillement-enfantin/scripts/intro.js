@@ -76,7 +76,12 @@ function add_email() {
     }
 
     if (newEmail) {
-        buttonText.innerHTML = tickMark;
+        //buttonText.innerHTML = tickMark;
+        buttonText.innerHTML = "Done";
+      
+        const tick = document.getElementById('tick');
+        tick.classList.add('flip');
+        
         button.classList.toggle('button__circle');
         document.getElementById("btn").onclick = null;
         document.getElementById('btn').disabled = true;
