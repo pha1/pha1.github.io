@@ -1,5 +1,11 @@
 /** General CSS **/
+@font-face {
+    font-family: myFirstFont;
+    src: url('fonts/bjork.ttf');
+}
+
 h1 {
+    font-family: myFirstFont;
     color: limegreen;
     font-size: 6vw;
 }
@@ -11,7 +17,8 @@ p {
 
 label {
     color: limegreen;
-    font-size: 2vw;
+    font-family: myFirstFont;
+    font-size: 4vw;
 }
 
 /** Video CSS **/
