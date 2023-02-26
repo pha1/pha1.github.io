@@ -1,24 +1,24 @@
 /** General CSS **/
 @font-face {
     font-family: myFirstFont;
-    src: url('fonts/bjork.ttf');
+    src: url('fonts/HelveticaNeue\ Bold.ttf');
 }
 
 h1 {
     font-family: myFirstFont;
-    color: limegreen;
-    font-size: 6vw;
+    color: red;
+    font-size: 5vw;
 }
 
 p {
-    color: limegreen;
+    color: red;
     font-size: 2vw;
 }
 
 label {
-    color: limegreen;
+    color: red;
     font-family: myFirstFont;
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 /** Video CSS **/
