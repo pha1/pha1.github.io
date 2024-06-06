@@ -1,8 +1,14 @@
 h1 {
     font-family: myFirstFont;
     background-color: orange;
+    display: inline;
 }
 
 p {
     background-color: orange;
+    display:inline
+}
+
+img {
+    display: block
 }
