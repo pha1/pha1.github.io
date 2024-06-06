@@ -2,16 +2,19 @@ h1 {
     font-family: myFirstFont;
     background-color: orange;
     display: inline;
+    margin-bottom: 10px;
 }
 
 p {
     background-color: orange;
-    display:inline
+    display:inline;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .jerome {
-    width: 50vw;
-    height: 50vh;
+    width: 40vw;
+    height: 40vh;
     display:table-cell;
 }
 
