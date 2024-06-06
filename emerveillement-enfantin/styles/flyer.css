@@ -10,15 +10,15 @@ p {
 }
 
 .jerome {
-    width: 60vw;
-    height: 60vh;
+    width: 50vw;
+    height: 50vh;
     display:table-cell;
-    vertical-align: middle;
-    text-align: center;
 }
 
 img {
     max-width:100%;
     height:auto;
     max-height:100%;
+    vertical-align: middle;
+    text-align: center;
 }
