@@ -1,5 +1,6 @@
-h1 {
+h2 {
     font-family: myFirstFont;
+    src: url('fonts/HelveticaNeue\ Bold.ttf');
     background-color: orange;
     display: inline-block;
     margin-bottom: 10px;
