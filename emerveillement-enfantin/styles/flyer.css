@@ -16,12 +16,11 @@ p {
     width: 40vw;
     height: 40vh;
     text-align: center;
+    vertical-align: middle;
 }
 
 img {
     max-width:100%;
     height:auto;
     max-height:100%;
-    vertical-align: middle;
-    text-align: center;
 }
