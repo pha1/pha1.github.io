@@ -1,13 +1,13 @@
 h1 {
     font-family: myFirstFont;
     background-color: orange;
-    display: inline;
+    display: inline-block;
     margin-bottom: 100px;
 }
 
 p {
     background-color: orange;
-    display:inline;
+    display:inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
 }
